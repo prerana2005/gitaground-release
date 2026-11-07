@@ -3,16 +3,16 @@ message: "If you use this release, please cite it."
 title: "Where Is the Verse? Benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding"
 type: dataset
 authors:
-  - name: "Maitreyi"
+  - given-names: "Maitreyi"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - name: "Prerana M P"
+  - given-names: "Prerana M P"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - name: "Meghana S"
+  - given-names: "Meghana S"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - name: "Meghana Gajendran"
+  - given-names: "Meghana Gajendran"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - name: "Badri Prasad"
+  - given-names: "Badri Prasad"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
 license: CC-BY-NC-4.0
 # doi: add the Zenodo DOI after the first release
-repository-code: "https://github.com/TODO/TODO"
+repository-code: "https://github.com/prerana2005/gitaground-release.git"

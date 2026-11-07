@@ -9,7 +9,7 @@ Labels, passage grid, embeddings and code for *verse grounding in oral discourse
 **Route (a).** No lecture audio and no transcript or passage text is distributed. The release has URLs, offsets,
 text hashes, code, labels and pre-computed embeddings. `reconstruct/` explains how to rebuild the text yourself.
 
-DOI: TODO (assigned by Zenodo after the first release)
+DOI: [10.5281/zenodo.24037830](https://doi.org/10.5281/zenodo.24037830)
 
 ## Contents (Section 8)
 

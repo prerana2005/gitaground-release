@@ -1,0 +1,422 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+kn_kannada_13_0000,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:24:35
+kn_kannada_13_0000,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:25:08
+kn_kannada_13_0001,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:30:08
+kn_kannada_13_0002,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:36:44
+kn_kannada_13_0003,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:38:50
+kn_kannada_13_0004,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:40:31
+kn_kannada_13_0005,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T18:03:01
+kn_kannada_13_0006,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T18:03:36
+kn_kannada_13_0008,kannada_13,Meghana S,BG 2.34,T2,0,0,,2026-08-21T18:07:27
+kn_kannada_13_0010,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T18:08:12
+kn_kannada_13_0007,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T19:08:09
+kn_kannada_13_0007,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T19:08:09
+kn_kannada_13_0009,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T23:25:09
+kn_kannada_14_0001,kannada_14,Meghana S,BG 2.35,T1,1,0,,2026-08-23T19:47:13
+kn_kannada_14_0002,kannada_14,Meghana S,BG 2.35,T2,0,0,,2026-08-23T19:48:10
+kn_kannada_14_0003,kannada_14,Meghana S,BG 2.35,T2,0,0,,2026-08-23T19:49:28
+kn_kannada_14_0004,kannada_14,Meghana S,BG 2.35,T1,0,0,,2026-08-23T19:50:04
+kn_kannada_14_0004,kannada_14,Meghana S,BG 2.36,T1,0,0,,2026-08-23T19:50:58
+kn_kannada_14_0005,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:53:08
+kn_kannada_14_0006,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:53:40
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.36,T1,1,0,,2026-08-23T19:54:48
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.37,T1,0,0,,2026-08-23T19:54:58
+kn_kannada_14_0008,kannada_14,Meghana S,BG 2.37,T4,0,0,,2026-08-23T19:55:48
+kn_kannada_14_0009,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS: Rigveda 10.154.3,2026-08-23T20:01:52
+kn_kannada_14_0010,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS: Rigveda 10.154.3,2026-08-23T20:05:52
+kn_kannada_14_0011,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS:Rigveda 10.154.3,2026-08-23T20:07:36
+kn_kannada_14_0012,kannada_14,Meghana S,BG 2.37,T2,0,0,,2026-08-23T20:09:33
+kn_kannada_14_0013,kannada_14,Meghana S,BG 2.37,T1,1,0,,2026-08-23T20:10:15
+kn_kannada_15_0001,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:13:23
+kn_kannada_15_0002,kannada_15,Meghana S,NONE,NONE,0,0,"OOS: Abhijñānaśākuntalam (Śākuntala) Act 5, Verse 6 (5.6) ",2026-08-23T20:15:55
+kn_kannada_15_0003,kannada_15,Meghana S,NONE,NONE,0,0,,2026-08-23T20:16:50
+kn_kannada_15_0004,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:18:23
+kn_kannada_15_0005,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:19:13
+kn_kannada_15_0006,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:20:28
+kn_kannada_15_0007,kannada_15,Meghana S,BG 2.38,T4,0,0,,2026-08-23T20:20:59
+kn_kannada_15_0008,kannada_15,Meghana S,BG 2.38,T1,0,0,,2026-08-23T20:21:47
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.38,T3,1,0,,2026-08-23T20:22:34
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.39,T1,0,0,,2026-08-23T20:22:42
+kn_kannada_15_0010,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:23:21
+kn_kannada_15_0012,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:24:28
+kn_kannada_15_0013,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:24:59
+kn_kannada_15_0014,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:25:28
+kn_kannada_15_0017,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:33:06
+kn_kannada_15_0018,kannada_15,Meghana S,BG 2.39,T2,0,0,,2026-08-23T20:34:38
+kn_kannada_15_0019,kannada_15,Meghana S,BG 2.39,T1,0,0,,2026-08-23T20:35:05
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.39,T3,1,0,,2026-08-23T22:55:24
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.40,T3,1,0,,2026-08-23T22:55:33
+kn_kannada_16_0001,kannada_16,Meghana S,BG 2.40,T1,0,0,,2026-08-23T22:56:08
+kn_kannada_16_0002,kannada_16,Meghana S,BG 2.40,T2,1,0,,2026-08-23T22:57:02
+kn_kannada_16_0003,kannada_16,Meghana S,BG 2.40,T4,0,0,,2026-08-23T22:57:43
+kn_kannada_16_0004,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T23:00:52
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.50,T4,0,0,,2026-08-23T23:06:30
+kn_kannada_16_0005,kannada_16,Meghana S,BG 2.40,T4,0,0,,2026-08-23T23:09:01
+kn_kannada_16_0006,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T23:10:01
+kn_kannada_16_0007,kannada_16,Meghana S,BG 2.40,T3,0,0,OOS: Viṣṇudharma,2026-08-23T23:11:44
+kn_kannada_16_0008,kannada_16,Meghana S,BG 2.40,T1,0,0,,2026-08-23T23:13:55
+kn_kannada_16_0009,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:15:21
+kn_kannada_16_0010,kannada_16,Meghana S,BG 2.41,T3,0,0,,2026-08-23T23:16:19
+kn_kannada_16_0011,kannada_16,Meghana S,BG 2.41,T3,0,0,OOS: Śvetāśvatara Upanishad 3.8,2026-08-23T23:18:16
+kn_kannada_16_0012,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:19:56
+kn_kannada_16_0013,kannada_16,Meghana S,BG 2.41,T3,0,0,,2026-08-23T23:20:32
+kn_kannada_16_0014,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:21:06
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.39,T3,0,0,,2026-08-24T00:25:48
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.43,T1,0,0,,2026-08-24T00:25:59
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.42,T1,0,0,,2026-08-24T00:25:59
+kn_kannada_17_0001,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T00:28:08
+kn_kannada_17_0001,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T00:28:08
+kn_kannada_17_0002,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T00:30:18
+kn_kannada_17_0002,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T00:30:18
+kn_kannada_17_0003,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:04:34
+kn_kannada_17_0004,kannada_17,Meghana S,BG 2.42,T2,0,0,OOS: Gita Bhashya 2.45 (Madhvacharya).,2026-08-24T12:07:05
+kn_kannada_17_0005,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:08:13
+kn_kannada_17_0006,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T12:09:42
+kn_kannada_17_0007,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:11:11
+kn_kannada_17_0007,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T12:11:11
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.42,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.43,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.44,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0009,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:14:38
+kn_kannada_17_0010,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:17:26
+kn_kannada_17_0011,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:18:33
+kn_kannada_17_0012,kannada_17,Meghana S,BG 2.44,T1,0,0,,2026-08-24T12:20:32
+kn_kannada_17_0013,kannada_17,Meghana S,NONE,NONE,0,0,,2026-08-24T12:20:52
+kn_kannada_18_0000,kannada_18,Meghana S,BG 2.45,T1,1,0,,2026-08-24T17:25:49
+kn_kannada_18_0001,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:27:08
+kn_kannada_18_0002,kannada_18,Meghana S,BG 2.45,T4,0,0,,2026-08-24T17:27:53
+kn_kannada_18_0003,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:29:27
+kn_kannada_18_0004,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:30:26
+kn_kannada_18_0005,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:32:08
+kn_kannada_18_0006,kannada_18,Meghana S,BG 2.45,T2,0,0,,2026-08-24T23:15:29
+kn_kannada_18_0007,kannada_18,Meghana S,BG 2.45,T3,0,0,OOS:9.22,2026-08-24T23:16:43
+kn_kannada_18_0008,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T23:17:45
+kn_kannada_18_0009,kannada_18,Meghana S,BG 2.45,T1,0,0,,2026-08-24T23:18:43
+kn_kannada_18_0010,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T23:19:32
+kn_kannada_18_0011,kannada_18,Meghana S,BG 2.45,T2,0,0,OOS: Kena Upanishad 2.5,2026-08-24T23:23:35
+kn_kannada_18_0012,kannada_18,Meghana S,BG 2.45,T5,0,0,,2026-08-24T23:24:13
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.33,T2,0,0,,2026-08-26T20:03:52
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.34,T2,0,0,,2026-08-26T20:03:52
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.37,T2,0,0,OOS:BG 1.36,2026-08-26T20:15:51
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.38,T1,1,0,,2026-08-26T20:16:04
+kn_kannada_15_0011,kannada_15,Meghana S,BG 2.39,T3,0,0,OOS:BG 13.24,2026-08-26T20:22:48
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.48,T3,0,0,,2026-08-26T20:25:33
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.50,T3,0,0,,2026-08-26T20:25:33
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-26T20:25:49
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.48,T4,0,0,,2026-08-26T22:52:55
+kn_kannada_17_0003,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-26T23:05:41
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.34,T2,0,0,,2026-08-23T19:46:24
+kn_kannada_14_0001,kannada_14,Meghana S,BG 2.35,T1,0,0,,2026-08-23T19:47:13
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:54:48
+kn_kannada_14_0008,kannada_14,Meghana S,BG 2.37,T3,0,0,,2026-08-23T19:55:48
+kn_kannada_14_0013,kannada_14,Meghana S,BG 2.37,T1,0,0,,2026-08-23T20:10:15
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.37,T2,0,0,,2026-08-23T20:11:13
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.38,T1,0,0,,2026-08-23T20:11:48
+kn_kannada_15_0007,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:20:59
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:22:34
+kn_kannada_15_0011,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:23:45
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.39,T3,0,0,"OOS:2.50, 2.48",2026-08-23T20:31:44
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.39,T3,0,0,,2026-08-23T22:55:24
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T22:55:33
+kn_kannada_16_0002,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T22:57:02
+kn_kannada_16_0003,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T22:57:43
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.50,T4,0,0,OOS:2.48,2026-08-23T23:06:30
+kn_kannada_16_0005,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T23:09:01
+kn_kannada_18_0000,kannada_18,Meghana S,BG 2.45,T4,0,0,,2026-08-24T17:25:49
+kn_kannada_18_0002,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:27:53
+en_video_02_0000,video_02,Meghana S,BG 2.9,T1,1,0,OOS:Dhyana Shloka,2026-08-28T13:13:45
+en_video_02_0000,video_02,Meghana S,BG 2.10,T1,1,0,OOS:Dhyana Shloka,2026-08-28T13:13:45
+en_video_02_0001,video_02,Meghana S,BG 2.9,T3,1,0,,2026-08-28T13:14:54
+en_video_02_0001,video_02,Meghana S,BG 2.10,T3,1,0,,2026-08-28T13:14:54
+en_video_02_0002,video_02,Meghana S,BG 2.10,T2,0,0,,2026-08-28T13:18:02
+en_video_02_0003,video_02,Meghana S,BG 2.11,T1,1,0,,2026-08-28T13:19:53
+en_video_02_0004,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T13:21:04
+en_video_02_0005,video_02,Meghana S,BG 2.11,T3,0,0,,2026-08-28T13:22:18
+en_video_02_0006,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T13:22:49
+en_video_02_0007,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:23:23
+en_video_02_0008,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:23:52
+en_video_02_0009,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:24:16
+en_video_02_0010,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:24:43
+en_video_02_0011,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:25:45
+en_video_02_0012,video_02,Meghana S,NONE,NONE,0,0,"OOS:Sāṅkhya Kārikā,",2026-08-28T13:27:44
+en_video_02_0013,video_02,Meghana S,NONE,NONE,0,0,OOS:Sāṅkhya philosophy,2026-08-28T13:29:26
+en_video_02_0014,video_02,Meghana S,NONE,NONE,0,0,OOS:Sāṅkhya Kārikā,2026-08-28T13:31:07
+en_video_02_0015,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:01
+en_video_02_0016,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:19
+en_video_02_0017,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:32
+en_video_02_0018,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:55
+en_video_02_0019,video_02,Meghana S,NONE,NONE,0,0,OOS: Buddhism,2026-08-28T13:33:09
+en_video_02_0020,video_02,Meghana S,NONE,NONE,0,0,OOS: Vedanta,2026-08-28T13:33:56
+en_video_02_0021,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:34:52
+en_video_02_0022,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:35:12
+en_video_02_0023,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:35:34
+en_video_02_0024,video_02,Meghana S,BG 2.11,T3,0,0,,2026-08-28T13:35:54
+en_video_02_0025,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:13
+en_video_02_0026,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:37
+en_video_02_0027,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:53
+en_video_02_0028,video_02,Meghana S,BG 2.11,T4,0,0,OOS:Vedanta,2026-08-28T13:37:29
+en_video_02_0029,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:38:34
+en_video_02_0029,video_02,Meghana S,BG 2.25,T4,0,0,,2026-08-28T13:38:34
+en_video_02_0030,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:55:14
+en_video_02_0032,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:56:30
+en_video_02_0033,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:57:33
+en_video_02_0034,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:57:48
+en_video_02_0035,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T16:58:46
+en_video_02_0036,video_02,Meghana S,BG 2.12,T2,0,0,,2026-08-28T16:59:32
+en_video_02_0037,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:00
+en_video_02_0038,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:23
+en_video_02_0039,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:46
+en_video_02_0040,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:03:54
+en_video_02_0041,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:04:12
+en_video_02_0042,video_02,Meghana S,BG 2.12,T3,0,0,OOS:BG 4.5,2026-08-28T17:05:00
+en_video_02_0043,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-08-28T17:05:51
+en_video_02_0045,video_02,Meghana S,NONE,NONE,0,0,OOS:Gospel of Sri Ramakrishna/BG 4.5,2026-08-28T17:07:17
+en_video_02_0046,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:07:35
+en_video_02_0047,video_02,Meghana S,BG 2.12,T4,0,0,OOS:Ramakrishna tradition,2026-08-28T17:08:22
+en_video_02_0048,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-08-28T17:12:33
+en_video_02_0049,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:13:55
+en_video_02_0050,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:14:51
+en_video_02_0051,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:15:51
+en_video_02_0052,video_02,Meghana S,BG 2.12,T4,0,0,OOS: Aparoksha Anubhuti,2026-08-28T17:16:15
+en_video_02_0053,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:16:44
+en_video_02_0054,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:11
+en_video_02_0055,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:27
+en_video_02_0056,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:47
+en_video_02_0057,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:00
+en_video_02_0058,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:13
+en_video_02_0059,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:28
+en_video_02_0060,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:18:40
+en_video_02_0061,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:19:07
+en_video_02_0062,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:19:34
+en_video_02_0063,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:20:05
+en_video_02_0064,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:20:28
+en_video_02_0065,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:02
+en_video_02_0066,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:21
+en_video_02_0067,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:40
+en_video_02_0068,video_02,Meghana S,BG 2.12,T4,0,0,OOS: Taittiriya Upanishad ,2026-08-29T00:31:18
+en_video_02_0069,video_02,Meghana S,NONE,NONE,0,0,OOS: Taittiriya Upanishad,2026-08-29T00:32:00
+en_video_02_0070,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:32:14
+en_video_02_0071,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:32:49
+en_video_02_0072,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:33:12
+en_video_02_0073,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:33:51
+en_video_02_0031,video_02,Meghana S,NONE,NONE,0,0,,2026-09-08T12:25:31
+en_video_02_0044,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-09-08T12:34:24
+en_video_02_0074,video_02,Meghana S,BG 2.13,T4,0,0,,2026-09-08T13:46:45
+en_video_02_0075,video_02,Meghana S,BG 2.13,T4,0,0,,2026-09-08T13:47:27
+en_video_02_0076,video_02,Meghana S,NONE,NONE,0,0,OOS:Buddhist teaching,2026-09-08T13:48:05
+en_video_02_0077,video_02,Meghana S,NONE,NONE,0,0,OOS:Buddhist teaching,2026-09-08T13:48:40
+en_video_02_0078,video_02,Meghana S,NONE,NONE,0,0,OOS:Bṛhadāraṇyaka Upanishad 1.3.28,2026-09-08T13:49:12
+en_video_02_0079,video_02,Meghana S,BG 2.27,T2,0,0,,2026-09-08T13:50:22
+en_video_08_0000,video_08,Meghana S,NONE,NONE,0,0,OOS:dhyāna śloka,2026-09-09T16:50:19
+en_video_08_0001,video_08,Meghana S,BG 2.22,T3,0,0,,2026-09-09T16:51:01
+en_video_08_0002,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:51:17
+en_video_08_0003,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:51:42
+en_video_08_0004,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:02
+en_video_08_0005,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:35
+en_video_08_0006,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:46
+en_video_08_0007,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:53:01
+en_video_08_0008,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:53:21
+en_video_08_0009,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:53:38
+en_video_08_0010,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:53:54
+en_video_08_0011,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:54:07
+en_video_08_0012,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:54:51
+en_video_08_0013,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:55:00
+en_video_08_0014,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad 2.1.1.,2026-09-09T16:56:23
+en_video_08_0015,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad,2026-09-09T16:56:41
+en_video_08_0016,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad,2026-09-09T16:56:52
+en_video_08_0017,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:57:11
+en_video_08_0017,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:57:11
+en_video_08_0018,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:57:42
+en_video_08_0018,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:57:42
+en_video_08_0019,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T16:58:08
+en_video_08_0020,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:58:38
+en_video_08_0020,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:58:38
+en_video_08_0021,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:58:52
+en_video_08_0022,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:59:10
+en_video_08_0023,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:59:24
+en_video_08_0024,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:59:53
+en_video_08_0025,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:13
+en_video_08_0026,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:36
+en_video_08_0027,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:52
+en_video_08_0028,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:12:21
+en_video_08_0029,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:00
+en_video_08_0030,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:14
+en_video_08_0031,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:25
+en_video_08_0032,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:42
+en_video_08_0033,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:56
+en_video_08_0034,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:06
+en_video_08_0035,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:16
+en_video_08_0036,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:28
+en_video_08_0037,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:41
+en_video_08_0038,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:10
+en_video_08_0039,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:24
+en_video_08_0040,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:35
+en_video_08_0041,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:49
+en_video_08_0042,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T17:16:31
+en_video_08_0043,video_08,Meghana S,BG 2.24,T2,0,0,,2026-09-09T17:17:07
+en_video_08_0044,video_08,Meghana S,BG 2.24,T2,0,0,,2026-09-09T17:17:35
+en_video_08_0045,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:17:45
+en_video_08_0046,video_08,Meghana S,BG 2.27,T4,0,0,,2026-09-09T17:18:04
+en_video_08_0047,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:18:23
+en_video_08_0048,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:18:46
+en_video_08_0049,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:19:00
+en_video_08_0050,video_08,Meghana S,BG 2.24,T4,0,0,OOS: Swami Virajananda / Towards the Goal Supreme,2026-09-12T13:35:07
+en_video_08_0051,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T13:35:32
+en_video_08_0052,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T13:36:05
+en_video_08_0053,video_08,Meghana S,BG 2.25,T2,0,0,,2026-09-12T13:36:51
+en_video_08_0054,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:11
+en_video_08_0055,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:28
+en_video_08_0056,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:46
+en_video_08_0057,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:38:06
+en_video_08_0058,video_08,Meghana S,Bg 2.25,T4,0,0,,2026-09-12T13:38:26
+en_video_08_0059,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:38:39
+en_video_08_0060,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:39:03
+en_video_08_0061,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:39:27
+en_video_08_0062,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:39:45
+en_video_08_0063,video_08,Meghana S,NONE,NONE,0,0,OOS:Bṛhadāraṇyaka Upaniṣad,2026-09-12T13:40:10
+en_video_08_0064,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:24
+en_video_08_0065,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:35
+en_video_08_0066,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:50
+en_video_08_0067,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:58
+en_video_08_0068,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:06
+en_video_08_0069,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:16
+en_video_08_0070,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:25
+en_video_08_0071,video_08,Meghana S,NONE,NONE,0,0,OOS: “Anubhava-mātram Parabrahma,2026-09-12T13:43:53
+en_video_08_0072,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:44:06
+en_video_08_0073,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:45:06
+en_video_08_0074,video_08,Meghana S,NONE,NONE,0,0,OOS: Patañjali Yoga / samādhi,2026-09-12T13:45:45
+en_video_08_0075,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:47:30
+en_video_08_0076,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:48:39
+en_video_08_0077,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:48:54
+en_video_08_0078,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:00:32
+en_video_08_0079,video_08,Meghana S,BG 2.11,T4,0,0,,2026-09-12T14:01:09
+en_video_08_0079,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T14:01:09
+en_video_08_0080,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T14:09:49
+en_video_08_0080,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T14:09:49
+en_video_08_0081,video_08,Meghana S,BG 2.19,T4,0,0,,2026-09-12T14:10:14
+en_video_08_0082,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:10:36
+en_video_08_0083,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:10:47
+en_video_08_0084,video_08,Meghana S,NONE,NONE,0,0,OOS:BG: 13.29,2026-09-12T14:11:12
+en_video_08_0085,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:11:59
+en_video_08_0086,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:12:26
+en_video_08_0087,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:12:47
+en_video_08_0088,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:12:59
+en_video_08_0089,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:13:12
+en_video_08_0090,video_08,Meghana S,NONE,NONE,0,0,OOS:Muṇḍaka Upaniṣad 1.1.4–5,2026-09-12T14:13:40
+en_video_08_0091,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-12T14:14:00
+en_video_08_0092,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:14:13
+en_video_09_0000,video_09,Meghana S,NONE,NONE,0,0,OOS:dhyāna śloka,2026-09-12T23:07:27
+en_video_09_0001,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:07:53
+en_video_09_0002,video_09,Meghana S,BG 2.25,T4,0,0,,2026-09-12T23:08:19
+en_video_09_0003,video_09,Meghana S,BG 2.16,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.20,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.23,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.24,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0004,video_09,Meghana S,BG 2.16,T2,0,0,,2026-09-12T23:10:10
+en_video_09_0005,video_09,Meghana S,BG 2.24,T4,0,0,,2026-09-12T23:10:29
+en_video_09_0006,video_09,Meghana S,BG 2.18,T4,0,0,,2026-09-12T23:11:07
+en_video_09_0007,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:11:30
+en_video_09_0007,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-12T23:11:30
+en_video_09_0008,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:11:45
+en_video_09_0009,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:12:22
+en_video_09_0010,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:12:40
+en_video_09_0011,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:12:51
+en_video_09_0012,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:03
+en_video_09_0013,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:19
+en_video_09_0014,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:29
+en_video_09_0015,video_09,Meghana S,BG 2.26,T1,0,0,,2026-09-12T23:13:45
+en_video_09_0016,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:14:01
+en_video_09_0017,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:14:18
+en_video_09_0018,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata materialism,2026-09-12T23:14:45
+en_video_09_0019,video_09,Meghana S,BG 2.26,T4,0,0,,2026-10-10T12:31:58
+en_video_09_0020,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:40:39
+en_video_09_0021,video_09,Meghana S,NONE,NONE,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:40:56
+en_video_09_0022,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:41:23
+en_video_09_0023,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:41:58
+en_video_09_0024,video_09,Meghana S,NONE,NONE,0,0,"OOS: Māṇḍūkya Kārikā, Aparokṣānubhūti, Advaita Vedanta",2026-09-13T13:42:18
+en_video_09_0025,video_09,Meghana S,NONE,NONE,0,0,"OOS: Rāmānuja, Madhva, Nimbārkācārya, Vallabhācārya, Chaitanya/Hare Krishna tradition",2026-09-13T13:42:41
+en_video_09_0026,video_09,Meghana S,NONE,NONE,0,0,"OOS: Patañjali Yoga Sūtras, Yoga school, Bhakti traditions, Jñāna traditions",2026-09-13T13:42:57
+en_video_09_0027,video_09,Meghana S,NONE,NONE,0,0,"OOS:Śrī Vaiṣṇava tradition, Madhva tradition, Swaminarayan tradition, Puṣṭi Mārga",2026-09-13T13:43:33
+en_video_09_0028,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:43:51
+en_video_09_0029,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:44:08
+en_video_09_0030,video_09,Meghana S,NONE,NONE,0,0,"OOS: Rāmānujācārya, Śrī Vaiṣṇava tradition, Viśiṣṭādvaita",2026-09-13T13:44:27
+en_video_09_0031,video_09,Meghana S,NONE,NONE,0,0,OOS:Vasudev Shastri Abhyankar's Advaita Modha,2026-09-13T13:45:02
+en_video_09_0032,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:45:29
+en_video_09_0033,video_09,Meghana S,NONE,NONE,0,0,OOS: Rāmānuja's Śrī Bhāṣya,2026-09-13T13:45:42
+en_video_09_0034,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:45:57
+en_video_09_0035,video_09,Meghana S,NONE,NONE,0,0,OOS: Vāda,2026-09-13T13:46:17
+en_video_09_0036,video_09,Meghana S,NONE,NONE,0,0,OOS: Vāda,2026-09-13T13:46:33
+en_video_09_0037,video_09,Meghana S,NONE,NONE,0,0,OOS: Vedānta Deśika,2026-09-13T13:46:48
+en_video_09_0038,video_09,Meghana S,NONE,NONE,0,0,OOS: Rāmānuja / Viśiṣṭādvaita Vedānta,2026-09-13T13:47:03
+en_video_09_0039,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:47:15
+en_video_08_0050,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-20T13:34:16
+en_video_09_0040,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:11
+en_video_09_0041,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:19
+en_video_09_0042,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:20
+en_video_09_0043,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:21
+en_video_09_0044,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:21
+en_video_09_0045,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:22
+en_video_09_0046,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:23
+en_video_09_0047,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:24
+en_video_09_0048,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:26
+en_video_09_0049,video_09,Meghana S,BG 2.59,T5,0,0,,2026-09-22T08:53:33
+en_video_09_0050,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:54:52
+en_video_09_0051,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:45
+en_video_09_0052,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:46
+en_video_09_0053,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:47
+en_video_09_0054,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:47
+en_video_09_0055,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:48
+en_video_09_0056,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:49
+en_video_09_0057,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:50
+en_video_09_0058,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T14:11:06
+en_video_09_0059,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T14:11:15
+en_video_09_0060,video_09,Meghana S,BG 2.27,T1,0,0,,2026-09-22T15:53:29
+en_video_09_0060,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:53:42
+en_video_09_0061,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:54:21
+en_video_09_0061,video_09,Meghana S,BG 2.22,T4,0,0,,2026-09-22T15:54:21
+en_video_09_0062,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:54:32
+en_video_09_0063,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:54:41
+en_video_09_0064,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:54:52
+en_video_09_0064,video_09,Meghana S,BG 2.22,T4,0,0,,2026-09-22T15:55:04
+en_video_09_0065,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:55:14
+en_video_09_0066,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:55:23
+en_video_09_0067,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:55:31
+en_video_09_0068,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:55:39
+en_video_09_0069,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:50
+en_video_09_0070,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:51
+en_video_09_0071,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:51
+en_video_09_0072,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:52
+en_video_09_0073,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:53
+en_video_09_0074,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:54
+en_video_09_0075,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:54
+en_video_09_0076,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:55
+en_video_09_0077,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:56
+en_video_09_0078,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:58
+en_video_09_0079,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:56:06
+en_video_09_0080,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:16
+en_video_09_0081,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:27
+en_video_09_0082,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:36
+en_video_09_0083,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:56:45
+en_video_09_0084,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:59
+en_video_09_0085,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:13
+en_video_09_0086,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:21
+en_video_09_0087,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:32
+en_video_09_0088,video_09,Meghana S,BG 2.27,T3,0,0,,2026-09-22T15:57:48
+en_video_09_0089,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:57:50
+en_video_09_0090,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:58:05
+en_video_09_0091,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:12
+en_video_09_0092,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:21
+en_video_09_0093,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:27
+en_video_09_0094,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:28
+en_video_09_0095,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:38
+en_video_09_0096,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:44
+en_video_09_0097,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:47
+en_video_09_0098,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:53
+en_video_09_0099,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:53
+en_video_09_0100,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:54
+en_video_02_0080,video_02,Meghana S,NONE,NONE,0,0,,2026-10-10T12:33:59
+en_video_02_0081,video_02,Meghana S,BG 2.27,T4,0,0,,2026-10-10T12:34:37
+en_video_08_0093,video_08,Meghana S,BG 2.22,T4,0,0,,2026-10-10T12:35:25
+en_video_08_0094,video_08,Meghana S,NONE,NONE,0,0,,2026-10-10T12:35:42
+en_video_08_0095,video_08,Meghana S,NONE,NONE,0,0,,2026-10-10T12:35:46
+en_video_09_0101,video_09,Meghana S,NONE,NONE,0,0,,2026-10-10T12:36:08

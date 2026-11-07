@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+# never commit these (Route a): audio and transcript text
+reconstruct/audio/
+reconstruct/work/
+data/

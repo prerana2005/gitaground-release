@@ -1,0 +1,351 @@
+"""
+annotate_app.py — span + mention-type annotation UI for the verse-grounding corpus.
+
+Run:
+    ../.venv/bin/python -m streamlit run annotate_app.py --server.fileWatcherType none
+
+Reads  : data/units_v2.csv   (frozen unit grid — never regenerate)
+         data/units_heldout_v1.csv   (new-speaker lectures, if present)
+Writes : data/mention_spans.csv  (append-only; safe for concurrent annotators)
+
+Second pass (agreement check): tick "Second pass (blind)" in the sidebar.
+    Only the lectures assigned to you in data/iaa_assignment.csv are offered,
+    nobody else's labels are shown, and labels go to data/annotations_iaa/ so
+    they can never leak into the gold file. Score with
+    scripts/compute_iaa_units.py --second-pass data/annotations_iaa
+
+Adjudication (expert): tick "Adjudicate (expert)". Only the passages in
+    data/adjudication_units.csv (where the two blind passes disagreed) are
+    offered, with the two labels shown as A and B in random order and without
+    names. Decisions go to data/adjudication/ and replace the gold labels of
+    those passages (evalkit.load_gold); data/mention_spans.csv is never changed.
+    "Start this passage over" discards earlier decisions on the passage.
+
+Annotation guideline: docs/annotation_guideline_mention_types.md
+"""
+import csv
+import datetime
+import glob
+import os
+import re
+
+import pandas as pd
+import streamlit as st
+
+from verse_database import VERSES_BG_CH2
+from verse_translations import VERSE_TRANSLATIONS
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+UNITS = os.path.join(BASE, "data", "units_v2.csv")
+# New-speaker lectures (build_units_heldout.py). A separate grid so the frozen
+# units_v2.csv is never rewritten; offered alongside it once the file exists.
+UNITS_HELDOUT = os.path.join(BASE, "data", "units_heldout_v1.csv")
+
+# One file per annotator: nobody ever edits anyone else's, so git cannot
+# conflict on them. Merge into data/mention_spans.csv for analysis with
+# scripts/merge_annotations.py data/annotations/*.csv
+OUT_DIR = os.path.join(BASE, "data", "annotations")
+# Second-pass labels live in their own directory: merge_annotations.py and the
+# scorers never read it, so the gold file stays single-annotator.
+IAA_DIR = os.path.join(BASE, "data", "annotations_iaa")
+IAA_PLAN = os.path.join(BASE, "data", "iaa_assignment.csv")
+ADJ_DIR = os.path.join(BASE, "data", "adjudication")
+ADJ_UNITS = os.path.join(BASE, "data", "adjudication_units.csv")
+
+COLS = ["unit_id", "video_file", "annotator", "verse_ref", "mention_type",
+        "has_explicit_ref", "uncertain", "notes", "created_at"]
+
+
+def slug(name):
+    return re.sub(r"[^a-z0-9]+", "_", name.strip().lower()).strip("_") or "unnamed"
+
+
+def out_path(name, out_dir=OUT_DIR):
+    return os.path.join(out_dir, slug(name) + ".csv")
+
+TYPES = {
+    "T1": "Verbatim Sanskrit recitation",
+    "T2": "Partial quote / key Sanskrit phrase",
+    "T3": "Direct translation of the verse",
+    "T4": "Paraphrase / explanation, no quoting",
+    "T5": "Allusion — the idea, not the verse",
+}
+
+# The five thematic blocks of Chapter 2 — narrows 72 verses to ~8 in seconds.
+BLOCKS = [
+    (1, 10, "Arjuna's despair; he surrenders and asks Krishna to teach him"),
+    (11, 30, "The self is eternal; the body perishes; grief is misplaced"),
+    (31, 38, "Your duty as a warrior; fight, don't flee"),
+    (39, 53, "Act without attachment to results (2.47)"),
+    (54, 72, "The sthitaprajña — marks of the steady-minded sage"),
+]
+
+
+def verse_num(ref):
+    try:
+        return int(str(ref).split(".")[1])
+    except (IndexError, ValueError):
+        return -1
+
+st.set_page_config(page_title="Verse Grounding Annotator", layout="wide")
+
+
+@st.cache_data
+def load_units():
+    df = pd.read_csv(UNITS, keep_default_na=False)
+    if os.path.exists(UNITS_HELDOUT):
+        df = pd.concat([df, pd.read_csv(UNITS_HELDOUT, keep_default_na=False)],
+                       ignore_index=True)
+    return df
+
+
+@st.cache_data
+def verse_options():
+    opts = {}
+    for v in VERSES_BG_CH2:
+        tr = VERSE_TRANSLATIONS.get(v["ref"], [""])[0]
+        opts[v["ref"]] = f'{v["ref"]} — {tr[:70]}'
+    return opts
+
+
+def load_done(out_dir=OUT_DIR):
+    """Everyone's annotations: every per-annotator file, plus the legacy merged one."""
+    frames = []
+    for p in sorted(glob.glob(os.path.join(out_dir, "*.csv"))):
+        frames.append(pd.read_csv(p, keep_default_na=False))
+    legacy = os.path.join(BASE, "data", "mention_spans.csv")
+    if out_dir == OUT_DIR and os.path.exists(legacy):
+        frames.append(pd.read_csv(legacy, keep_default_na=False))
+    if not frames:
+        return pd.DataFrame(columns=COLS)
+    df = pd.concat(frames, ignore_index=True)
+    return df.drop_duplicates(subset=COLS)
+
+
+def append(rows, name):
+    os.makedirs(SAVE_DIR, exist_ok=True)
+    path = out_path(name, SAVE_DIR)
+    is_new = not os.path.exists(path)
+    with open(path, "a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=COLS)
+        if is_new:
+            w.writeheader()
+        w.writerows(rows)
+
+
+def now():
+    return datetime.datetime.now().isoformat(timespec="seconds")
+
+
+units = load_units()
+vopts = verse_options()
+
+# ── sidebar ───────────────────────────────────────────────
+st.sidebar.header("Annotator")
+who = st.sidebar.text_input("Your name").strip()
+if not who:
+    st.warning("Enter your name in the sidebar to begin.")
+    st.stop()
+
+blind = st.sidebar.checkbox("Second pass (blind)",
+                            help="Agreement check: re-label an assigned lecture "
+                                 "without seeing the first annotator's labels.")
+adjudicate = st.sidebar.checkbox("Adjudicate (expert)",
+                                 help="Decide the passages where the two blind passes disagreed.")
+if blind and adjudicate:
+    st.warning("Tick only one of 'Second pass (blind)' and 'Adjudicate (expert)'.")
+    st.stop()
+SAVE_DIR = ADJ_DIR if adjudicate else IAA_DIR if blind else OUT_DIR
+
+done = load_done(SAVE_DIR)
+mine = done[done.annotator == who] if len(done) else done
+
+videos, limit = sorted(units.video_file.unique()), {}
+if blind:
+    plan = pd.read_csv(IAA_PLAN, keep_default_na=False)
+    plan = plan[plan.second_annotator.map(slug) == slug(who)]
+    if not len(plan):
+        st.warning(f"No second-pass lectures are assigned to '{who}' in "
+                   "data/iaa_assignment.csv. Check the spelling of your name.")
+        st.stop()
+    videos = list(plan.video_file)
+    limit = {r.video_file: int(r.max_units) for r in plan.itertuples() if str(r.max_units).strip()}
+    st.sidebar.info("Blind second pass. Do not open exports or discuss these "
+                    "lectures until both passes are finished.")
+
+adj = None
+if adjudicate:
+    adj = pd.read_csv(ADJ_UNITS, keep_default_na=False).set_index("unit_id")
+    videos = list(dict.fromkeys(adj.video_file))
+    st.sidebar.info("Adjudication. A and B are the two blind-pass labels in random "
+                    "order. Choose the correct label; it can match A, B, or neither.")
+
+vid = st.sidebar.selectbox("Video", videos)
+sub = units[units.video_file == vid].reset_index(drop=True)
+if vid in limit:
+    sub = sub.iloc[:limit[vid]]
+if adjudicate:
+    sub = sub[sub.unit_id.isin(adj.index)].reset_index(drop=True)
+
+reviewed = set(mine.unit_id) if len(mine) else set()
+n_done = int(sub.unit_id.isin(reviewed).sum())
+st.sidebar.progress(n_done / len(sub))
+st.sidebar.caption(f"{n_done}/{len(sub)} units in this video")
+st.sidebar.caption(f"{len(reviewed)}/{len(units)} units overall")
+st.sidebar.caption(f"saving to `data/{os.path.basename(SAVE_DIR)}/{slug(who)}.csv`")
+st.sidebar.divider()
+st.sidebar.caption("**Mention types**")
+for t, d in TYPES.items():
+    st.sidebar.caption(f"**{t}** — {d}")
+
+# ── current unit ──────────────────────────────────────────
+key = f"idx::{who}::{vid}"
+if key not in st.session_state:
+    todo = [n for n, r in enumerate(sub.itertuples()) if r.unit_id not in reviewed]
+    st.session_state[key] = todo[0] if todo else 0
+i = min(st.session_state[key], len(sub) - 1)
+st.session_state[key] = i
+row = sub.iloc[i]
+
+st.markdown(f"### {vid} — unit {i + 1} / {len(sub)}")
+if row.time_start != "":
+    st.caption(f"⏱ {float(row.time_start):.0f}s – {float(row.time_end):.0f}s")
+
+if i > 0:
+    st.caption(f"…{sub.iloc[i - 1].text[-220:]}")
+st.markdown(
+    "<div style='background:#1c2733;padding:1rem;border-radius:8px;"
+    f"font-size:1.12rem;line-height:1.75'>{row.text}</div>",
+    unsafe_allow_html=True,
+)
+if i < len(sub) - 1:
+    st.caption(f"{sub.iloc[i + 1].text[:220]}…")
+
+def _flag(v):
+    try:
+        return bool(int(v))
+    except (TypeError, ValueError):
+        return False
+
+
+if adjudicate:
+    a = adj.loc[row.unit_id]
+    st.info(f"**Passage {a['no']} of {len(adj)}**  \n**Label A:** {a.label_A}  \n"
+            f"**Label B:** {a.label_B}")
+    if st.button("↺ Start this passage over (discard my decisions on it)"):
+        append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
+                 "verse_ref": "RESET", "mention_type": "RESET", "has_explicit_ref": 0,
+                 "uncertain": 0, "notes": "", "created_at": now()}], who)
+        st.rerun()
+
+# In a blind pass or adjudication only your own labels may be shown.
+shown = mine if (blind or adjudicate) else done
+existing = shown[shown.unit_id == row.unit_id] if len(shown) else shown
+if adjudicate and len(existing):
+    existing = existing.sort_values("created_at")
+    resets = existing.index[existing.verse_ref == "RESET"]
+    if len(resets):
+        existing = existing.loc[existing.index > resets[-1]]
+if len(existing):
+    lines = []
+    for r in existing.itertuples():
+        bit = f"**{r.annotator}** — `{r.verse_ref}` / `{r.mention_type}`"
+        if _flag(r.has_explicit_ref):
+            bit += " · explicit ref"
+        if _flag(r.uncertain):
+            bit += " · ⚠️ uncertain"
+        if str(r.notes).strip():
+            bit += f" · 📝 _{r.notes}_"
+        lines.append(bit)
+    st.success("**Already labelled**  \n" + "  \n".join(lines))
+else:
+    st.caption("· not yet labelled ·")
+
+# ── verse reference (lookup aid — deliberately NOT model suggestions) ──
+with st.expander("📖 Verse reference — search all 72", expanded=False):
+    st.caption("**Where am I in Chapter 2?**")
+    for lo, hi, desc in BLOCKS:
+        st.caption(f"　**BG 2.{lo}–2.{hi}** — {desc}")
+    st.divider()
+
+    q = st.text_input(
+        "Search by keyword or verse number",
+        placeholder="e.g.  slain   ·   grief   ·   duty   ·   2.47",
+        key=f"q{row.unit_id}",
+    ).strip()
+
+    if q:
+        ql = q.lower()
+        asnum = verse_num(q) if "." in q else (int(q) if q.isdigit() else -1)
+        hits = []
+        for v in VERSES_BG_CH2:
+            ref = v["ref"]
+            trs = VERSE_TRANSLATIONS.get(ref, [])
+            if verse_num(ref) == asnum or any(ql in t.lower() for t in trs):
+                hits.append((ref, trs))
+        st.caption(f"**{len(hits)} match(es)**")
+        for ref, trs in hits[:25]:
+            blk = next((f"2.{lo}–2.{hi}" for lo, hi, _ in BLOCKS
+                        if lo <= verse_num(ref) <= hi), "?")
+            st.markdown(f"**{ref}**  ·  _block {blk}_")
+            for t in trs:
+                st.caption(t)
+        if len(hits) > 25:
+            st.caption(f"…and {len(hits) - 25} more — narrow your search.")
+    else:
+        st.caption("Type a keyword from the passage to find candidate verses.")
+
+# ── labelling ─────────────────────────────────────────────
+st.divider()
+c1, c2 = st.columns([3, 2])
+with c1:
+    picked = st.multiselect("Verse(s) mentioned here", list(vopts),
+                            format_func=lambda r: vopts[r], key=f"v{row.unit_id}")
+with c2:
+    mtype = st.radio("Mention type", list(TYPES),
+                     format_func=lambda t: f"{t} — {TYPES[t]}", key=f"t{row.unit_id}")
+    explicit = st.checkbox("Explicit reference ('verse 12')", key=f"e{row.unit_id}")
+    uncertain = st.checkbox("Uncertain", key=f"u{row.unit_id}")
+notes = st.text_input("Notes (optional)", key=f"n{row.unit_id}")
+
+
+def advance():
+    st.session_state[key] = min(i + 1, len(sub) - 1)
+    st.rerun()
+
+
+b1, b2 = st.columns(2)
+
+if b1.button("💾 Save label(s) →", type="primary", use_container_width=True):
+    if not picked:
+        st.error("Pick at least one verse, or use 'No verse here'.")
+    else:
+        append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
+                 "verse_ref": r, "mention_type": mtype,
+                 "has_explicit_ref": int(explicit), "uncertain": int(uncertain),
+                 "notes": notes, "created_at": now()} for r in picked], who)
+        advance()
+
+if b2.button("∅ No verse here →", use_container_width=True):
+    append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
+             "verse_ref": "NONE", "mention_type": "NONE",
+             "has_explicit_ref": 0, "uncertain": 0,
+             "notes": notes, "created_at": now()}], who)
+    advance()
+
+# ── navigation (moves without labelling) ──────────────────
+st.caption("Navigate without labelling:")
+n1, n2, n3 = st.columns(3)
+
+if n1.button("← Previous", use_container_width=True, disabled=i == 0):
+    st.session_state[key] = max(i - 1, 0)
+    st.rerun()
+
+if n2.button("Next →", use_container_width=True, disabled=i >= len(sub) - 1):
+    st.session_state[key] = min(i + 1, len(sub) - 1)
+    st.rerun()
+
+if n3.button("⏭ Jump to first unlabelled", use_container_width=True):
+    todo = [n for n, r in enumerate(sub.itertuples()) if r.unit_id not in reviewed]
+    st.session_state[key] = todo[0] if todo else len(sub) - 1
+    st.rerun()

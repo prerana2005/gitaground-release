@@ -1,0 +1,49 @@
+[
+ {
+  "video": "kannada_12.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_13.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_14.txt",
+  "detected_verses": [
+   "BG 2.6"
+  ],
+  "num_chunks": 3
+ },
+ {
+  "video": "kannada_15.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_16.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_17.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_18.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_19.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ },
+ {
+  "video": "kannada_20.txt",
+  "detected_verses": [],
+  "num_chunks": 0
+ }
+]

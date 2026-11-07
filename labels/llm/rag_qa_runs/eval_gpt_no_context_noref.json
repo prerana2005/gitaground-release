@@ -1,0 +1,2195 @@
+{
+ "summary": {
+  "total_questions": 74,
+  "evaluated": 74,
+  "judge_backend": "gpt",
+  "generation_mode": "no_context",
+  "tradition_filter": null,
+  "eval_mode": "no_ref",
+  "faithfulness_scale": "0-5",
+  "groundedness_scale": "0-1",
+  "precision_at_1": 0.5946,
+  "precision_at_3": 0.8243,
+  "precision_at_5": 0.8649,
+  "shloka_identification_accuracy": 0.8649,
+  "avg_retrieval_similarity": 0.5808,
+  "avg_faithfulness": 2.4595,
+  "n_faithfulness_judged": 74,
+  "faithfulness_distribution": {
+   "0": 2,
+   "1": 10,
+   "2": 27,
+   "3": 22,
+   "4": 13,
+   "5": 0
+  },
+  "avg_groundedness": 0.4388,
+  "n_groundedness_judged": 74,
+  "avg_unsupported_claims_per_answer": 2.635,
+  "answers_fully_grounded": 1,
+  "answers_with_hallucination": 64,
+  "by_question_type": {
+   "Factual": {
+    "precision_1": 0.6087,
+    "precision_3": 0.8261,
+    "precision_5": 0.8261,
+    "shloka_acc": 0.8261,
+    "faithfulness": 1.8696,
+    "groundedness": 0.3652,
+    "similarity": 0.5486,
+    "count": 23
+   },
+   "Interpretive": {
+    "precision_1": 0.6111,
+    "precision_3": 0.8333,
+    "precision_5": 0.9444,
+    "shloka_acc": 0.9444,
+    "faithfulness": 2.7222,
+    "groundedness": 0.4618,
+    "similarity": 0.5691,
+    "count": 18
+   },
+   "Cross-verse": {
+    "precision_1": 0.6667,
+    "precision_3": 0.8889,
+    "precision_5": 0.8889,
+    "shloka_acc": 0.8889,
+    "faithfulness": 2.5556,
+    "groundedness": 0.4279,
+    "similarity": 0.6399,
+    "count": 9
+   },
+   "General": {
+    "precision_1": 0.75,
+    "precision_3": 1.0,
+    "precision_5": 1.0,
+    "shloka_acc": 1.0,
+    "faithfulness": 2.8333,
+    "groundedness": 0.4954,
+    "similarity": 0.6277,
+    "count": 12
+   },
+   "Applied": {
+    "precision_1": 0.3333,
+    "precision_3": 0.5833,
+    "precision_5": 0.6667,
+    "shloka_acc": 0.6667,
+    "faithfulness": 2.75,
+    "groundedness": 0.4972,
+    "similarity": 0.5689,
+    "count": 12
+   }
+  }
+ },
+ "detailed_results": [
+  {
+   "question_id": "V1_Q01",
+   "question": "What two qualities does Sanjaya use to describe Arjuna's eyes?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.4"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.598,
+    0.5681,
+    0.5601,
+    0.5559,
+    0.5552
+   ],
+   "avg_similarity": 0.5675,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.4,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the specific terms 'aśru-pūrṇa' and 'ākula-īkṣaṇa' and inaccurately describes one quality."
+  },
+  {
+   "question_id": "V1_Q02",
+   "question": "What does the term 'kṛpayāviṣṭam' reveal about the cause of Arjuna's breakdown?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.7",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5789,
+    0.5695,
+    0.5631,
+    0.5479,
+    0.5479
+   ],
+   "avg_similarity": 0.5615,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.4167,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "V1_Q03",
+   "question": "Why does Sanjaya refer to Krishna as 'Madhusūdana'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.4",
+    "BG 2.3",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6036,
+    0.5875,
+    0.5735,
+    0.5601,
+    0.5564
+   ],
+   "avg_similarity": 0.5762,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are minor wording differences."
+  },
+  {
+   "question_id": "V1_Q04",
+   "question": "What word does Krishna use to describe Arjuna's mental state, and what does it literally mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6624,
+    0.6606,
+    0.6526,
+    0.6373,
+    0.6343
+   ],
+   "avg_similarity": 0.6494,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.25,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer incorrectly identifies the term used by Krishna and misses the key point about 'Kaśmala'."
+  },
+  {
+   "question_id": "V1_Q05",
+   "question": "What are the three negative consequences Krishna attributes to Arjuna's kaśmala?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.14",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5264,
+    0.5169,
+    0.5142,
+    0.5051,
+    0.4928
+   ],
+   "avg_similarity": 0.5111,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.375,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer does not mention the three specific negative consequences attributed to Arjuna's kaśmala."
+  },
+  {
+   "question_id": "V1_Q06",
+   "question": "Why does Krishna emphasize 'viṣame' (at this critical juncture) when rebuking Arjuna?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6281,
+    0.614,
+    0.6049,
+    0.604,
+    0.5909
+   ],
+   "avg_similarity": 0.6084,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point about Arjuna already deciding to fight and the critical timing of his retreat."
+  },
+  {
+   "question_id": "V1_Q07",
+   "question": "What does the Sanskrit word 'klaibyam' mean, and why is it such a strong word?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.17, BG 2.18",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4859,
+    0.4616,
+    0.4587,
+    0.4497,
+    0.4475
+   ],
+   "avg_similarity": 0.4607,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.1875,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets 'klaibyam' and does not convey the correct meaning or context."
+  },
+  {
+   "question_id": "V1_Q08",
+   "question": "Why does Krishna address Arjuna as 'Pārtha' (son of Kuntī)?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.3",
+    "BG 2.11"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7397,
+    0.6818,
+    0.6151,
+    0.5969,
+    0.5681
+   ],
+   "avg_similarity": 0.6403,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point about cowardice being unworthy of Kuntī's son."
+  },
+  {
+   "question_id": "V1_Q09",
+   "question": "What does Krishna call Arjuna's weakness — is it great wisdom or something else?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.10",
+    "BG 2.7"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6875,
+    0.6213,
+    0.6178,
+    0.6058,
+    0.6051
+   ],
+   "avg_similarity": 0.6275,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.4167,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer incorrectly states that Krishna calls Arjuna's weakness 'great wisdom' instead of the correct term."
+  },
+  {
+   "question_id": "V1_Q10",
+   "question": "How does Krishna's tone and language escalate across his first rebukes to Arjuna?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.2",
+    "BG 2.3"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6834,
+    0.6599,
+    0.6455,
+    0.6434,
+    0.6359
+   ],
+   "avg_similarity": 0.6536,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses key terms like 'kaśmala', 'klaibyam', and 'kṣudra', and does not accurately reflect the escalation in tone."
+  },
+  {
+   "question_id": "V1_Q11",
+   "question": "How does Arjuna's position change from the start of Chapter 2 to after hearing Krishna's rebukes?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.691,
+    0.6802,
+    0.6451,
+    0.6408,
+    0.6371
+   ],
+   "avg_similarity": 0.6588,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point of Arjuna's surrender as a disciple."
+  },
+  {
+   "question_id": "V1_Q12",
+   "question": "What is the opening verse of Chapter 2 about?",
+   "question_type": "General",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5504,
+    0.55,
+    0.5454,
+    0.5358,
+    0.5278
+   ],
+   "avg_similarity": 0.5419,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5833,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the specific mention of Sanjaya describing Arjuna's state and the focus on Krishna beginning to speak."
+  },
+  {
+   "question_id": "V1_Q13",
+   "question": "Can you summarize what Krishna says when he first rebukes Arjuna for his weakness?",
+   "question_type": "General",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.2",
+    "BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6962,
+    0.6729,
+    0.6592,
+    0.6521,
+    0.6235
+   ],
+   "avg_similarity": 0.6608,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point about Arjuna's sorrow being a stain and does not mention the impact on his reputation."
+  },
+  {
+   "question_id": "V1_Q14",
+   "question": "What is the main message of Krishna's strongest rebuke to Arjuna about cowardice?",
+   "question_type": "General",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6727,
+    0.65,
+    0.6433,
+    0.6188,
+    0.6131
+   ],
+   "avg_similarity": 0.6396,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer includes some relevant points but misses the key emphasis on Arjuna's cowardice and the need to cast it aside."
+  },
+  {
+   "question_id": "V1_Q15",
+   "question": "I'm unable to take a tough decision because I'm too emotionally attached to the people involved. What does the Gita say about this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.1, BG 2.2",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.3",
+    "BG 2.11",
+    "BG 2.8",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5866,
+    0.5803,
+    0.5751,
+    0.5748,
+    0.5734
+   ],
+   "avg_similarity": 0.578,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.6667,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer partially addresses the issue but misses key points about Arjuna's emotional paralysis and Krishna's specific terminology."
+  },
+  {
+   "question_id": "V1_Q16",
+   "question": "I know what I should do but I keep hesitating and overthinking. Does the Gita address this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.28, BG 2.29",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6308,
+    0.6157,
+    0.6093,
+    0.5878,
+    0.5842
+   ],
+   "avg_similarity": 0.6056,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5625,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer partially addresses the issue but misses key points about Krishna labeling hesitation as a stain and a weakness."
+  },
+  {
+   "question_id": "V2_Q01",
+   "question": "Who are the two specific people Arjuna names as those he cannot fight, and why?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.9",
+    "BG 2.4",
+    "BG 2.1"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5752,
+    0.5732,
+    0.5565,
+    0.5551,
+    0.5494
+   ],
+   "avg_similarity": 0.5619,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points present, but the explanation of why Bhīṣma and Droṇa are revered is incomplete."
+  },
+  {
+   "question_id": "V2_Q02",
+   "question": "What is the significance of Arjuna calling Krishna both 'Madhusūdana' and 'Arisūdana'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.4",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1",
+    "BG 2.3"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6044,
+    0.5978,
+    0.5751,
+    0.5723,
+    0.5596
+   ],
+   "avg_similarity": 0.5818,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.4286,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point about the distinction between killing revered elders and slaying demons."
+  },
+  {
+   "question_id": "V2_Q03",
+   "question": "What does Arjuna say is better than killing his teachers — and why is this ironic for a Kṣatriya?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.5",
+    "BG 2.6",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6538,
+    0.6434,
+    0.6426,
+    0.623,
+    0.6101
+   ],
+   "avg_similarity": 0.6346,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3333,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point about 'living by begging' and inaccurately describes Arjuna's statement."
+  },
+  {
+   "question_id": "V2_Q04",
+   "question": "What does 'rudhira-pradigdhān' mean?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.17, BG 2.18",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.17, BG 2.18",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4819,
+    0.4666,
+    0.4657,
+    0.4572,
+    0.4563
+   ],
+   "avg_similarity": 0.4655,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets the meaning of 'rudhira-pradigdhān' and does not convey the key points about blood and guilt."
+  },
+  {
+   "question_id": "V2_Q05",
+   "question": "What is Arjuna's argument about victory being uncertain?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.6",
+   "retrieved_verses": [
+    "BG 2.6",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6728,
+    0.6278,
+    0.6251,
+    0.6179,
+    0.614
+   ],
+   "avg_similarity": 0.6315,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the specific quote and the certainty of sin are omitted."
+  },
+  {
+   "question_id": "V2_Q06",
+   "question": "What does 'na jijīviṣāmaḥ' reveal about Arjuna's state of mind?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.6",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5937,
+    0.587,
+    0.5865,
+    0.5817,
+    0.5739
+   ],
+   "avg_similarity": 0.5846,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5833,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the emphasis on life becoming unbearable is missing."
+  },
+  {
+   "question_id": "V2_Q07",
+   "question": "How does Arjuna's argument develop as he explains why he cannot fight his elders?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.4, BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6498,
+    0.6457,
+    0.6373,
+    0.6273,
+    0.6232
+   ],
+   "avg_similarity": 0.6367,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6429,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point about the uncertainty of victory and does not address the moral wrongness of the war."
+  },
+  {
+   "question_id": "V2_Q08",
+   "question": "What does Arjuna say about fighting Bhīṣma and Droṇa?",
+   "question_type": "General",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.4",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6833,
+    0.6316,
+    0.5918,
+    0.5655,
+    0.5599
+   ],
+   "avg_similarity": 0.6064,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some additional details that slightly alter the focus."
+  },
+  {
+   "question_id": "V2_Q09",
+   "question": "What is Arjuna saying about living by begging versus enjoying a blood-stained kingdom?",
+   "question_type": "General",
+   "expected_verse": "BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.5",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.8",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.7"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.678,
+    0.6405,
+    0.622,
+    0.6124,
+    0.5956
+   ],
+   "avg_similarity": 0.6297,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points present, but omits the idea that victory isn't guaranteed and the war is sinful."
+  },
+  {
+   "question_id": "V2_Q10",
+   "question": "I got a promotion but it came at the cost of my mentor being let go. I feel guilty. What does the Gita say?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.19",
+    "BG 2.17, BG 2.18",
+    "BG 2.8",
+    "BG 2.6"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5529,
+    0.5498,
+    0.5439,
+    0.5397,
+    0.5368
+   ],
+   "avg_similarity": 0.5446,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.8333,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer partially addresses the situation but misses the key point about distinguishing between genuine wrongdoing and emotional attachment."
+  },
+  {
+   "question_id": "V2_Q11",
+   "question": "I'm stuck between two bad options and can't decide. Does the Gita talk about this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.6",
+    "BG 2.7",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.8",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5858,
+    0.585,
+    0.5797,
+    0.5751,
+    0.5625
+   ],
+   "avg_similarity": 0.5776,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5833,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points present, trivial wording differences."
+  },
+  {
+   "question_id": "V3_Q01",
+   "question": "What does 'kārpaṇya-doṣa-upahata-svabhāvaḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.7",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5021,
+    0.4571,
+    0.4422,
+    0.4413,
+    0.4385
+   ],
+   "avg_similarity": 0.4562,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.1667,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets the key concepts and does not accurately convey the meaning of 'kārpaṇya-doṣa-upahata-svabhāvaḥ'."
+  },
+  {
+   "question_id": "V3_Q02",
+   "question": "What does 'dharma-sammūḍha-cetāḥ' tell us about Arjuna's confusion?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.7",
+    "BG 2.11",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5436,
+    0.5432,
+    0.5358,
+    0.5316,
+    0.5249
+   ],
+   "avg_similarity": 0.5358,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, with minor wording differences."
+  },
+  {
+   "question_id": "V3_Q03",
+   "question": "What is the significance of 'śiṣyas te'haṃ śādhi māṃ tvāṃ prapannam'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.16",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4778,
+    0.4752,
+    0.4743,
+    0.4646,
+    0.4638
+   ],
+   "avg_similarity": 0.4711,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.75,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "V3_Q04",
+   "question": "What does Arjuna say about gaining a kingdom or lordship of heaven removing his grief?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.8",
+   "retrieved_verses": [
+    "BG 2.8",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6938,
+    0.6135,
+    0.6048,
+    0.5897,
+    0.5883
+   ],
+   "avg_similarity": 0.618,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, with minor wording differences."
+  },
+  {
+   "question_id": "V3_Q05",
+   "question": "What does 'indriyāṇām ucchoṣaṇam' describe?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.8",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.16",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4555,
+    0.4496,
+    0.4367,
+    0.4283,
+    0.4282
+   ],
+   "avg_similarity": 0.4397,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.1,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets the phrase and focuses on a different aspect of the senses."
+  },
+  {
+   "question_id": "V3_Q06",
+   "question": "What does Arjuna finally declare to Krishna about fighting, and what does he do after?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6946,
+    0.6661,
+    0.6636,
+    0.6628,
+    0.6567
+   ],
+   "avg_similarity": 0.6688,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 0,
+   "faithfulness_reason": "The generated answer contradicts the key point that Arjuna declares he will not fight."
+  },
+  {
+   "question_id": "V3_Q07",
+   "question": "Why does Vyāsa use the names 'Hṛṣīkeśa' and 'Govinda' for Krishna?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.9",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.1"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6262,
+    0.5555,
+    0.5343,
+    0.5188,
+    0.5124
+   ],
+   "avg_similarity": 0.5494,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3571,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points present, but the explanation of 'Govinda' is inaccurate and lacks the connection to the Vedas."
+  },
+  {
+   "question_id": "V3_Q08",
+   "question": "Trace Arjuna's journey from stubborn refusal to surrender to silence in Chapter 2's opening.",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.7, BG 2.9",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7207,
+    0.6949,
+    0.6506,
+    0.6322,
+    0.6226
+   ],
+   "avg_similarity": 0.6642,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.625,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits Arjuna's admission of confusion and explicit declaration of 'na yotsye'."
+  },
+  {
+   "question_id": "V3_Q09",
+   "question": "What happens when Arjuna surrenders to Krishna as a disciple?",
+   "question_type": "General",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.7"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7373,
+    0.6212,
+    0.6192,
+    0.6089,
+    0.6079
+   ],
+   "avg_similarity": 0.6389,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.25,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer includes some relevant concepts but misses key points about Arjuna's grief, confusion about dharma, and his request for guidance."
+  },
+  {
+   "question_id": "V3_Q10",
+   "question": "What is the verse about where Arjuna says he will not fight and becomes silent?",
+   "question_type": "General",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.9",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6594,
+    0.6348,
+    0.6258,
+    0.6199,
+    0.6134
+   ],
+   "avg_similarity": 0.6307,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it lacks mention of Arjuna's silence and the context for Krishna's teaching."
+  },
+  {
+   "question_id": "V3_Q11",
+   "question": "I've been struggling with a problem for a long time and nothing works. I feel completely stuck. What does the Gita suggest?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.7, BG 2.8",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.8",
+    "BG 2.11, BG 2.12",
+    "BG 2.7"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5987,
+    0.5854,
+    0.5852,
+    0.5836,
+    0.5834
+   ],
+   "avg_similarity": 0.5873,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point of surrendering to a wiser guide and does not address the specific context of Arjuna's struggle."
+  },
+  {
+   "question_id": "V3_Q12",
+   "question": "How should I approach a guru or mentor for guidance, according to the Gita?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6101,
+    0.5986,
+    0.5903,
+    0.5875,
+    0.587
+   ],
+   "avg_similarity": 0.5947,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0833,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses key points about admitting defects and clearly stating confusion."
+  },
+  {
+   "question_id": "V4_Q01",
+   "question": "What does 'prahasan iva' mean, and why did Krishna smile this way?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12",
+    "BG 2.14",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5578,
+    0.5344,
+    0.5299,
+    0.5287,
+    0.5266
+   ],
+   "avg_similarity": 0.5355,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.2143,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets the meaning of 'prahasan iva' and lacks key points about Arjuna's faults and Krishna's intent."
+  },
+  {
+   "question_id": "V4_Q02",
+   "question": "Why does the verse mention 'senayorubhayormadhye' (between the two armies)?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5354,
+    0.5287,
+    0.5253,
+    0.5178,
+    0.5082
+   ],
+   "avg_similarity": 0.5231,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3125,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the urgency and difficulty of the situation."
+  },
+  {
+   "question_id": "V4_Q03",
+   "question": "What does 'aśocyān anvaśocaḥ tvam' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4992,
+    0.4702,
+    0.4693,
+    0.4624,
+    0.4545
+   ],
+   "avg_similarity": 0.4711,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.2143,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points present, but misses the specific mention of Bhīṣma, Droṇa, and the duty of a Kṣatriya."
+  },
+  {
+   "question_id": "V4_Q04",
+   "question": "What does 'prajñāvādāṃś ca bhāṣase' really mean — is Krishna praising Arjuna's wisdom?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.11",
+    "BG 2.3",
+    "BG 2.2"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5982,
+    0.5875,
+    0.585,
+    0.581,
+    0.5771
+   ],
+   "avg_similarity": 0.5858,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.25,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets the meaning of 'prajñāvādāṃś ca bhāṣase' and fails to convey the key point that Krishna is not praising Arjuna's wisdom."
+  },
+  {
+   "question_id": "V4_Q05",
+   "question": "What does 'gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.28, BG 2.29",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.16"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5024,
+    0.4871,
+    0.4817,
+    0.4616,
+    0.4576
+   ],
+   "avg_similarity": 0.4781,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9167,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but there is a minor inaccuracy regarding 'agatāsūṃś'."
+  },
+  {
+   "question_id": "V4_Q06",
+   "question": "According to the discourse, what is the core of Krishna's Gita teaching as introduced when he first begins to teach?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.7",
+    "BG 2.3",
+    "BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6653,
+    0.6555,
+    0.6434,
+    0.6376,
+    0.6319
+   ],
+   "avg_similarity": 0.6467,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.1429,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer partially captures Krishna's teaching but misses the emphasis on duty and the specific context of Arjuna's Kṣatriya duty."
+  },
+  {
+   "question_id": "V4_Q07",
+   "question": "How does Krishna's approach shift from rebuking Arjuna to actually teaching him?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.2, BG 2.3, BG 2.10, BG 2.11",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.3"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6522,
+    0.6476,
+    0.6418,
+    0.6336,
+    0.6209
+   ],
+   "avg_similarity": 0.6392,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits specific references to emotional provocations and the transition to rational instruction."
+  },
+  {
+   "question_id": "V4_Q08",
+   "question": "What happens when Krishna smiles and begins to speak to Arjuna between the two armies?",
+   "question_type": "General",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7131,
+    0.6524,
+    0.6505,
+    0.6486,
+    0.6463
+   ],
+   "avg_similarity": 0.6622,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the specific mention of Arjuna's sorrow and the significance of Krishna's smile revealing his weakness."
+  },
+  {
+   "question_id": "V4_Q09",
+   "question": "What is Krishna saying when he tells Arjuna that wise people do not grieve?",
+   "question_type": "General",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.9"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7386,
+    0.6876,
+    0.6743,
+    0.6696,
+    0.6312
+   ],
+   "avg_similarity": 0.6803,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.2,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer partially captures Krishna's message but misses the key point about grieving for those who don't deserve it."
+  },
+  {
+   "question_id": "V4_Q10",
+   "question": "I feel like I'm being wise by avoiding conflict, but others say I'm just being weak. What does the Gita say?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.9",
+    "BG 2.7",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.2"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6242,
+    0.6158,
+    0.6089,
+    0.6073,
+    0.6041
+   ],
+   "avg_similarity": 0.6121,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.3,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the emphasis on self-deception and true understanding."
+  },
+  {
+   "question_id": "V4_Q11",
+   "question": "Should I treat wrongdoing by family members differently from wrongdoing by strangers?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.19",
+    "BG 2.19",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.19"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5081,
+    0.5063,
+    0.4771,
+    0.4764,
+    0.4747
+   ],
+   "avg_similarity": 0.4885,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.2143,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the emphasis on accountability and the specific dismissal of special treatment for elders is missing."
+  },
+  {
+   "question_id": "V5_Q01",
+   "question": "What does Krishna establish about the soul using three grammatical persons (I/you/they)?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.28, BG 2.29",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6451,
+    0.6324,
+    0.6275,
+    0.61,
+    0.6096
+   ],
+   "avg_similarity": 0.6249,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.25,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point about the eternal existence of all souls and does not mention the specific grammatical terms used by Krishna."
+  },
+  {
+   "question_id": "V5_Q02",
+   "question": "What is the logical argument Krishna makes about birth and death?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.11, BG 2.12",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6751,
+    0.652,
+    0.6335,
+    0.6287,
+    0.616
+   ],
+   "avg_similarity": 0.6411,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the explanation of the soul's eternal nature and the concept of grief is less direct than in the gold answer."
+  },
+  {
+   "question_id": "V5_Q03",
+   "question": "What analogy does Krishna use to explain death, and how does it work?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.14",
+    "BG 2.26, BG 2.27",
+    "BG 2.11, BG 2.12",
+    "BG 2.11"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6139,
+    0.607,
+    0.5987,
+    0.5968,
+    0.5893
+   ],
+   "avg_similarity": 0.6011,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.6,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer focuses on a different analogy (changing clothes) and misses the key life stages analogy."
+  },
+  {
+   "question_id": "V5_Q04",
+   "question": "What does 'dhīras tatra na muhyati' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.4693,
+    0.452,
+    0.4477,
+    0.443,
+    0.4392
+   ],
+   "avg_similarity": 0.4502,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point about not being deluded regarding the transition from one body to another."
+  },
+  {
+   "question_id": "V5_Q05",
+   "question": "How does the childhood-youth-old age analogy address Arjuna's grief about the body being destroyed?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.609,
+    0.6012,
+    0.5898,
+    0.5733,
+    0.5729
+   ],
+   "avg_similarity": 0.5892,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are minor wording differences."
+  },
+  {
+   "question_id": "V5_Q06",
+   "question": "How do the teachings about the eternal soul and the body-change analogy together build the case for why Arjuna should not grieve?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.12, BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13",
+    "BG 2.11, BG 2.12",
+    "BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6385,
+    0.6368,
+    0.6138,
+    0.6082,
+    0.6042
+   ],
+   "avg_similarity": 0.6203,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the specific references to BG 2.12 and the elimination of both reasons for sorrow are missing."
+  },
+  {
+   "question_id": "V5_Q07",
+   "question": "What is the verse about where Krishna says the soul has always existed and always will?",
+   "question_type": "General",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6795,
+    0.6778,
+    0.6618,
+    0.6313,
+    0.6254
+   ],
+   "avg_similarity": 0.6552,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "V5_Q08",
+   "question": "What is the teaching about the soul passing through different stages like childhood, youth, and old age?",
+   "question_type": "General",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6233,
+    0.6202,
+    0.5814,
+    0.5589,
+    0.5546
+   ],
+   "avg_similarity": 0.5877,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but the focus on grieving is less emphasized."
+  },
+  {
+   "question_id": "V5_Q09",
+   "question": "I recently lost a loved one and I'm struggling to cope. What does the Gita say about death and grief?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.12, BG 2.13",
+   "retrieved_verses": [
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.19",
+    "BG 2.13",
+    "BG 2.11",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.635,
+    0.6297,
+    0.6278,
+    0.6035,
+    0.6017
+   ],
+   "avg_similarity": 0.6195,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the eternal nature of the soul and the specific mention of the soul's continuity."
+  },
+  {
+   "question_id": "V5_Q10",
+   "question": "I'm afraid of getting old and eventually dying. Does the Gita address fear of death?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.19",
+    "BG 2.28, BG 2.29",
+    "BG 2.11, BG 2.12",
+    "BG 2.13",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5779,
+    0.5719,
+    0.568,
+    0.5665,
+    0.5523
+   ],
+   "avg_similarity": 0.5673,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9375,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "V6_Q01",
+   "question": "What does the technical term 'mātrā-sparśa' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5221,
+    0.4464,
+    0.4348,
+    0.4274,
+    0.4246
+   ],
+   "avg_similarity": 0.4511,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 1,
+   "faithfulness_reason": "The generated answer misinterprets 'mātrā-sparśa' and focuses on the individual self's connection with Brahman, missing the key points about sense objects and contact."
+  },
+  {
+   "question_id": "V6_Q02",
+   "question": "What example does Krishna use to explain how sensory contact produces pleasure and pain?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27",
+    "BG 2.17, BG 2.18",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.7559,
+    0.639,
+    0.6254,
+    0.6068,
+    0.6038
+   ],
+   "avg_similarity": 0.6462,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 0,
+   "faithfulness_reason": "The generated answer does not address the example of hot and cold, which is central to the expected answer."
+  },
+  {
+   "question_id": "V6_Q03",
+   "question": "What do 'āgamāpāyinaḥ' and 'anityāḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.14",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5055,
+    0.5,
+    0.4964,
+    0.4942,
+    0.4901
+   ],
+   "avg_similarity": 0.4972,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the explanation of 'āgamāpāyinaḥ' is slightly inaccurate and lacks specific examples."
+  },
+  {
+   "question_id": "V6_Q04",
+   "question": "According to Madhvācārya's commentary, what is the real cause of pleasure and pain — is it sensory contact alone?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6504,
+    0.5673,
+    0.533,
+    0.528,
+    0.5258
+   ],
+   "avg_similarity": 0.5609,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.2,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point of 'abhimāna' as the real cause and introduces a different interpretation."
+  },
+  {
+   "question_id": "V6_Q05",
+   "question": "What does 'titikṣasva' mean according to Madhvācārya, and how is it different from other commentators' interpretation?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.16",
+    "BG 2.14",
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5009,
+    0.4823,
+    0.4725,
+    0.4599,
+    0.4525
+   ],
+   "avg_similarity": 0.4736,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5714,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misinterprets Madhvācārya's view and omits the crucial distinction regarding the root cause of grief."
+  },
+  {
+   "question_id": "V6_Q06",
+   "question": "How does the teaching about sensory contact and abhimāna directly solve Arjuna's specific problem about fighting his elders?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.4",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6548,
+    0.634,
+    0.6214,
+    0.6148,
+    0.5951
+   ],
+   "avg_similarity": 0.624,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.375,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the specific mention of Arjuna's grief related to his grandfather and the concept of seeing them as enemies of dharma."
+  },
+  {
+   "question_id": "V6_Q07",
+   "question": "How does the teaching on mātrā-sparśa complete the three-part answer Krishna gives about why Arjuna should not grieve?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.12, BG 2.13, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.11, BG 2.12",
+    "BG 2.3",
+    "BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6473,
+    0.621,
+    0.6199,
+    0.6162,
+    0.6132
+   ],
+   "avg_similarity": 0.6235,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.25,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but it omits the specific mention of personal bonds and attachment as the root cause of Arjuna's grief."
+  },
+  {
+   "question_id": "V6_Q08",
+   "question": "What is the verse about sensory contact, pleasure, pain, and endurance (titikṣā)?",
+   "question_type": "General",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6828,
+    0.5943,
+    0.5862,
+    0.578,
+    0.5537
+   ],
+   "avg_similarity": 0.599,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.1111,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but the deeper teaching about 'mine-ness' and attachment is omitted."
+  },
+  {
+   "question_id": "V6_Q09",
+   "question": "The same situation makes me emotional but doesn't affect my colleague at all. Why do I react so strongly to things others shrug off?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.19",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5407,
+    0.5329,
+    0.5257,
+    0.5094,
+    0.4997
+   ],
+   "avg_similarity": 0.5217,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "V6_Q10",
+   "question": "How can I do difficult things at work without getting emotionally overwhelmed?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5427,
+    0.5424,
+    0.5338,
+    0.5147,
+    0.514
+   ],
+   "avg_similarity": 0.5295,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7857,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses the key point of dropping abhimāna and does not directly address the specific duty context."
+  },
+  {
+   "question_id": "S_Q01",
+   "question": "What does the word 'viṣāda' mean according to Ṭīkākṛtpādaru (Madhvācārya's commentary)?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.16",
+    "BG 2.14",
+    "BG 2.16",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.20, BG 2.21, BG 2.22"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5172,
+    0.498,
+    0.4977,
+    0.4951,
+    0.4852
+   ],
+   "avg_similarity": 0.4986,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.25,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer is partially correct but misses the key point about viṣāda being specifically defined as weakness of mind and the loss of discrimination."
+  },
+  {
+   "question_id": "S_Q02",
+   "question": "What does the word 'ārya' mean in Krishna's rebuke, and how is it different from the racial interpretation?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.3",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.5678,
+    0.5665,
+    0.5591,
+    0.5531,
+    0.5526
+   ],
+   "avg_similarity": 0.5598,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5,
+   "faithfulness": 4,
+   "faithfulness_reason": "All key points are present, but there are some trivial wording differences."
+  },
+  {
+   "question_id": "S_Q03",
+   "question": "What is the overall structure of Chapter 2's opening — how does the conversation shift from Arjuna's despair to Krishna's teaching?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.7"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6632,
+    0.6558,
+    0.6551,
+    0.6427,
+    0.6299
+   ],
+   "avg_similarity": 0.6493,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3333,
+   "faithfulness": 3,
+   "faithfulness_reason": "Most key points are present, but there are minor omissions and inaccuracies regarding specific verses."
+  },
+  {
+   "question_id": "S_Q04",
+   "question": "What is the Dvaita (Madhva) perspective on why Arjuna should not grieve, as explained across Krishna's initial teaching verses?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.11, BG 2.12, BG 2.13, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.11, BG 2.12",
+    "BG 2.10",
+    "BG 2.3",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "no_context",
+   "retrieval_similarities": [
+    0.6286,
+    0.6166,
+    0.6094,
+    0.6077,
+    0.6038
+   ],
+   "avg_similarity": 0.6132,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.0,
+   "faithfulness": 2,
+   "faithfulness_reason": "The generated answer misses key points about the eternal nature of the ātmā and the specific teachings on suffering and attachment."
+  }
+ ]
+}

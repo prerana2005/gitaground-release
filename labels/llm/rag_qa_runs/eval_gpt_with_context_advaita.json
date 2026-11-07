@@ -1,0 +1,1367 @@
+{
+ "summary": {
+  "total_questions": 48,
+  "evaluated": 48,
+  "judge_backend": "gpt",
+  "generation_mode": "with_context",
+  "tradition_filter": "Advaita",
+  "eval_mode": "standard",
+  "faithfulness_scale": "0-5",
+  "groundedness_scale": "0-1",
+  "precision_at_1": 0.6458,
+  "precision_at_3": 0.8542,
+  "precision_at_5": 0.9375,
+  "shloka_identification_accuracy": 0.9375,
+  "avg_retrieval_similarity": 0.6002,
+  "avg_groundedness": 0.7707,
+  "n_groundedness_judged": 48,
+  "avg_unsupported_claims_per_answer": 0.833,
+  "answers_fully_grounded": 8,
+  "answers_with_hallucination": 23,
+  "by_question_type": {
+   "Factual": {
+    "precision_1": 0.7143,
+    "precision_3": 0.8571,
+    "precision_5": 0.9524,
+    "shloka_acc": 0.9524,
+    "groundedness": 0.7854,
+    "similarity": 0.6033,
+    "count": 21
+   },
+   "Interpretive": {
+    "precision_1": 0.6111,
+    "precision_3": 0.8333,
+    "precision_5": 0.9444,
+    "shloka_acc": 0.9444,
+    "groundedness": 0.7725,
+    "similarity": 0.599,
+    "count": 18
+   },
+   "Applied": {
+    "precision_1": 0.5,
+    "precision_3": 1.0,
+    "precision_5": 1.0,
+    "shloka_acc": 1.0,
+    "groundedness": 0.7329,
+    "similarity": 0.6054,
+    "count": 4
+   },
+   "General": {
+    "precision_1": 1.0,
+    "precision_3": 1.0,
+    "precision_5": 1.0,
+    "shloka_acc": 1.0,
+    "groundedness": 0.875,
+    "similarity": 0.6082,
+    "count": 2
+   },
+   "Cross-verse": {
+    "precision_1": 0.3333,
+    "precision_3": 0.6667,
+    "precision_5": 0.6667,
+    "shloka_acc": 0.6667,
+    "groundedness": 0.6369,
+    "similarity": 0.5736,
+    "count": 3
+   }
+  }
+ },
+ "detailed_results": [
+  {
+   "question_id": "QA_V1_01",
+   "question": "According to Swami Sarvapriyananda, what three consequences does Krishna warn Arjuna about regarding his refusal to fight?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5916,
+    0.59,
+    0.5779,
+    0.5652,
+    0.5626
+   ],
+   "avg_similarity": 0.5775,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625
+  },
+  {
+   "question_id": "QA_V1_02",
+   "question": "What does Swamiji say about why the mind disguises weakness as righteousness, and how does this apply to Arjuna's situation?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.26, BG 2.27",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6226,
+    0.6002,
+    0.5862,
+    0.5827,
+    0.5818
+   ],
+   "avg_similarity": 0.5947,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V1_03",
+   "question": "What does the word 'klaibyam' mean, and why does Swami Vivekananda consider this verse one of the central teachings of the Gita?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5741,
+    0.5623,
+    0.552,
+    0.5513,
+    0.5411
+   ],
+   "avg_similarity": 0.5562,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5625
+  },
+  {
+   "question_id": "QA_V1_04",
+   "question": "Why does Krishna address Arjuna as 'Partha' (son of Pritha), and what story about Queen Kunti illustrates this significance?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7508,
+    0.691,
+    0.6323,
+    0.5461,
+    0.5326
+   ],
+   "avg_similarity": 0.6306,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9167
+  },
+  {
+   "question_id": "QA_V1_05",
+   "question": "What does Arjuna say about the dilemma of winning versus losing the war, and why does he see both outcomes as pointless?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.6",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6772,
+    0.6432,
+    0.6253,
+    0.6191,
+    0.6112
+   ],
+   "avg_similarity": 0.6352,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7143
+  },
+  {
+   "question_id": "QA_V1_06",
+   "question": "What does 'karpanya dosha' mean, and what is significant about verse 7 where Arjuna says 'I am thy disciple, teach me'?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.16",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7324,
+    0.6595,
+    0.5848,
+    0.5763,
+    0.5641
+   ],
+   "avg_similarity": 0.6234,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5625
+  },
+  {
+   "question_id": "QA_V1_07",
+   "question": "What is the spiritual significance of Krishna smiling before he begins teaching, as described in verse 10?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.612,
+    0.59,
+    0.588,
+    0.5863,
+    0.5734
+   ],
+   "avg_similarity": 0.5899,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5714
+  },
+  {
+   "question_id": "QA_V1_08",
+   "question": "Swamiji tells a story about a novice monk who complained to a senior monk about not being able to bear his monastery. What was the senior monk's one-line reply and what lesson does it teach?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.17, BG 2.18",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6048,
+    0.6019,
+    0.5874,
+    0.5867,
+    0.5756
+   ],
+   "avg_similarity": 0.5913,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7857
+  },
+  {
+   "question_id": "QA_V1_09",
+   "question": "How does the Advaita lecture describe the story of how Krishna became Arjuna's chariot driver, and what is the spiritual lesson?",
+   "question_type": "General",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6446,
+    0.6294,
+    0.6248,
+    0.6019,
+    0.5942
+   ],
+   "avg_similarity": 0.619,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.75
+  },
+  {
+   "question_id": "QA_V2_01",
+   "question": "What does Krishna mean when he tells Arjuna 'you grieve for those who should not be grieved for, yet you speak like a learned person'?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6526,
+    0.6338,
+    0.6171,
+    0.6119,
+    0.6016
+   ],
+   "avg_similarity": 0.6234,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5625
+  },
+  {
+   "question_id": "QA_V2_02",
+   "question": "According to Shankaracharya, what is the original meaning of the word 'pandit', and how does it relate to the concept of 'panda'?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.16",
+    "BG 2.16"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6492,
+    0.6029,
+    0.5581,
+    0.5226,
+    0.5174
+   ],
+   "avg_similarity": 0.57,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8333
+  },
+  {
+   "question_id": "QA_V2_03",
+   "question": "How does Vedanta trace the root cause of all human suffering, and what is the 'one fatal mistake' that leads to the entire drama of samsara?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.11, BG 2.12",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.11, BG 2.12",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6407,
+    0.5884,
+    0.5734,
+    0.5724,
+    0.5681
+   ],
+   "avg_similarity": 0.5886,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.75
+  },
+  {
+   "question_id": "QA_V2_04",
+   "question": "What is the wave analogy that Swami Sarvapriyananda uses to explain the self, and how does the wave's fear of the shore illustrate our misunderstanding?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.16",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6043,
+    0.5791,
+    0.5736,
+    0.5627,
+    0.5546
+   ],
+   "avg_similarity": 0.5749,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5
+  },
+  {
+   "question_id": "QA_V2_05",
+   "question": "What are the three types of suffering (duhkha traya) mentioned in the Sankhya Karika, and why does this ancient text say spiritual seeking begins?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6794,
+    0.6111,
+    0.6071,
+    0.5683,
+    0.5494
+   ],
+   "avg_similarity": 0.6031,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8333
+  },
+  {
+   "question_id": "QA_V2_06",
+   "question": "How does the Advaita teaching connect Krishna's rebuke about false grief to the doctrine of the immortality of the self?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.11, BG 2.12",
+   "retrieved_verses": [
+    "BG 2.26, BG 2.27",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.28, BG 2.29",
+    "BG 2.16",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6192,
+    0.6095,
+    0.5909,
+    0.5846,
+    0.5799
+   ],
+   "avg_similarity": 0.5968,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.5714
+  },
+  {
+   "question_id": "QA_V3_01",
+   "question": "What is the body-change analogy Krishna uses about childhood, youth, and old age, and what does it prove about the self?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6692,
+    0.6431,
+    0.6346,
+    0.63,
+    0.6252
+   ],
+   "avg_similarity": 0.6404,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7143
+  },
+  {
+   "question_id": "QA_V3_02",
+   "question": "In the Advaita lecture, how is the wave analogy extended to explain why we should not fear death?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.26, BG 2.27",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6432,
+    0.6212,
+    0.621,
+    0.6189,
+    0.5964
+   ],
+   "avg_similarity": 0.6201,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.875
+  },
+  {
+   "question_id": "QA_V3_03",
+   "question": "What does the Sanskrit term 'matra-sparsha' mean, and what example does Swamiji give about how sensory contacts produce pleasure and pain?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.19",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5934,
+    0.5808,
+    0.5624,
+    0.5575,
+    0.5565
+   ],
+   "avg_similarity": 0.5701,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625
+  },
+  {
+   "question_id": "QA_V3_04",
+   "question": "How does Shankaracharya define 'titiksha' (forbearance) in the Vivekachudamani, and what does it involve?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.16",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5811,
+    0.5268,
+    0.5028,
+    0.5015,
+    0.5014
+   ],
+   "avg_similarity": 0.5227,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.875
+  },
+  {
+   "question_id": "QA_V3_05",
+   "question": "According to the lecture, what makes a person 'fit for immortality' according to verse 15?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.15",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27",
+    "BG 2.20, BG 2.21, BG 2.22"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6218,
+    0.5883,
+    0.5613,
+    0.5489,
+    0.5416
+   ],
+   "avg_similarity": 0.5724,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V3_06",
+   "question": "How do the teachings about the eternal self, impermanent sensory experience, and equanimity build a logical argument across verses 13 to 15?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.13, BG 2.14, BG 2.15",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.11, BG 2.12",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5597,
+    0.559,
+    0.5586,
+    0.5452,
+    0.5448
+   ],
+   "avg_similarity": 0.5535,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.7143
+  },
+  {
+   "question_id": "QA_V4_01",
+   "question": "What does verse 16 say about the unreal (asat) and the real (sat), and why does Swamiji call this the 'philosophical heart of the Bhagavad Gita'?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.16",
+   "retrieved_verses": [
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.17, BG 2.18",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.16",
+    "BG 2.16"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6289,
+    0.6098,
+    0.5901,
+    0.5895,
+    0.5888
+   ],
+   "avg_similarity": 0.6014,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.875
+  },
+  {
+   "question_id": "QA_V4_02",
+   "question": "What is the concept of 'isness' that Shankaracharya uses to explain the sat-asat distinction, and how does the example 'pot exists, cloth exists, elephant exists' illustrate it?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.16",
+   "retrieved_verses": [
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.17, BG 2.18",
+    "BG 2.16"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6975,
+    0.6543,
+    0.6504,
+    0.6437,
+    0.6394
+   ],
+   "avg_similarity": 0.6571,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.75
+  },
+  {
+   "question_id": "QA_V4_03",
+   "question": "How does Swamiji connect the Advaita Vedanta teaching of verse 16 to the 'hard problem of consciousness' discussed at the NYU philosophy conference?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.16",
+   "retrieved_verses": [
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.26, BG 2.27",
+    "BG 2.16",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.645,
+    0.6075,
+    0.602,
+    0.59,
+    0.5821
+   ],
+   "avg_similarity": 0.6053,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5833
+  },
+  {
+   "question_id": "QA_V4_04",
+   "question": "If everything in the world of experience has only 'borrowed existence' and constantly changes, what is the practical implication for how we view our life situations?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.16",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.16",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5893,
+    0.5746,
+    0.5718,
+    0.5683,
+    0.5636
+   ],
+   "avg_similarity": 0.5735,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5833
+  },
+  {
+   "question_id": "QA_V5_01",
+   "question": "What does Krishna say about the nature of that which pervades everything, and why can nobody cause its destruction?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.17",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.17, BG 2.18",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.674,
+    0.6443,
+    0.6307,
+    0.6209,
+    0.6124
+   ],
+   "avg_similarity": 0.6365,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9375
+  },
+  {
+   "question_id": "QA_V5_02",
+   "question": "How does Swami Sarvapriyananda connect Vivekananda's critique of caste in India to the Advaita teaching about the divinity within every person?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.17, BG 2.18",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6349,
+    0.5981,
+    0.5824,
+    0.5681,
+    0.567
+   ],
+   "avg_similarity": 0.5901,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V5_03",
+   "question": "What is the 'hard problem of matter' that Swamiji discusses, and how does combining it with the hard problem of consciousness lead to Advaita Vedanta?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.17, BG 2.18",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18",
+    "BG 2.16",
+    "BG 2.26, BG 2.27",
+    "BG 2.19"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6213,
+    0.616,
+    0.604,
+    0.6004,
+    0.5885
+   ],
+   "avg_similarity": 0.606,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.6111
+  },
+  {
+   "question_id": "QA_V5_04",
+   "question": "How does the teaching about the indestructible self in verse 17 relate to the claim about perishable bodies in verse 18?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.17, BG 2.18",
+   "retrieved_verses": [
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.17, BG 2.18",
+    "BG 2.19",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5921,
+    0.5714,
+    0.5696,
+    0.5626,
+    0.5574
+   ],
+   "avg_similarity": 0.5706,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625
+  },
+  {
+   "question_id": "QA_V6_01",
+   "question": "What does 'aprameya' mean, and why does Swamiji say you should not look for the self in the world of objects?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.18, BG 2.19",
+   "retrieved_verses": [
+    "BG 2.17, BG 2.18",
+    "BG 2.19",
+    "BG 2.19",
+    "BG 2.19",
+    "BG 2.20, BG 2.21, BG 2.22"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.659,
+    0.6563,
+    0.6509,
+    0.6238,
+    0.6078
+   ],
+   "avg_similarity": 0.6396,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625
+  },
+  {
+   "question_id": "QA_V6_02",
+   "question": "Why does Krishna say that both the one who thinks the self slays and the one who thinks it is slain are ignorant?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.19",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6271,
+    0.6195,
+    0.6079,
+    0.6024,
+    0.6008
+   ],
+   "avg_similarity": 0.6115,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.8125
+  },
+  {
+   "question_id": "QA_V6_03",
+   "question": "According to the lecture, what are the three effects of karma, and which two can be scientifically verified?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.19",
+   "retrieved_verses": [
+    "BG 2.19",
+    "BG 2.19",
+    "BG 2.28, BG 2.29",
+    "BG 2.19",
+    "BG 2.19"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6684,
+    0.5888,
+    0.5842,
+    0.5802,
+    0.5618
+   ],
+   "avg_similarity": 0.5967,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9375
+  },
+  {
+   "question_id": "QA_V6_04",
+   "question": "How does Swamiji contrast the faith-based approach to God with the Vedantic approach of self-knowledge, using the example of doubting existence?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.19",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.19",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5925,
+    0.5871,
+    0.5512,
+    0.5426,
+    0.5426
+   ],
+   "avg_similarity": 0.5632,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8571
+  },
+  {
+   "question_id": "QA_V7_01",
+   "question": "What does the verse 'na jayate mriyate va kadachin' teach about the nature of the self?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.20",
+   "retrieved_verses": [
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.28, BG 2.29",
+    "BG 2.13, BG 2.14, BG 2.15",
+    "BG 2.26, BG 2.27",
+    "BG 2.16"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5716,
+    0.5657,
+    0.5572,
+    0.5528,
+    0.5507
+   ],
+   "avg_similarity": 0.5596,
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0,
+   "groundedness": 0.8571
+  },
+  {
+   "question_id": "QA_V7_02",
+   "question": "What is the garment analogy Krishna uses for death and rebirth, and what are the three types of bodies mentioned in the Vedantic analysis?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.22",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6115,
+    0.6106,
+    0.6064,
+    0.601,
+    0.6005
+   ],
+   "avg_similarity": 0.606,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V7_03",
+   "question": "Swamiji says 'when you know you are perfectly safe, then you can play the game to the hilt.' How does self-knowledge make ethical and moral life possible?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.20, BG 2.22",
+   "retrieved_verses": [
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.26, BG 2.27",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10",
+    "BG 2.17, BG 2.18",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6098,
+    0.5697,
+    0.5694,
+    0.5691,
+    0.556
+   ],
+   "avg_similarity": 0.5748,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.5714
+  },
+  {
+   "question_id": "QA_V7_04",
+   "question": "Swamiji tells the story of a senior monk who had a stroke and was partially paralyzed. When asked how he was, what was his response and what does it illustrate?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.22",
+   "retrieved_verses": [
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.17, BG 2.18",
+    "BG 2.17, BG 2.18",
+    "BG 2.1, BG 2.2, BG 2.3, BG 2.4, BG 2.5, BG 2.6, BG 2.7, BG 2.8, BG 2.9, BG 2.10"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6934,
+    0.6424,
+    0.6089,
+    0.5938,
+    0.5818
+   ],
+   "avg_similarity": 0.6241,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.75
+  },
+  {
+   "question_id": "QA_V8_01",
+   "question": "What four elements does Krishna say cannot affect the self — what cannot cut it, burn it, wet it, or dry it?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.23",
+   "retrieved_verses": [
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6726,
+    0.6648,
+    0.6031,
+    0.5978,
+    0.5911
+   ],
+   "avg_similarity": 0.6259,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9167
+  },
+  {
+   "question_id": "QA_V8_02",
+   "question": "How does Swamiji use the impermanence of Manhattan — from underwater prehistoric creatures to scattered settlements to the modern city — to illustrate the concept of anitya?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.24, BG 2.25",
+   "retrieved_verses": [
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.17, BG 2.18",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5665,
+    0.5647,
+    0.5647,
+    0.5525,
+    0.55
+   ],
+   "avg_similarity": 0.5597,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8571
+  },
+  {
+   "question_id": "QA_V8_03",
+   "question": "What are the five great unsolved problems of philosophy that Swamiji discusses, and how does Vedanta answer them?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.24, BG 2.25",
+   "retrieved_verses": [
+    "BG 2.11, BG 2.12",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6042,
+    0.5861,
+    0.5757,
+    0.5666,
+    0.56
+   ],
+   "avg_similarity": 0.5785,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8125
+  },
+  {
+   "question_id": "QA_V8_04",
+   "question": "What does the Buddha's analogy of life as 'a bubble in midstream, a flash of lightning, a phantom in the dark' have in common with the Vedantic teaching about samsara?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.25",
+   "retrieved_verses": [
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.22, BG 2.23, BG 2.24, BG 2.25",
+    "BG 2.11, BG 2.12",
+    "BG 2.26, BG 2.27",
+    "BG 2.11, BG 2.12"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5989,
+    0.5775,
+    0.5617,
+    0.538,
+    0.5342
+   ],
+   "avg_similarity": 0.5621,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.3333
+  },
+  {
+   "question_id": "QA_V9_01",
+   "question": "What is Krishna's argument in verse 27 — what is certain for those who are born, and what is certain for those who have died?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.27",
+   "retrieved_verses": [
+    "BG 2.26, BG 2.27",
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7098,
+    0.6882,
+    0.6199,
+    0.6074,
+    0.5951
+   ],
+   "avg_similarity": 0.6441,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.625
+  },
+  {
+   "question_id": "QA_V9_02",
+   "question": "How does Ramanuja's argument for bhakti differ from Shankaracharya's approach to self-knowledge, and why does Ramanuja say pure knowledge alone is insufficient?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.26",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6275,
+    0.6187,
+    0.6046,
+    0.5985,
+    0.5783
+   ],
+   "avg_similarity": 0.6055,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V9_03",
+   "question": "Swamiji says Vedanta can work even without belief in reincarnation. What is the purpose of Vedanta expressed as 'atyantika duhkha nivritti paramananda praptischa'?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.26, BG 2.27",
+   "retrieved_verses": [
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27",
+    "BG 2.20, BG 2.21, BG 2.22",
+    "BG 2.26, BG 2.27",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.6714,
+    0.643,
+    0.6291,
+    0.6139,
+    0.6051
+   ],
+   "avg_similarity": 0.6325,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.8125
+  },
+  {
+   "question_id": "QA_V10_01",
+   "question": "What does Krishna say about beings being unmanifest before birth, manifest during life, and unmanifest again after death?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.28",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.11, BG 2.12",
+    "BG 2.11, BG 2.12",
+    "BG 2.13, BG 2.14, BG 2.15"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7499,
+    0.6932,
+    0.6678,
+    0.6652,
+    0.6619
+   ],
+   "avg_similarity": 0.6876,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V10_02",
+   "question": "Why does the verse say 'some see the self as a wonder, some speak of it as a wonder, some hear of it as a wonder' — what makes the Atman a mystery even to the enlightened?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.29",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7154,
+    0.6746,
+    0.6742,
+    0.6644,
+    0.6633
+   ],
+   "avg_similarity": 0.6784,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 0.9167
+  },
+  {
+   "question_id": "QA_V10_03",
+   "question": "What is the dark room analogy Swamiji uses to explain how the self is known differently from all other objects?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.29",
+   "retrieved_verses": [
+    "BG 2.19",
+    "BG 2.28, BG 2.29",
+    "BG 2.17, BG 2.18",
+    "BG 2.28, BG 2.29",
+    "BG 2.17, BG 2.18"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.5757,
+    0.5738,
+    0.5708,
+    0.5651,
+    0.562
+   ],
+   "avg_similarity": 0.5695,
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  },
+  {
+   "question_id": "QA_V10_04",
+   "question": "What story does Swamiji tell about Latu Maharaj (Swami Adbhutananda) and what does it teach about the relationship between learning and enlightenment?",
+   "question_type": "General",
+   "expected_verse": "BG 2.29",
+   "retrieved_verses": [
+    "BG 2.28, BG 2.29",
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27",
+    "BG 2.28, BG 2.29",
+    "BG 2.26, BG 2.27"
+   ],
+   "generation_mode": "with_context",
+   "retrieval_similarities": [
+    0.7025,
+    0.6471,
+    0.5482,
+    0.5452,
+    0.5438
+   ],
+   "avg_similarity": 0.5974,
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0,
+   "groundedness": 1.0
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Applies to the labels and derived data in this repository:
+  catalogue/  themes/  passage_grid/  labels/  embeddings_features/  frozen/  eval/  experiment_log/  docs/  reconstruct/sources.csv  reconstruct/asr_segment_timings.csv
+
+The code (code/, reconstruct/**/*.py, tools/) is under the MIT License; see LICENSE.
+
+You are free to share and adapt the material, with attribution, for non-commercial purposes.
+Full legal text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by-nc/4.0/
+
+The lecture audio and transcript text are NOT part of this release and are not covered by this
+licence. They remain the property of their speakers and publishers (see README, "What is not here").

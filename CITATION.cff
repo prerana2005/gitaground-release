@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this release, please cite it."
+title: "Where Is the Verse? Benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding"
+type: dataset
+authors:
+  - name: "Maitreyi"
+    affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+  - name: "Prerana M P"
+    affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+  - name: "Meghana S"
+    affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+  - name: "Meghana Gajendran"
+    affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+  - name: "Badri Prasad"
+    affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+license: CC-BY-NC-4.0
+# doi: add the Zenodo DOI after the first release
+repository-code: "https://github.com/TODO/TODO"

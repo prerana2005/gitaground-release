@@ -1,0 +1,44 @@
+{
+  "title": "Where Is the Verse? Benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding (GitaGround release)",
+  "upload_type": "dataset",
+  "description": "Route (a) release. Contains the lecture catalogue, verse-theme file, passage grid (offsets and hashes, no text), gold labels, second-pass labels and adjudication, all LLM labels, embeddings and features, frozen system files, the experiment log, and a reconstruct/ folder with source URLs and the ASR, segmentation and alignment scripts. Lecture audio and transcript text are not distributed. Code: MIT. Labels and data: CC BY-NC 4.0.",
+  "creators": [
+    {
+      "name": "Maitreyi",
+      "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+    },
+    {
+      "name": "Prerana M P",
+      "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+    },
+    {
+      "name": "Meghana S",
+      "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+    },
+    {
+      "name": "Meghana Gajendran",
+      "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+    },
+    {
+      "name": "Badri Prasad",
+      "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
+    }
+  ],
+  "license": "cc-by-nc-4.0",
+  "access_right": "open",
+  "keywords": [
+    "Bhagavad Gita",
+    "verse grounding",
+    "oral discourse",
+    "Kannada",
+    "retrieval",
+    "annotation"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/TODO/TODO",
+      "scheme": "url"
+    }
+  ]
+}

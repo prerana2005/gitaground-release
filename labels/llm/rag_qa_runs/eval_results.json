@@ -1,0 +1,1230 @@
+{
+ "summary": {
+  "total_questions": 74,
+  "evaluated": 74,
+  "precision_at_1": 0.5946,
+  "precision_at_3": 0.7973,
+  "precision_at_5": 0.8514,
+  "shloka_identification_accuracy": 0.8514,
+  "by_question_type": {
+   "Factual": {
+    "precision_1": 0.6087,
+    "precision_3": 0.913,
+    "precision_5": 0.913,
+    "shloka_acc": 0.913,
+    "count": 23
+   },
+   "Interpretive": {
+    "precision_1": 0.5556,
+    "precision_3": 0.7222,
+    "precision_5": 0.7222,
+    "shloka_acc": 0.7222,
+    "count": 18
+   },
+   "Cross-verse": {
+    "precision_1": 0.4444,
+    "precision_3": 0.7778,
+    "precision_5": 0.8889,
+    "shloka_acc": 0.8889,
+    "count": 9
+   },
+   "General": {
+    "precision_1": 0.75,
+    "precision_3": 0.9167,
+    "precision_5": 0.9167,
+    "shloka_acc": 0.9167,
+    "count": 12
+   },
+   "Applied": {
+    "precision_1": 0.5833,
+    "precision_3": 0.5833,
+    "precision_5": 0.8333,
+    "shloka_acc": 0.8333,
+    "count": 12
+   }
+  }
+ },
+ "detailed_results": [
+  {
+   "question_id": "V1_Q01",
+   "question": "What two qualities does Sanjaya use to describe Arjuna's eyes?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1",
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.4",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q02",
+   "question": "What does the term 'kṛpayāviṣṭam' reveal about the cause of Arjuna's breakdown?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.7",
+    "BG 2.2",
+    "BG 2.10"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V1_Q03",
+   "question": "Why does Sanjaya refer to Krishna as 'Madhusūdana'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.1",
+    "BG 2.4",
+    "BG 2.3",
+    "BG 2.9",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q04",
+   "question": "What word does Krishna use to describe Arjuna's mental state, and what does it literally mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q05",
+   "question": "What are the three negative consequences Krishna attributes to Arjuna's kaśmala?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.14",
+    "BG 2.11"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q06",
+   "question": "Why does Krishna emphasize 'viṣame' (at this critical juncture) when rebuking Arjuna?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.10",
+    "BG 2.11"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q07",
+   "question": "What does the Sanskrit word 'klaibyam' mean, and why is it such a strong word?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.14",
+    "BG 2.2",
+    "BG 2.12",
+    "BG 2.13"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q08",
+   "question": "Why does Krishna address Arjuna as 'Pārtha' (son of Kuntī)?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.11",
+    "BG 2.10",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q09",
+   "question": "What does Krishna call Arjuna's weakness — is it great wisdom or something else?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.10",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q10",
+   "question": "How does Krishna's tone and language escalate across his first rebukes to Arjuna?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.1",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q11",
+   "question": "How does Arjuna's position change from the start of Chapter 2 to after hearing Krishna's rebukes?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q12",
+   "question": "What is the opening verse of Chapter 2 about?",
+   "question_type": "General",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.2"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V1_Q13",
+   "question": "Can you summarize what Krishna says when he first rebukes Arjuna for his weakness?",
+   "question_type": "General",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.10",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q14",
+   "question": "What is the main message of Krishna's strongest rebuke to Arjuna about cowardice?",
+   "question_type": "General",
+   "expected_verse": "BG 2.3",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.11",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q15",
+   "question": "I'm unable to take a tough decision because I'm too emotionally attached to the people involved. What does the Gita say about this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.1, BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.11",
+    "BG 2.8",
+    "BG 2.7",
+    "BG 2.2"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V1_Q16",
+   "question": "I know what I should do but I keep hesitating and overthinking. Does the Gita address this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.2, BG 2.3",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.8",
+    "BG 2.13",
+    "BG 2.6",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V2_Q01",
+   "question": "Who are the two specific people Arjuna names as those he cannot fight, and why?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.9",
+    "BG 2.4",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q02",
+   "question": "What is the significance of Arjuna calling Krishna both 'Madhusūdana' and 'Arisūdana'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.4",
+    "BG 2.1",
+    "BG 2.3",
+    "BG 2.2"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q03",
+   "question": "What does Arjuna say is better than killing his teachers — and why is this ironic for a Kṣatriya?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.5",
+    "BG 2.6",
+    "BG 2.11",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q04",
+   "question": "What does 'rudhira-pradigdhān' mean?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.1",
+    "BG 2.4",
+    "BG 2.7",
+    "BG 2.3",
+    "BG 2.9"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V2_Q05",
+   "question": "What is Arjuna's argument about victory being uncertain?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.6",
+   "retrieved_verses": [
+    "BG 2.6",
+    "BG 2.10",
+    "BG 2.8"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q06",
+   "question": "What does 'na jijīviṣāmaḥ' reveal about Arjuna's state of mind?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.6",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V2_Q07",
+   "question": "How does Arjuna's argument develop as he explains why he cannot fight his elders?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.4, BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.6"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q08",
+   "question": "What does Arjuna say about fighting Bhīṣma and Droṇa?",
+   "question_type": "General",
+   "expected_verse": "BG 2.4",
+   "retrieved_verses": [
+    "BG 2.4",
+    "BG 2.10",
+    "BG 2.11",
+    "BG 2.6"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q09",
+   "question": "What is Arjuna saying about living by begging versus enjoying a blood-stained kingdom?",
+   "question_type": "General",
+   "expected_verse": "BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.5",
+    "BG 2.8",
+    "BG 2.7",
+    "BG 2.11"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q10",
+   "question": "I got a promotion but it came at the cost of my mentor being let go. I feel guilty. What does the Gita say?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.5",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.8",
+    "BG 2.6",
+    "BG 2.3",
+    "BG 2.5"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V2_Q11",
+   "question": "I'm stuck between two bad options and can't decide. Does the Gita talk about this?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.5, BG 2.6",
+   "retrieved_verses": [
+    "BG 2.6",
+    "BG 2.7",
+    "BG 2.8",
+    "BG 2.2",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q01",
+   "question": "What does 'kārpaṇya-doṣa-upahata-svabhāvaḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.14",
+    "BG 2.13",
+    "BG 2.3",
+    "BG 2.1"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q02",
+   "question": "What does 'dharma-sammūḍha-cetāḥ' tell us about Arjuna's confusion?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.11",
+    "BG 2.1",
+    "BG 2.3",
+    "BG 2.2"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q03",
+   "question": "What is the significance of 'śiṣyas te'haṃ śādhi māṃ tvāṃ prapannam'?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.11",
+    "BG 2.2",
+    "BG 2.10",
+    "BG 2.3"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V3_Q04",
+   "question": "What does Arjuna say about gaining a kingdom or lordship of heaven removing his grief?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.8",
+   "retrieved_verses": [
+    "BG 2.8",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q05",
+   "question": "What does 'indriyāṇām ucchoṣaṇam' describe?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.8",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.9",
+    "BG 2.11"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V3_Q06",
+   "question": "What does Arjuna finally declare to Krishna about fighting, and what does he do after?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.7"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V3_Q07",
+   "question": "Why does Vyāsa use the names 'Hṛṣīkeśa' and 'Govinda' for Krishna?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.9",
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.1",
+    "BG 2.4"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q08",
+   "question": "Trace Arjuna's journey from stubborn refusal to surrender to silence in Chapter 2's opening.",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.7, BG 2.9",
+   "retrieved_verses": [
+    "BG 2.10"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V3_Q09",
+   "question": "What happens when Arjuna surrenders to Krishna as a disciple?",
+   "question_type": "General",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.7",
+    "BG 2.8"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q10",
+   "question": "What is the verse about where Arjuna says he will not fight and becomes silent?",
+   "question_type": "General",
+   "expected_verse": "BG 2.9",
+   "retrieved_verses": [
+    "BG 2.9",
+    "BG 2.10",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q11",
+   "question": "I've been struggling with a problem for a long time and nothing works. I feel completely stuck. What does the Gita suggest?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.7, BG 2.8",
+   "retrieved_verses": [
+    "BG 2.8",
+    "BG 2.7",
+    "BG 2.3",
+    "BG 2.2",
+    "BG 2.1"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V3_Q12",
+   "question": "How should I approach a guru or mentor for guidance, according to the Gita?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.7",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.8",
+    "BG 2.3",
+    "BG 2.5",
+    "BG 2.1"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q01",
+   "question": "What does 'prahasan iva' mean, and why did Krishna smile this way?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.13",
+    "BG 2.1",
+    "BG 2.9"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q02",
+   "question": "Why does the verse mention 'senayorubhayormadhye' (between the two armies)?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.2",
+    "BG 2.6",
+    "BG 2.4",
+    "BG 2.8"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q03",
+   "question": "What does 'aśocyān anvaśocaḥ tvam' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.11",
+    "BG 2.8",
+    "BG 2.6",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q04",
+   "question": "What does 'prajñāvādāṃś ca bhāṣase' really mean — is Krishna praising Arjuna's wisdom?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.11",
+    "BG 2.3",
+    "BG 2.2"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q05",
+   "question": "What does 'gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.2",
+    "BG 2.11",
+    "BG 2.1",
+    "BG 2.6",
+    "BG 2.8"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q06",
+   "question": "According to the discourse, what is the core of Krishna's Gita teaching as introduced when he first begins to teach?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.3",
+    "BG 2.10",
+    "BG 2.1"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "V4_Q07",
+   "question": "How does Krishna's approach shift from rebuking Arjuna to actually teaching him?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.2, BG 2.3, BG 2.10, BG 2.11",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q08",
+   "question": "What happens when Krishna smiles and begins to speak to Arjuna between the two armies?",
+   "question_type": "General",
+   "expected_verse": "BG 2.10",
+   "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.4"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q09",
+   "question": "What is Krishna saying when he tells Arjuna that wise people do not grieve?",
+   "question_type": "General",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.2",
+    "BG 2.3",
+    "BG 2.9"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q10",
+   "question": "I feel like I'm being wise by avoiding conflict, but others say I'm just being weak. What does the Gita say?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.9",
+    "BG 2.7",
+    "BG 2.2",
+    "BG 2.11"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V4_Q11",
+   "question": "Should I treat wrongdoing by family members differently from wrongdoing by strangers?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.11",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.5",
+    "BG 2.6",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q01",
+   "question": "What does Krishna establish about the soul using three grammatical persons (I/you/they)?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.12",
+    "BG 2.13",
+    "BG 2.14",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q02",
+   "question": "What is the logical argument Krishna makes about birth and death?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.13",
+    "BG 2.12",
+    "BG 2.14"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q03",
+   "question": "What analogy does Krishna use to explain death, and how does it work?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.11",
+    "BG 2.13",
+    "BG 2.3"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q04",
+   "question": "What does 'dhīras tatra na muhyati' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.3",
+    "BG 2.14",
+    "BG 2.11",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q05",
+   "question": "How does the childhood-youth-old age analogy address Arjuna's grief about the body being destroyed?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q06",
+   "question": "How do the teachings about the eternal soul and the body-change analogy together build the case for why Arjuna should not grieve?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.12, BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.12",
+    "BG 2.11",
+    "BG 2.8"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q07",
+   "question": "What is the verse about where Krishna says the soul has always existed and always will?",
+   "question_type": "General",
+   "expected_verse": "BG 2.12",
+   "retrieved_verses": [
+    "BG 2.12",
+    "BG 2.13",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q08",
+   "question": "What is the teaching about the soul passing through different stages like childhood, youth, and old age?",
+   "question_type": "General",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.12",
+    "BG 2.7",
+    "BG 2.3",
+    "BG 2.14"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q09",
+   "question": "I recently lost a loved one and I'm struggling to cope. What does the Gita say about death and grief?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.12, BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.11",
+    "BG 2.8",
+    "BG 2.3"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V5_Q10",
+   "question": "I'm afraid of getting old and eventually dying. Does the Gita address fear of death?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.13",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.8",
+    "BG 2.7",
+    "BG 2.5"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q01",
+   "question": "What does the technical term 'mātrā-sparśa' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.9",
+    "BG 2.11",
+    "BG 2.7",
+    "BG 2.13"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q02",
+   "question": "What example does Krishna use to explain how sensory contact produces pleasure and pain?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.13",
+    "BG 2.3",
+    "BG 2.11"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q03",
+   "question": "What do 'āgamāpāyinaḥ' and 'anityāḥ' mean?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.7",
+    "BG 2.12",
+    "BG 2.8",
+    "BG 2.2"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q04",
+   "question": "According to Madhvācārya's commentary, what is the real cause of pleasure and pain — is it sensory contact alone?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.11",
+    "BG 2.7"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q05",
+   "question": "What does 'titikṣasva' mean according to Madhvācārya, and how is it different from other commentators' interpretation?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.1",
+    "BG 2.4",
+    "BG 2.9",
+    "BG 2.11"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q06",
+   "question": "How does the teaching about sensory contact and abhimāna directly solve Arjuna's specific problem about fighting his elders?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.4",
+    "BG 2.8",
+    "BG 2.1"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q07",
+   "question": "How does the teaching on mātrā-sparśa complete the three-part answer Krishna gives about why Arjuna should not grieve?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.12, BG 2.13, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.3",
+    "BG 2.10",
+    "BG 2.14",
+    "BG 2.8"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q08",
+   "question": "What is the verse about sensory contact, pleasure, pain, and endurance (titikṣā)?",
+   "question_type": "General",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.9",
+    "BG 2.3",
+    "BG 2.7",
+    "BG 2.13"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q09",
+   "question": "The same situation makes me emotional but doesn't affect my colleague at all. Why do I react so strongly to things others shrug off?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.11",
+    "BG 2.10"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "V6_Q10",
+   "question": "How can I do difficult things at work without getting emotionally overwhelmed?",
+   "question_type": "Applied",
+   "expected_verse": "BG 2.14",
+   "retrieved_verses": [
+    "BG 2.13",
+    "BG 2.8",
+    "BG 2.3"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 0.0,
+   "precision_at_5": 0.0,
+   "shloka_accuracy": 0.0
+  },
+  {
+   "question_id": "S_Q01",
+   "question": "What does the word 'viṣāda' mean according to Ṭīkākṛtpādaru (Madhvācārya's commentary)?",
+   "question_type": "Factual",
+   "expected_verse": "BG 2.1",
+   "retrieved_verses": [
+    "BG 2.14",
+    "BG 2.1",
+    "BG 2.9",
+    "BG 2.2"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "S_Q02",
+   "question": "What does the word 'ārya' mean in Krishna's rebuke, and how is it different from the racial interpretation?",
+   "question_type": "Interpretive",
+   "expected_verse": "BG 2.2",
+   "retrieved_verses": [
+    "BG 2.3",
+    "BG 2.14",
+    "BG 2.2",
+    "BG 2.7"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "S_Q03",
+   "question": "What is the overall structure of Chapter 2's opening — how does the conversation shift from Arjuna's despair to Krishna's teaching?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.1, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.7",
+    "BG 2.1",
+    "BG 2.10"
+   ],
+   "precision_at_1": 0.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  },
+  {
+   "question_id": "S_Q04",
+   "question": "What is the Dvaita (Madhva) perspective on why Arjuna should not grieve, as explained across Krishna's initial teaching verses?",
+   "question_type": "Cross-verse",
+   "expected_verse": "BG 2.11, BG 2.12, BG 2.13, BG 2.14",
+   "retrieved_verses": [
+    "BG 2.11",
+    "BG 2.10",
+    "BG 2.3",
+    "BG 2.8",
+    "BG 2.2"
+   ],
+   "precision_at_1": 1.0,
+   "precision_at_3": 1.0,
+   "precision_at_5": 1.0,
+   "shloka_accuracy": 1.0
+  }
+ ]
+}

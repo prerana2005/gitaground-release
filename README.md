@@ -40,6 +40,21 @@ Lecture rights belong to the speakers and publishers. Please fetch lectures from
 
 Code: MIT (`LICENSE`). Labels and data: CC BY-NC 4.0 (`LICENSE-DATA`).
 
+## Update, 21 Nov 2026 (after the paper snapshot)
+
+Everything above describes the 51-lecture paper release; those files are unchanged unless listed here.
+- **8 more lectures** (59 in all, 2,583 passages): `video_11`..`video_14` (original English speaker, E2 test) and
+  `en_chinmaya_day06`..`day09` (Swami Aparajitananda, held-out). Added to `catalogue/lecture_catalogue.csv`,
+  `reconstruct/sources.csv`, `passage_grid/` (with fingerprints) and gold labels (`labels/gold/`). Earlier rows are unchanged.
+- **New runs and results** (experiment log rows from 7 Nov on): GPT-6.1 Sol and Gemini 3.1 Pro (API) labels in `labels/llm/`;
+  cascade / hybrid, headroom, recall-by-type and fine-tuning CV results in `frozen/`; code in `code/scripts/` and `code/gg_finetune/`.
+  `frozen/README.md` is a guide to the result files.
+- **59-lecture rebuilds kept beside the paper's frozen files:** `frozen/step5_index_all_59.csv`,
+  `frozen/step5_segments_all_59.csv`, `embeddings_features/step2_features_59.npz`. The meaning-profile features
+  of the earlier passages differ in the 59-lecture rebuild, so the paper's `step2_features.npz` and `step5_*` stay as they were.
+  `unit_embeddings*.npz` now cover all 59 lectures (vectors of earlier passages identical).
+- Sarvam ASR script: `reconstruct/asr/transcribe_new.py` (model `saaras:v3`).
+
 ## Notes for users
 
 - Unit-level timestamps do not exist for most passages; `time_start`/`time_end` are empty in the grid.

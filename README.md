@@ -4,12 +4,13 @@ Companion release to *Where Is the Verse? A Benchmark and a Structured Decoder w
 
 
 Labels, passage grid, embeddings and code for *verse grounding in oral discourse* (Bhagavad Gita, Chapter 2):
-51 lectures, 6 speakers, three traditions, 1,884 passages in Kannada and English.
+59 lectures (38 Kannada, 21 English), three traditions, 2,583 passages in Kannada and English.
 
 **Route (a).** No lecture audio and no transcript or passage text is distributed. The release has URLs, offsets,
 text hashes, code, labels and pre-computed embeddings. `reconstruct/` explains how to rebuild the text yourself.
 
-DOI: [10.5281/zenodo.24037830](https://doi.org/10.5281/zenodo.24037830)
+DOI (this version, v1.1.0): [10.5281/zenodo.24450733](https://doi.org/10.5281/zenodo.24450733)
+DOI (all versions, always the latest): [10.5281/zenodo.24037829](https://doi.org/10.5281/zenodo.24037829)
 
 ## Contents (Section 8)
 

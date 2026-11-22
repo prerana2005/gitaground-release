@@ -14,5 +14,7 @@ authors:
   - given-names: "Badri Prasad"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
 license: CC-BY-NC-4.0
-doi: 10.5281/zenodo.24037830
+doi: 10.5281/zenodo.24450733
+version: "1.1.0"
+date-released: 2026-11-23
 repository-code: "https://github.com/prerana2005/gitaground-release.git"

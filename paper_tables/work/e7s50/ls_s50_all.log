@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[Embeddings] Loading BAAI/bge-m3 on mps
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 44737.11it/s]
+questions: /Users/maitreyi/Documents/Capstone/RAG-pipeline/RAG-pipeline-llama/data/e7_questions_scholar50.csv
+vector-search abstention: passage cosine < 0.5625 (dev balanced accuracy 0.885; 74 answerable, 12 unanswerable dev)
+  test: unanswerable refused 8/11, answerable wrongly refused 9/39
+  verse Hit@1 by mode: {'question': '24/34 = 0.706', 'shloka': '5/5 = 1.000'}  non-shloka: 24/34
+  GitaGround-Local       Hit@5 0.769  P@5 0.585  (n 39)  question P@5 0.565  shloka P@5 0.720  | primary claims correct 138/144 = 0.958
+  GitaGround-Local, p=1  Hit@5 0.769  P@5 0.595  (n 39)  question P@5 0.576  shloka P@5 0.720  | primary claims correct 134/144 = 0.931
+  Gemini low             Hit@5 0.769  P@5 0.574  (n 39)  question P@5 0.559  shloka P@5 0.680  | primary claims correct 131/138 = 0.949
+  3L + Gemini low        Hit@5 0.769  P@5 0.574  (n 39)  question P@5 0.559  shloka P@5 0.680  | primary claims correct 132/138 = 0.957
+  Gemini high            Hit@5 0.795  P@5 0.574  (n 39)  question P@5 0.559  shloka P@5 0.680  | primary claims correct 132/139 = 0.950
+  3L + Gemini            Hit@5 0.795  P@5 0.574  (n 39)  question P@5 0.559  shloka P@5 0.680  | primary claims correct 132/139 = 0.950
+  Sol                    Hit@5 0.795  P@5 0.605  (n 39)  question P@5 0.582  shloka P@5 0.760  | primary claims correct 137/144 = 0.951
+  3L + Sol               Hit@5 0.795  P@5 0.605  (n 39)  question P@5 0.582  shloka P@5 0.760  | primary claims correct 137/144 = 0.951
+  plain vector search    Hit@5 0.795  P@5 0.369

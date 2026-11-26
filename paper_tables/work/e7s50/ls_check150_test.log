@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[Embeddings] Loading BAAI/bge-m3 on mps
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 47816.80it/s]
+index restricted to test lectures: 1510 passages, 42 lectures
+questions: /Users/maitreyi/Documents/Capstone/RAG-pipeline/RAG-pipeline-llama/data/e7_questions_150.csv
+vector-search abstention: passage cosine < 0.5625 (dev balanced accuracy 0.865; 74 answerable, 12 unanswerable dev)
+  test: unanswerable refused 21/25, answerable wrongly refused 15/125
+  verse Hit@1 by mode: {'question': '38/50 = 0.760', 'shloka': '40/40 = 1.000', 'explanation': '32/35 = 0.914'}  non-shloka: 70/85
+  GitaGround-Local       Hit@5 0.912  P@5 0.675  (n 125)  question P@5 0.576  shloka P@5 0.735  explanation P@5 0.749  | primary claims correct 438/453 = 0.967
+  GitaGround-Local, p=1  Hit@5 0.920  P@5 0.662  (n 125)  question P@5 0.564  shloka P@5 0.715  explanation P@5 0.743  | primary claims correct 421/453 = 0.929
+  Gemini low             Hit@5 0.944  P@5 0.666  (n 125)  question P@5 0.568  shloka P@5 0.725  explanation P@5 0.737  | primary claims correct 418/444 = 0.941
+  3L + Gemini low        Hit@5 0.944  P@5 0.669  (n 125)  question P@5 0.568  shloka P@5 0.730  explanation P@5 0.743  | primary claims correct 419/443 = 0.946
+  Gemini high            Hit@5 0.936  P@5 0.666  (n 125)  question P@5 0.564  shloka P@5 0.735  explanation P@5 0.731  | primary claims correct 423/451 = 0.938
+  3L + Gemini            Hit@5 0.936  P@5 0.670  (n 125)  question P@5 0.564  shloka P@5 0.745  explanation P@5 0.737  | primary claims correct 425/450 = 0.944
+  Sol                    Hit@5 0.936  P@5 0.669  (n 125)  question P@5 0.580  shloka P@5 0.730  explanation P@5 0.726  | primary claims correct 417/446 = 0.935
+  3L + Sol               Hit@5 0.936  P@5 0.675  (n 125)  question P@5 0.584  shloka P@5 0.745  explanation P@5 0.726  | primary claims correct 419/445 = 0.942
+  plain vector search    Hit@5 0.784  P@5 0.366

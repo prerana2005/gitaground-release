@@ -1,0 +1,3 @@
+All 50 conf. cascade + Gemini low as is 0.775 fixdig 0.813 (+0.038) fixid 0.875 (+0.100)
+All 50 conf. cascade + Gemini high as is 0.806 fixdig 0.847 (+0.041) fixid 0.895 (+0.089)
+All 50 conf. cascade + Sol        as is 0.839 fixdig 0.913 (+0.074) fixid 0.901 (+0.062)

@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[Embeddings] Loading BAAI/bge-m3 on mps
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 45951.77it/s]
+questions: /Users/maitreyi/Documents/Capstone/RAG-pipeline/RAG-pipeline-llama/data/e7_questions_150.csv
+vector-search abstention: passage cosine < 0.5625 (dev balanced accuracy 0.885; 74 answerable, 12 unanswerable dev)
+  test: unanswerable refused 21/25, answerable wrongly refused 15/125
+  verse Hit@1 by mode: {'question': '38/50 = 0.760', 'shloka': '40/40 = 1.000', 'explanation': '32/35 = 0.914'}  non-shloka: 70/85
+  GitaGround-Local       Hit@5 0.936  P@5 0.725  (n 125)  question P@5 0.616  shloka P@5 0.815  explanation P@5 0.777  | primary claims correct 451/464 = 0.972
+  GitaGround-Local, p=1  Hit@5 0.944  P@5 0.706  (n 125)  question P@5 0.600  shloka P@5 0.790  explanation P@5 0.760  | primary claims correct 434/464 = 0.935
+  Gemini low             Hit@5 0.944  P@5 0.712  (n 125)  question P@5 0.604  shloka P@5 0.795  explanation P@5 0.771  | primary claims correct 445/464 = 0.959
+  3L + Gemini low        Hit@5 0.944  P@5 0.715  (n 125)  question P@5 0.604  shloka P@5 0.800  explanation P@5 0.777  | primary claims correct 446/463 = 0.963
+  Gemini high            Hit@5 0.936  P@5 0.707  (n 125)  question P@5 0.600  shloka P@5 0.795  explanation P@5 0.760  | primary claims correct 451/472 = 0.956
+  3L + Gemini            Hit@5 0.936  P@5 0.712  (n 125)  question P@5 0.600  shloka P@5 0.805  explanation P@5 0.766  | primary claims correct 452/470 = 0.962
+  Sol                    Hit@5 0.944  P@5 0.717  (n 125)  question P@5 0.620  shloka P@5 0.795  explanation P@5 0.766  | primary claims correct 447/470 = 0.951
+  3L + Sol               Hit@5 0.944  P@5 0.720  (n 125)  question P@5 0.620  shloka P@5 0.805  explanation P@5 0.766  | primary claims correct 447/468 = 0.955
+  plain vector search    Hit@5 0.824  P@5 0.390

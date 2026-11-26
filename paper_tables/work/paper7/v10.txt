@@ -1,0 +1,4 @@
+Gemini low 13 Counter({'BG 2.28': 9, 'BG 2.29': 4}) Counter({'T4': 11, 'T5': 2})
+Gemini high 21 Counter({'BG 2.29': 12, 'BG 2.28': 9}) Counter({'T4': 18, 'T5': 3})
+Sol 21 Counter({'BG 2.29': 12, 'BG 2.28': 9}) Counter({'T4': 18, 'T5': 3})
+video_10 gold verses: Counter({'BG 2.29': 41, 'BG 2.28': 17, 'BG 2.27': 7})

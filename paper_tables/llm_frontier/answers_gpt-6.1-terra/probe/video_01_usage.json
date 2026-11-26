@@ -1,0 +1,19 @@
+{
+ "model": "gpt-6.1-terra",
+ "effort": "high",
+ "status": "completed",
+ "incomplete": null,
+ "usage": {
+  "input_tokens": 26008,
+  "input_tokens_details": {
+   "cache_write_tokens": 26005,
+   "cached_tokens": 0
+  },
+  "output_tokens": 2484,
+  "output_tokens_details": {
+   "reasoning_tokens": 1932
+  },
+  "total_tokens": 28492
+ },
+ "seconds": 41.0
+}

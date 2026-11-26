@@ -1,0 +1,76 @@
+== per-lecture strict F1, 3L - LLM, English test lectures (passages whose label changed; FV removed; verse passages lost)
+  Gemini low: wins 9 mean +0.078, losses 7 mean -0.041
+     video_10             -0.124  changed  16  FV removed   3  right->wrong  13  digr share 0.36
+     video_12             -0.057  changed   9  FV removed   0  right->wrong   7  digr share 0.79
+     video_13             -0.051  changed  19  FV removed   4  right->wrong  13  digr share 0.74
+     video_06             -0.024  changed   2  FV removed   0  right->wrong   2  digr share 0.54
+     en_iskcon            -0.020  changed  12  FV removed   2  right->wrong  10  digr share 0.07
+     en_chinmaya_day07    -0.007  changed   4  FV removed   2  right->wrong   1  digr share 0.24
+     video_11             -0.001  changed   5  FV removed   1  right->wrong   3  digr share 0.66
+     en_chinmaya_day08    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     en_chinmaya_day09    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     video_14             +0.010  changed   9  FV removed   5  right->wrong   4  digr share 0.77
+     video_02             +0.025  changed  11  FV removed   0  right->wrong   6  digr share 0.43
+     en_chinmaya_day06    +0.026  changed   5  FV removed   5  right->wrong   0  digr share 0.27
+     en_chinmaya_day04    +0.032  changed   7  FV removed   0  right->wrong   1  digr share 0.00
+     video_09             +0.067  changed   7  FV removed   0  right->wrong   0  digr share 0.68
+     video_03             +0.084  changed  20  FV removed  17  right->wrong   2  digr share 0.46
+     video_05             +0.088  changed  31  FV removed  26  right->wrong   5  digr share 0.47
+     video_08             +0.147  changed  31  FV removed  29  right->wrong   2  digr share 0.53
+     en_chinmaya_day03    +0.220  changed  17  FV removed   0  right->wrong   0  digr share 0.01
+  Gemini high: wins 8 mean +0.044, losses 5 mean -0.042
+     video_10             -0.126  changed  32  FV removed  11  right->wrong  21  digr share 0.36
+     en_chinmaya_day04    -0.028  changed   4  FV removed   0  right->wrong   4  digr share 0.00
+     en_iskcon            -0.026  changed  14  FV removed   2  right->wrong  12  digr share 0.07
+     video_06             -0.018  changed   1  FV removed   0  right->wrong   1  digr share 0.54
+     video_11             -0.013  changed   4  FV removed   2  right->wrong   2  digr share 0.66
+     video_02             +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.43
+     video_12             +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.79
+     en_chinmaya_day03    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.01
+     en_chinmaya_day08    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     en_chinmaya_day09    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     en_chinmaya_day07    +0.004  changed   4  FV removed   2  right->wrong   1  digr share 0.24
+     video_13             +0.012  changed   1  FV removed   0  right->wrong   0  digr share 0.74
+     video_09             +0.014  changed   4  FV removed   3  right->wrong   1  digr share 0.68
+     en_chinmaya_day06    +0.027  changed   5  FV removed   5  right->wrong   0  digr share 0.27
+     video_14             +0.029  changed   3  FV removed   3  right->wrong   0  digr share 0.77
+     video_08             +0.046  changed   7  FV removed   7  right->wrong   0  digr share 0.53
+     video_05             +0.086  changed  31  FV removed  26  right->wrong   5  digr share 0.47
+     video_03             +0.132  changed  28  FV removed  25  right->wrong   2  digr share 0.46
+  Sol: wins 5 mean +0.076, losses 9 mean -0.030
+     video_10             -0.141  changed  29  FV removed   8  right->wrong  21  digr share 0.36
+     video_06             -0.042  changed   6  FV removed   1  right->wrong   5  digr share 0.54
+     en_chinmaya_day04    -0.028  changed   4  FV removed   0  right->wrong   4  digr share 0.00
+     en_iskcon            -0.013  changed  10  FV removed   0  right->wrong   8  digr share 0.07
+     video_02             -0.012  changed   1  FV removed   0  right->wrong   1  digr share 0.43
+     video_13             -0.012  changed   4  FV removed   2  right->wrong   1  digr share 0.74
+     en_chinmaya_day07    -0.009  changed   4  FV removed   2  right->wrong   2  digr share 0.24
+     video_09             -0.005  changed   2  FV removed   0  right->wrong   1  digr share 0.68
+     video_05             -0.004  changed  12  FV removed   7  right->wrong   5  digr share 0.47
+     video_12             +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.79
+     en_chinmaya_day03    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.01
+     en_chinmaya_day08    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     en_chinmaya_day09    +0.000  changed   0  FV removed   0  right->wrong   0  digr share 0.24
+     en_chinmaya_day06    +0.028  changed   5  FV removed   5  right->wrong   0  digr share 0.27
+     video_03             +0.054  changed   7  FV removed   6  right->wrong   0  digr share 0.46
+     video_14             +0.072  changed  10  FV removed  10  right->wrong   0  digr share 0.77
+     video_08             +0.094  changed  16  FV removed  16  right->wrong   0  digr share 0.53
+     video_11             +0.132  changed  30  FV removed  27  right->wrong   3  digr share 0.66
+== oracle repairs incl. 3L rows
+  E2 English   Plain Carry        as is 0.372 fixdig 0.691 (+0.319) fixid 0.482 (+0.110)  det 0.428 FV 602 miss 13 ident 0.640
+  E2 English   Cue                as is 0.610 fixdig 0.737 (+0.127) fixid 0.732 (+0.122)  det 0.748 FV 176 miss 95 ident 0.788
+  E2 English   Gemini low         as is 0.679 fixdig 0.816 (+0.138) fixid 0.735 (+0.056)  det 0.761 FV 161 miss 96 ident 0.888
+  E2 English   3L + Gemini low    as is 0.701 fixdig 0.801 (+0.101) fixid 0.764 (+0.063)  det 0.802 FV 110 miss 103 ident 0.880
+  E2 English   Gemini high        as is 0.717 fixdig 0.866 (+0.149) fixid 0.763 (+0.046)  det 0.778 FV 175 miss 64 ident 0.903
+  E2 English   3L + Gemini high   as is 0.733 fixdig 0.825 (+0.092) fixid 0.781 (+0.047)  det 0.818 FV 98 miss 98 ident 0.899
+  E2 English   Sol                as is 0.742 fixdig 0.916 (+0.174) fixid 0.776 (+0.034)  det 0.775 FV 209 miss 33 ident 0.920
+  E2 English   3L + Sol           as is 0.754 fixdig 0.872 (+0.118) fixid 0.788 (+0.034)  det 0.809 FV 132 miss 73 ident 0.919
+  All 50 test  Plain Carry        as is 0.577 fixdig 0.752 (+0.175) fixid 0.735 (+0.158)  det 0.651 FV 714 miss 56 ident 0.659
+  All 50 test  Cue                as is 0.713 fixdig 0.771 (+0.058) fixid 0.889 (+0.176)  det 0.818 FV 272 miss 131 ident 0.715
+  All 50 test  Gemini low         as is 0.780 fixdig 0.844 (+0.064) fixid 0.863 (+0.083)  det 0.792 FV 250 miss 210 ident 0.829
+  All 50 test  3L + Gemini low    as is 0.797 fixdig 0.847 (+0.050) fixid 0.883 (+0.086)  det 0.826 FV 191 miss 194 ident 0.827
+  All 50 test  Gemini high        as is 0.823 fixdig 0.890 (+0.067) fixid 0.894 (+0.071)  det 0.837 FV 261 miss 100 ident 0.851
+  All 50 test  3L + Gemini high   as is 0.830 fixdig 0.877 (+0.047) fixid 0.902 (+0.073)  det 0.856 FV 176 miss 143 ident 0.847
+  All 50 test  Sol                as is 0.857 fixdig 0.932 (+0.075) fixid 0.903 (+0.046)  det 0.841 FV 297 miss 55 ident 0.898
+  All 50 test  3L + Sol           as is 0.862 fixdig 0.918 (+0.056) fixid 0.908 (+0.046)  det 0.854 FV 213 miss 109 ident 0.897
+== passages < 50 words: 24 of which lecture-final: 24 [('kn_gita-1st_video_0014', 40, True), ('kn_gita-2nd_video_0012', 29, True), ('kn_gita-3rd_video_0013', 23, True), ('kn_gita-5th_video_0018', 8, True), ('kn_gita-6th_video_0020', 28, True), ('kn_kannada_09_0014', 25, True), ('kn_kannada_11_0015', 31, True), ('kn_kannada_12_0015', 1, True)]

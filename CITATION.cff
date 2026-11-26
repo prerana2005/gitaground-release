@@ -1,20 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this release, please cite it."
-title: "Where Is the Verse? Benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding"
+title: "GitaGround release: benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding"
 type: dataset
 authors:
   - given-names: "Maitreyi"
+    family-names: "V"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - given-names: "Prerana M P"
+  - given-names: "Prerana"
+    family-names: "M P"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - given-names: "Meghana S"
+  - given-names: "Meghana"
+    family-names: "S"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
-  - given-names: "Meghana Gajendran"
+  - given-names: "Meghana"
+    family-names: "Gajendran"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
   - given-names: "Badri Prasad"
+    family-names: "V R"
     affiliation: "Department of Computer Science and Engineering, PES University, Bengaluru, India"
 license: CC-BY-NC-4.0
-doi: 10.5281/zenodo.24450733
-version: "1.1.0"
-date-released: 2026-11-23
-repository-code: "https://github.com/prerana2005/gitaground-release.git"
+doi: 10.5281/zenodo.24037829
+version: "1.2.0"
+date-released: 2026-11-27
+repository-code: "https://github.com/prerana2005/gitaground-release"

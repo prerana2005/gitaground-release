@@ -1,0 +1,22 @@
+answer check: video_01: missing 33 unparsed 0 outside Ch2 0
+
+veto decides 39 passages: Cue right 36  (veto output = NONE)
+  veto right 36; LLM right on the same: Gemini low 38, Gemini high 37, Sol 36, Nemotron 3 Ultra 34
+  fill decides (Cue right vs LLM right / n): Gemini low 2 vs 0 / 4, Gemini high 0 vs 0 / 1, Sol 0 vs 0 / 0, Nemotron 3 Ultra 14 vs 0 / 16  -> Nemotron fill KEEP
+  Nemotron veto keep rule: 36 vs 34 -> KEEP
+  old 3L (confidence routing) layer Cue conf >= 0.9 decides 43: Cue right 40 vs Nemotron 38 -> KEEP
+
+English tuning lectures ['video_01'], 88 passages, 46 digressions:
+  GitaGround-Cue (LOLO)    strict 0.826  det 0.886  FV   5/46  missed   5/42  ident 0.892
+  Gemini low               strict 0.854  det 0.875  FV   7/46  missed   4/42  ident 0.947
+    old 3L (conf. routing) strict 0.844  det 0.875  FV   4/46  missed   7/42  ident 0.971
+    improved 3L            strict 0.845  det 0.886  FV   7/46  missed   3/42  ident 0.923
+  Gemini high              strict 0.884  det 0.920  FV   5/46  missed   2/42  ident 0.900
+    old 3L (conf. routing) strict 0.870  det 0.909  FV   4/46  missed   4/42  ident 0.921
+    improved 3L            strict 0.860  det 0.898  FV   5/46  missed   4/42  ident 0.921
+  Sol                      strict 0.882  det 0.886  FV   8/46  missed   2/42  ident 0.975
+    old 3L (conf. routing) strict 0.882  det 0.886  FV   8/46  missed   2/42  ident 0.975
+    improved 3L            strict 0.863  det 0.886  FV   5/46  missed   5/42  ident 0.973
+  Nemotron 3 Ultra         strict 0.143  det 0.636  FV   5/46  missed  27/42  ident 0.267
+    old 3L (conf. routing) strict 0.147  det 0.659  FV   3/46  missed  27/42  ident 0.267
+    improved 3L            strict 0.500  det 0.841  FV   3/46  missed  11/42  ident 0.581

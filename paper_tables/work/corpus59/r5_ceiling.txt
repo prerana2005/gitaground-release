@@ -1,0 +1,2 @@
+e7_questions_150.csv: 125 scored; relevant passages per query median 32 min 14 max 182; R@5 ceiling 0.162
+e7_questions_scholar50.csv: 39 scored; relevant passages per query median 32 min 12 max 206; R@5 ceiling 0.161

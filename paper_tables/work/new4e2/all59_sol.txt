@@ -1,0 +1,159 @@
+Improved 3-layer system vs old 3L vs Sol vs Cue, 59 lectures. Sol labels: results/llm_frontier_gpt61sol.csv + tuning answers
+improved 3L: 1 Cue veto (English, Cue off-verse with P_off >= 0.95) > 2 Sol > 3 Cue fill (Sol NONE, Cue conf >= 0.5); thresholds chosen post-hoc on the 42 test lectures with Gemini
+old 3L: Kannada anchor > Cue conf >= 0.9 > Sol; English Sol alone. Cue on tuning = leave-one-lecture-out
+
+keep rule on the 9 tuning lectures (layers kept for the improved 3L):
+  kn 1 Cue veto   English only (not used in Kannada)
+  kn 3 Cue fill   decides   0 tuning passages: right 0 vs Sol 0 -> KEEP
+  en 1 Cue veto   decides  99 tuning passages: right 86 vs Sol 85 -> KEEP
+  en 3 Cue fill   decides   3 tuning passages: right 1 vs Sol 2 -> drop
+  -> Kannada: 3 Cue fill > 2 Sol; English: 1 Cue veto > 2 Sol
+
+1. STRICT / +-1 / THEME F1
+
+  group                    lect                   Sol                   Cue                old 3L           improved 3L
+  Tuning Kannada              6     0.921 0.969 0.964     0.938 0.966 0.994     0.956 0.978 0.976     0.921 0.969 0.964
+  Tuning English              3     0.883 0.894 0.885     0.731 0.786 0.815     0.883 0.894 0.885     0.876 0.887 0.881
+  E2 Kannada test            23     0.934 0.969 0.970     0.820 0.899 0.904     0.877 0.924 0.927     0.934 0.969 0.970
+  E2 English test             7     0.792 0.823 0.824     0.631 0.729 0.750     0.792 0.823 0.824     0.781 0.811 0.812
+  E3 new Kannada              9     0.929 0.964 0.958     0.665 0.855 0.906     0.866 0.931 0.939     0.934 0.970 0.966
+  E3 new English              3     0.910 0.944 0.948     0.814 0.903 0.929     0.910 0.944 0.948     0.896 0.930 0.932
+  New 4 Chinmaya English      4     0.856 0.873 0.853     0.642 0.779 0.800     0.856 0.873 0.853     0.860 0.877 0.860
+  New E2 English (video_11-14)    4     0.626 0.638 0.630     0.563 0.619 0.624     0.626 0.638 0.630     0.689 0.702 0.695
+  All 9 tuning                9     0.895 0.918 0.910     0.799 0.845 0.873     0.906 0.920 0.914     0.891 0.914 0.908
+  All 42 test                42     0.886 0.919 0.916     0.749 0.850 0.867     0.861 0.901 0.902     0.882 0.915 0.912
+  42 test + new E2 4 (46)    46     0.857 0.889 0.881     0.729 0.825 0.838     0.835 0.871 0.869     0.863 0.894 0.888
+  All test: 42 + Chinmaya 4 + new E2 4 (50)   50     0.857 0.886 0.877     0.713 0.817 0.832     0.839 0.872 0.866     0.862 0.891 0.883
+  All E2 English test        11     0.742 0.767 0.765     0.610 0.695 0.710     0.742 0.767 0.765     0.754 0.780 0.778
+  All E3 English              7     0.885 0.911 0.906     0.738 0.849 0.873     0.885 0.911 0.906     0.879 0.906 0.900
+  All Kannada (38)           38     0.931 0.968 0.966     0.796 0.896 0.918     0.885 0.933 0.937     0.932 0.969 0.968
+  All English (21)           21     0.832 0.855 0.847     0.691 0.785 0.803     0.832 0.855 0.847     0.835 0.859 0.851
+  All 59                     59     0.862 0.890 0.881     0.724 0.820 0.837     0.848 0.878 0.873     0.866 0.894 0.887
+
+2. PAIRED, STRICT F1 (diff [95% CI], W/T/L; 10,000 lecture resamples; groups of 5+ lectures)
+
+  group                                      improved 3L - Sol                improved 3L - old 3L                           Cue - Sol
+  Tuning Kannada                  +0.000 [+0.000,+0.000] 0/6/0        -0.035 [-0.074,+0.010] 1/1/4        +0.017 [-0.054,+0.082] 3/0/3
+  E2 Kannada test                +0.000 [+0.000,+0.000] 0/23/0       +0.057 [+0.032,+0.084] 17/2/4       -0.114 [-0.172,-0.063] 3/2/18
+  E2 English test                 -0.011 [-0.067,+0.045] 2/0/5        -0.011 [-0.067,+0.045] 2/0/5        -0.161 [-0.353,-0.006] 2/0/5
+  E3 new Kannada                  +0.006 [+0.000,+0.011] 1/8/0        +0.068 [+0.040,+0.128] 8/1/0        -0.264 [-0.384,-0.181] 0/0/9
+  All 9 tuning                    -0.004 [-0.011,+0.004] 1/6/2        -0.015 [-0.041,+0.001] 2/1/6        -0.097 [-0.151,+0.013] 3/0/6
+  All 42 test                    -0.004 [-0.021,+0.014] 3/32/7      +0.021 [-0.001,+0.051] 27/4/11       -0.137 [-0.200,-0.086] 5/2/35
+  42 test + new E2 4 (46)        +0.005 [-0.014,+0.028] 5/33/8      +0.028 [+0.004,+0.058] 29/5/12       -0.128 [-0.187,-0.080] 6/2/38
+  All test: 42 + Chinmaya 4 + new E2 4 (50)       +0.005 [-0.011,+0.024] 6/35/9      +0.023 [+0.004,+0.048] 30/7/13       -0.144 [-0.195,-0.100] 6/2/42
+  All E2 English test             +0.012 [-0.040,+0.060] 4/1/6        +0.012 [-0.040,+0.060] 4/1/6        -0.132 [-0.276,-0.022] 3/0/8
+  All E3 English                  -0.006 [-0.014,+0.006] 1/3/3        -0.006 [-0.014,+0.006] 1/3/3        -0.147 [-0.219,-0.098] 0/0/7
+  All Kannada (38)               +0.002 [+0.000,+0.004] 1/37/0       +0.047 [+0.025,+0.069] 26/4/8       -0.135 [-0.185,-0.083] 6/2/30
+  All English (21)               +0.003 [-0.017,+0.026] 6/4/11       +0.003 [-0.017,+0.026] 6/4/11       -0.140 [-0.203,-0.087] 3/0/18
+  All 59                        +0.004 [-0.010,+0.020] 7/41/11      +0.018 [+0.002,+0.039] 32/8/19       -0.138 [-0.181,-0.098] 9/2/48
+
+3. DIGRESSIONS (gold no verse): false verse; VERSE PASSAGES: missed (no verse given)
+
+  Tuning Kannada           digressions    1: Sol   0  Cue   1  old 3L   0  improved 3L   0   | verse psg   81: missed Sol   0  Cue   0  old 3L   0  improved 3L   0
+  Tuning English           digressions  119: Sol  26  Cue  22  old 3L  26  improved 3L  15   | verse psg  173: missed Sol  15  Cue  27  old 3L  15  improved 3L  25
+  E2 Kannada test          digressions   23: Sol   7  Cue  19  old 3L   7  improved 3L   7   | verse psg  317: missed Sol   3  Cue   0  old 3L   3  improved 3L   3
+  E2 English test          digressions  336: Sol  96  Cue  72  old 3L  96  improved 3L  58   | verse psg  340: missed Sol  29  Cue  88  old 3L  29  improved 3L  64
+  E3 new Kannada           digressions    4: Sol   0  Cue   1  old 3L   0  improved 3L   0   | verse psg  128: missed Sol   5  Cue  10  old 3L  12  improved 3L   3
+  E3 new English           digressions   16: Sol  10  Cue  12  old 3L  10  improved 3L  10   | verse psg  346: missed Sol  14  Cue  23  old 3L  14  improved 3L  28
+  New 4 Chinmaya English   digressions   74: Sol  71  Cue  64  old 3L  71  improved 3L  64   | verse psg  225: missed Sol   0  Cue   3  old 3L   0  improved 3L   2
+  New E2 English (video_11-14) digressions  296: Sol 113  Cue 104  old 3L 113  improved 3L  74   | verse psg  104: missed Sol   4  Cue   7  old 3L   4  improved 3L   9
+  All 9 tuning             digressions  120: Sol  26  Cue  23  old 3L  26  improved 3L  15   | verse psg  254: missed Sol  15  Cue  27  old 3L  15  improved 3L  25
+  All 42 test              digressions  379: Sol 113  Cue 104  old 3L 113  improved 3L  75   | verse psg 1131: missed Sol  51  Cue 121  old 3L  58  improved 3L  98
+  42 test + new E2 4 (46)  digressions  675: Sol 226  Cue 208  old 3L 226  improved 3L 149   | verse psg 1235: missed Sol  55  Cue 128  old 3L  62  improved 3L 107
+  All test: 42 + Chinmaya 4 + new E2 4 (50) digressions  749: Sol 297  Cue 272  old 3L 297  improved 3L 213   | verse psg 1460: missed Sol  55  Cue 131  old 3L  62  improved 3L 109
+  All E2 English test      digressions  632: Sol 209  Cue 176  old 3L 209  improved 3L 132   | verse psg  444: missed Sol  33  Cue  95  old 3L  33  improved 3L  73
+  All E3 English           digressions   90: Sol  81  Cue  76  old 3L  81  improved 3L  74   | verse psg  571: missed Sol  14  Cue  26  old 3L  14  improved 3L  30
+  All Kannada (38)         digressions   28: Sol   7  Cue  21  old 3L   7  improved 3L   7   | verse psg  526: missed Sol   8  Cue  10  old 3L  15  improved 3L   6
+  All English (21)         digressions  841: Sol 316  Cue 274  old 3L 316  improved 3L 221   | verse psg 1188: missed Sol  62  Cue 148  old 3L  62  improved 3L 128
+  All 59                   digressions  869: Sol 323  Cue 295  old 3L 323  improved 3L 228   | verse psg 1714: missed Sol  70  Cue 158  old 3L  77  improved 3L 134
+
+4. IMPROVED 3L: WHICH LAYER DECIDED (passages; right = set equals gold; Sol alone right on the same)
+
+  Tuning Kannada          1 Cue veto: 0 right 0 (Sol 0)   2 Sol: 82 right 70 (Sol 70)   3 Cue fill: 0 right 0 (Sol 0)
+  Tuning English          1 Cue veto: 99 right 86 (Sol 85)   2 Sol: 193 right 163 (Sol 163)   3 Cue fill: 0 right 0 (Sol 0)
+  E2 Kannada test         1 Cue veto: 0 right 0 (Sol 0)   2 Sol: 340 right 295 (Sol 295)   3 Cue fill: 0 right 0 (Sol 0)
+  E2 English test         1 Cue veto: 266 right 220 (Sol 215)   2 Sol: 410 right 309 (Sol 309)   3 Cue fill: 0 right 0 (Sol 0)
+  E3 new Kannada          1 Cue veto: 0 right 0 (Sol 0)   2 Sol: 130 right 109 (Sol 109)   3 Cue fill: 2 right 2 (Sol 0)
+  E3 new English          1 Cue veto: 20 right 2 (Sol 14)   2 Sol: 342 right 287 (Sol 287)   3 Cue fill: 0 right 0 (Sol 0)
+  New 4 Chinmaya English  1 Cue veto: 11 right 9 (Sol 4)   2 Sol: 288 right 203 (Sol 203)   3 Cue fill: 0 right 0 (Sol 0)
+  New E2 English (video_11-14)1 Cue veto: 173 right 167 (Sol 132)   2 Sol: 227 right 145 (Sol 145)   3 Cue fill: 0 right 0 (Sol 0)
+  All 9 tuning            1 Cue veto: 99 right 86 (Sol 85)   2 Sol: 275 right 233 (Sol 233)   3 Cue fill: 0 right 0 (Sol 0)
+  All 42 test             1 Cue veto: 286 right 222 (Sol 229)   2 Sol: 1222 right 1000 (Sol 1000)   3 Cue fill: 2 right 2 (Sol 0)
+  42 test + new E2 4 (46) 1 Cue veto: 459 right 389 (Sol 361)   2 Sol: 1449 right 1145 (Sol 1145)   3 Cue fill: 2 right 2 (Sol 0)
+  All test: 42 + Chinmaya 4 + new E2 4 (50)1 Cue veto: 470 right 398 (Sol 365)   2 Sol: 1737 right 1348 (Sol 1348)   3 Cue fill: 2 right 2 (Sol 0)
+  All E2 English test     1 Cue veto: 439 right 387 (Sol 347)   2 Sol: 637 right 454 (Sol 454)   3 Cue fill: 0 right 0 (Sol 0)
+  All E3 English          1 Cue veto: 31 right 11 (Sol 18)   2 Sol: 630 right 490 (Sol 490)   3 Cue fill: 0 right 0 (Sol 0)
+  All Kannada (38)        1 Cue veto: 0 right 0 (Sol 0)   2 Sol: 552 right 474 (Sol 474)   3 Cue fill: 2 right 2 (Sol 0)
+  All English (21)        1 Cue veto: 569 right 484 (Sol 450)   2 Sol: 1460 right 1107 (Sol 1107)   3 Cue fill: 0 right 0 (Sol 0)
+  All 59                  1 Cue veto: 569 right 484 (Sol 450)   2 Sol: 2012 right 1581 (Sol 1581)   3 Cue fill: 2 right 2 (Sol 0)
+
+5. LECTURE BY LECTURE (strict F1, best marked *)
+
+  lecture                     psg          Sol          Cue       old 3L  improved 3L
+  -- Tuning Kannada --
+  gita-1st_video               15       1.000*       0.875        1.000*       1.000*
+  gita-4th_video               15       0.872        0.938*       0.919        0.872 
+  kannada_07                   15       0.938        0.933        1.000*       0.938 
+  kannada_10                   11       0.828        0.963*       0.923        0.828 
+  kannada_13                   11       0.923        1.000*       1.000*       0.923 
+  kannada_16                   15       0.968*       0.938        0.909        0.968*
+  -- Tuning English --
+  video_01                     88       0.882*       0.826        0.882*       0.863 
+  video_04                    107       0.877*       0.677        0.877*       0.865 
+  video_07                     97       0.891        0.718        0.891        0.897*
+  -- E2 Kannada test --
+  gita-2nd_video               13       1.000*       0.966        1.000*       1.000*
+  gita-3rd_video               14       0.857*       0.839        0.848        0.857*
+  gita-5th_video               19       0.884        0.900        0.905*       0.884 
+  gita-6th_video               21       1.000*       0.488        0.950        1.000*
+  kannada_08                   12       0.909        0.714        0.933*       0.909 
+  kannada_09                   15       0.941*       0.914        0.941*       0.941*
+  kannada_11                   16       0.919*       0.791        0.829        0.919*
+  kannada_12                   16       0.971*       0.914        0.944        0.971*
+  kannada_14                   14       0.895        0.909        0.941*       0.895 
+  kannada_15                   20       0.933*       0.739        0.864        0.933*
+  kannada_17                   14       0.933*       0.800        0.776        0.933*
+  kannada_18                   13       1.000*       1.000*       0.889        1.000*
+  kannada_19                   18       0.923        1.000*       0.947        0.923 
+  kannada_20                   15       0.970*       0.857        0.938        0.970*
+  kannada_21                   13       0.828*       0.828*       0.786        0.828*
+  kannada_22                   14       0.966*       0.828        0.897        0.966*
+  kannada_23                   17       0.865*       0.811        0.765        0.865*
+  kannada_24                   12       0.929*       0.880        0.846        0.929*
+  kannada_25                   14       0.938*       0.706        0.812        0.938*
+  kannada_26                   12       0.974*       0.810        0.842        0.974*
+  kannada_27                   14       0.970*       0.889        0.882        0.970*
+  kannada_28                   11       0.968*       0.667        0.774        0.968*
+  kannada_29                   13       0.938*       0.750        0.875        0.938*
+  -- E2 English test --
+  video_02                     82       0.724*       0.644        0.724*       0.712 
+  video_03                     87       0.778        0.792        0.778        0.832*
+  video_05                    103       0.791*       0.776        0.791*       0.787 
+  video_06                    104       0.945*       0.286        0.945*       0.904 
+  video_08                     96       0.605        0.692        0.605        0.699*
+  video_09                    102       0.795*       0.508        0.795*       0.789 
+  video_10                    102       0.889*       0.639        0.889*       0.748 
+  -- E3 new Kannada --
+  kn_brahmanyachar_day02b      44       0.905        0.686        0.864        0.920*
+  kn_sumith_day01               9       0.875*       0.824        0.875*       0.875*
+  kn_sumith_day02              10       0.917*       0.833        0.857        0.917*
+  kn_sumith_day03              12       1.000*       0.429        0.625        1.000*
+  kn_sumith_day04              12       0.903*       0.562        0.897        0.903*
+  kn_sumith_day05              15       0.941*       0.489        0.898        0.941*
+  kn_sumith_day06               8       1.000*       0.818        0.900        1.000*
+  kn_sumith_day07              11       1.000*       0.923        0.917        1.000*
+  kn_sumith_day08              11       0.917*       0.400        0.857        0.917*
+  -- E3 new English --
+  en_chinmaya_day03            71       0.912*       0.898        0.912*       0.912*
+  en_chinmaya_day04            76       0.914*       0.816        0.914*       0.886 
+  en_iskcon                   215       0.908*       0.790        0.908*       0.895 
+  -- New 4 Chinmaya English --
+  en_chinmaya_day06            67       0.833        0.685        0.833        0.861*
+  en_chinmaya_day07            80       0.841*       0.694        0.841*       0.832 
+  en_chinmaya_day08            66       0.868*       0.531        0.868*       0.868*
+  en_chinmaya_day09            86       0.879*       0.646        0.879*       0.879*
+  -- New E2 English (video_11-14) --
+  video_11                     97       0.574        0.635        0.574        0.706*
+  video_12                    113       0.800*       0.703        0.800*       0.800*
+  video_13                     91       0.657*       0.526        0.657*       0.645 
+  video_14                     99       0.538        0.409        0.538        0.610*

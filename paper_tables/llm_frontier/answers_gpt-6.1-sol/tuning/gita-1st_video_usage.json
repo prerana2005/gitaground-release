@@ -1,0 +1,20 @@
+{
+ "model": "gpt-6.1-sol",
+ "api": "responses",
+ "effort": "high",
+ "status": "completed",
+ "incomplete": null,
+ "usage": {
+  "input_tokens": 18092,
+  "input_tokens_details": {
+   "cache_write_tokens": 18089,
+   "cached_tokens": 0
+  },
+  "output_tokens": 544,
+  "output_tokens_details": {
+   "reasoning_tokens": 424
+  },
+  "total_tokens": 18636
+ },
+ "seconds": 24.7
+}

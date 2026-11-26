@@ -1,0 +1,33 @@
+== Gemini low: alone 0.780 / FV 250 / missed 210
+   t=0.5   vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.6   vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.7   vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.8   vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.85  vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.9   vetoes  544  strict 0.797  FV  179  missed  207  E2EN 0.697  diff +0.016 [-0.008,+0.043] 14/28/8
+   t=0.925 vetoes  470  strict 0.797  FV  191  missed  194  E2EN 0.701  diff +0.017 [-0.005,+0.041] 14/28/8
+   t=0.95  vetoes  470  strict 0.797  FV  191  missed  194  E2EN 0.701  diff +0.017 [-0.005,+0.041] 14/28/8
+   t=0.975 vetoes  470  strict 0.797  FV  191  missed  194  E2EN 0.701  diff +0.017 [-0.005,+0.041] 14/28/8
+   t=0.99  vetoes    0  strict 0.788  FV  285  missed  157  E2EN 0.672  diff +0.008 [-0.004,+0.024] 9/35/6
+== Gemini high: alone 0.823 / FV 261 / missed 100
+   t=0.5   vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.6   vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.7   vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.8   vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.85  vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.9   vetoes  544  strict 0.828  FV  158  missed  166  E2EN 0.724  diff +0.005 [-0.016,+0.028] 11/29/10
+   t=0.925 vetoes  470  strict 0.830  FV  176  missed  143  E2EN 0.733  diff +0.007 [-0.011,+0.027] 12/31/7
+   t=0.95  vetoes  470  strict 0.830  FV  176  missed  143  E2EN 0.733  diff +0.007 [-0.011,+0.027] 12/31/7
+   t=0.975 vetoes  470  strict 0.830  FV  176  missed  143  E2EN 0.733  diff +0.007 [-0.011,+0.027] 12/31/7
+   t=0.99  vetoes    0  strict 0.825  FV  262  missed   91  E2EN 0.717  diff +0.002 [-0.000,+0.006] 4/44/2
+== Sol: alone 0.857 / FV 297 / missed 55
+   t=0.5   vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.6   vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.7   vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.8   vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.85  vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.9   vetoes  544  strict 0.862  FV  187  missed  133  E2EN 0.751  diff +0.005 [-0.016,+0.027] 9/34/7
+   t=0.925 vetoes  470  strict 0.862  FV  213  missed  109  E2EN 0.754  diff +0.005 [-0.011,+0.024] 6/35/9
+   t=0.95  vetoes  470  strict 0.862  FV  213  missed  109  E2EN 0.754  diff +0.005 [-0.011,+0.024] 6/35/9
+   t=0.975 vetoes  470  strict 0.862  FV  213  missed  109  E2EN 0.754  diff +0.005 [-0.011,+0.024] 6/35/9
+   t=0.99  vetoes    0  strict 0.858  FV  297  missed   53  E2EN 0.742  diff +0.001 [+0.000,+0.002] 1/49/0

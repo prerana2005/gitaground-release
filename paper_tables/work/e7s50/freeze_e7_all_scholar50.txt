@@ -1,0 +1,33 @@
+E7 — index all (1884 passages), questions test
+abstention rule: {'signal': 'profile', 'threshold': 0.536748, 'index': 'dev', 'dev_balanced_accuracy': 0.913, 'calibrated_on': '69 answerable dev questions, 12 dev unanswerable'}
+
+  VERSES AND ABSTENTION (ours)
+  mode               n  Hit@1  Hit@3  abstained  wrongly abst.
+  question          34  0.706  0.794          -          0.029
+  unanswerable      11      -      -      0.636              -
+  shloka             5  1.000  1.000          -          0.000
+  ALL answerable    39  0.744  0.821          -          0.026
+
+  PASSAGES (inputs with a relevant passage in the index; R@5 = share of ALL relevant passages found, so it is small for much-discussed verses)
+  mode            scored   system    Hit@5    P@5    R@5
+  question            34   ours      0.735  0.565  0.152
+                           vector    0.765  0.365  0.092
+                           LLM       0.765  0.365  0.092
+  shloka               5   ours      1.000  0.720  0.185
+                           vector    1.000  0.400  0.097
+                           LLM       1.000  0.400  0.097
+  ALL answerable      39   ours      0.769  0.585  0.156
+                           vector    0.795  0.369  0.093
+                           LLM       0.795  0.369  0.093
+
+  LLM-EXTRACTED TOPICS baseline (GPT-4o-mini routing)
+  mode               n  Hit@1  abstained  wrongly abst.  verses routed  outside Ch.2  not in index
+  question          34  0.000          -          1.000              0             0             0
+  unanswerable      11      -      1.000              -              0             0             0
+  shloka             5  0.000          -          1.000              0             0             0
+  ALL answerable    39  0.000          -          1.000              0             0             0
+
+  primary claims among retrieved passages: 138/144 correct (0.958)
+  passing claims among retrieved passages: 7/8 correct (0.875)
+  unsupported / hallucinated topics: 0 by construction (catalogue verses and indexed passages only; LLM summary text not evaluated)
+  plain vector search never abstains (abstention on unanswerable = 0).

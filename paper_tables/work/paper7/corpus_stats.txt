@@ -1,0 +1,5 @@
+passages 2583 words 274992 mean 106.5 median 105 min 1 max 216
+kn: passages 554 mean 105.0 median 105.0
+en: passages 2029 mean 106.9 median 105
+python 3.13.14 sklearn 1.9.0 sentence-transformers 5.6.0 rapidfuzz 3.14.5 arm64
+Gemini maxOutputTokens: scripts/llm_frontier_gemini_api.py MAX_OUT = 65536

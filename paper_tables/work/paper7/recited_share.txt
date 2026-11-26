@@ -1,0 +1,8 @@
+Tuning KN  mentions    89  recited   75 (84.3%)  non-recited   14 (15.7%)  {'T1': 33, 'T2': 42, 'T3': 6, 'T4': 8}
+Tuning EN  mentions   190  recited   29 (15.3%)  non-recited  161 (84.7%)  {'T1': 16, 'T2': 13, 'T3': 7, 'T4': 147, 'T5': 7}
+E2 KN      mentions   387  recited  298 (77.0%)  non-recited   89 (23.0%)  {'T1': 124, 'T2': 174, 'T3': 21, 'T4': 65, 'T5': 3}
+E2 EN      mentions   475  recited  132 (27.8%)  non-recited  343 (72.2%)  {'T1': 40, 'T2': 92, 'T3': 28, 'T4': 288, 'T5': 27}
+E3 KN      mentions   176  recited   79 (44.9%)  non-recited   97 (55.1%)  {'T1': 47, 'T2': 32, 'T3': 13, 'T4': 82, 'T5': 2}
+E3 EN      mentions   736  recited  200 (27.2%)  non-recited  536 (72.8%)  {'T1': 105, 'T2': 95, 'T3': 151, 'T4': 339, 'T5': 46}
+Test 50    mentions  1774  recited  709 (40.0%)  non-recited 1065 (60.0%)  {'T1': 316, 'T2': 393, 'T3': 213, 'T4': 774, 'T5': 78}
+All 59     mentions  2053  recited  813 (39.6%)  non-recited 1240 (60.4%)  {'T1': 365, 'T2': 448, 'T3': 226, 'T4': 929, 'T5': 85}

@@ -1,0 +1,24 @@
+{
+ "model": "gemini-3.1-pro-preview",
+ "model_version": "gemini-3.1-pro-preview",
+ "thinking_level": "high",
+ "max_output_tokens": 65536,
+ "finish_reason": [
+  "STOP"
+ ],
+ "usage": {
+  "promptTokenCount": 21197,
+  "candidatesTokenCount": 437,
+  "totalTokenCount": 33583,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 21197
+   }
+  ],
+  "thoughtsTokenCount": 11949,
+  "serviceTier": "standard"
+ },
+ "full_prompt_tokens": 26189,
+ "seconds": 353.6
+}

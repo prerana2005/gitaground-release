@@ -1,0 +1,4 @@
+Local 73 (GitaGround-Local)  kn (23) strict 0.817 Pk 0.312 WD 0.315   en (11) strict 0.552 Pk 0.348 WD 0.368
+Local 145                    kn (23) strict 0.819 Pk 0.299 WD 0.305   en (11) strict 0.539 Pk 0.354 WD 0.377
+Cue 73                       kn (23) strict 0.820 Pk 0.309 WD 0.312   en (11) strict 0.560 Pk 0.342 WD 0.364
+Cue 145 (GitaGround-Cue)     kn (23) strict 0.820 Pk 0.309 WD 0.312   en (11) strict 0.610 Pk 0.350 WD 0.373

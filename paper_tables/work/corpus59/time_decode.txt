@@ -1,0 +1,2 @@
+GitaGround-Cue decoding, all 59 lectures: 0.28 s total, 5 ms per lecture
+python 3.13.14 numpy 2.5.0 sklearn 1.9.0 arm64

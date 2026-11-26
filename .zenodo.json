@@ -1,26 +1,26 @@
 {
-  "title": "Where Is the Verse? Benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding (GitaGround release)",
+  "title": "GitaGround release: benchmark, labels, embeddings and reconstruction scripts for Canonical Verse Grounding",
   "upload_type": "dataset",
-  "description": "Route (a) release. Contains the lecture catalogue, verse-theme file, passage grid (offsets and hashes, no text), gold labels, second-pass labels and adjudication, all LLM labels, embeddings and features, frozen system files, the experiment log, and a reconstruct/ folder with source URLs and the ASR, segmentation and alignment scripts. Lecture audio and transcript text are not distributed. Code: MIT. Labels and data: CC BY-NC 4.0.",
+  "description": "Route (a) release for the paper 'GitaGround: A Bilingual Benchmark and Structured Digression Veto for Canonical Verse Grounding in Spoken Lectures'. 59 lectures, 2,583 passages, Kannada and English. Contains the lecture catalogue and metadata, verse-theme file, passage grid (offsets and hashes, no text), gold labels, second-pass labels and adjudication, all LLM labels, embeddings and features, frozen system files, the experiment log, paper_tables/ with the 59-lecture labels, scripts and outputs behind every table of the paper, and a reconstruct/ folder with source URLs and the ASR (Sarvam AI saaras:v3), segmentation and alignment scripts. Lecture audio and transcript text are not distributed. Code: MIT. Labels and data: CC BY-NC 4.0.",
   "creators": [
     {
-      "name": "Maitreyi",
+      "name": "V, Maitreyi",
       "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
     },
     {
-      "name": "Prerana M P",
+      "name": "M P, Prerana",
       "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
     },
     {
-      "name": "Meghana S",
+      "name": "S, Meghana",
       "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
     },
     {
-      "name": "Meghana Gajendran",
+      "name": "Gajendran, Meghana",
       "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
     },
     {
-      "name": "Badri Prasad",
+      "name": "V R, Badri Prasad",
       "affiliation": "Department of Computer Science and Engineering, PES University, Bengaluru, India"
     }
   ],
@@ -40,5 +40,6 @@
       "identifier": "https://github.com/prerana2005/gitaground-release",
       "scheme": "url"
     }
-  ]
+  ],
+  "version": "1.2.0"
 }

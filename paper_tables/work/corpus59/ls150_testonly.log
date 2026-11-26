@@ -1,0 +1,11 @@
+Local check vs step5_index_all.csv: 1884 passages, 0 differ
+index: 2209 passages, 50 lectures (50 test lectures only)
+  GitaGround-Local (decoded p)   Hit@5 0.952  P@5 0.730  R@5 0.138  (n 125)  | primary claims correct 454/471 = 0.964
+  GitaGround-Local (p = 1)       Hit@5 0.960  P@5 0.699  R@5 0.134  (n 125)  | primary claims correct 426/471 = 0.904
+  Gemini low                     Hit@5 0.960  P@5 0.722  R@5 0.138  (n 125)  | primary claims correct 450/477 = 0.943
+  3L + Gemini low                Hit@5 0.960  P@5 0.725  R@5 0.138  (n 125)  | primary claims correct 452/477 = 0.948
+  Gemini high                    Hit@5 0.952  P@5 0.717  R@5 0.137  (n 125)  | primary claims correct 449/478 = 0.939
+  3L + Gemini high               Hit@5 0.952  P@5 0.722  R@5 0.138  (n 125)  | primary claims correct 451/477 = 0.945
+  Sol                            Hit@5 0.960  P@5 0.712  R@5 0.136  (n 125)  | primary claims correct 439/475 = 0.924
+  3L + Sol                       Hit@5 0.960  P@5 0.718  R@5 0.138  (n 125)  | primary claims correct 441/474 = 0.930
+  vector search                  Hit@5 0.888  P@5 0.443  R@5 0.080

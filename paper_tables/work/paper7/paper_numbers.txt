@@ -1,0 +1,176 @@
+0. CORPUS (lectures, passages, digressions, share, verse mentions = gold (passage, verse) pairs)
+  Tuning KN                6 lect    82 psg  dig    1 (1.2%)  verse psg    81  mentions 89
+  Tuning EN                3 lect   292 psg  dig  119 (40.8%)  verse psg   173  mentions 190
+  E2 KN                   23 lect   340 psg  dig   23 (6.8%)  verse psg   317  mentions 387
+  E2 EN orig 7             7 lect   676 psg  dig  336 (49.7%)  verse psg   340  mentions 361
+  E2 EN new 4              4 lect   400 psg  dig  296 (74.0%)  verse psg   104  mentions 114
+  E2 EN 11                11 lect  1076 psg  dig  632 (58.7%)  verse psg   444  mentions 475
+  E3 KN                    9 lect   132 psg  dig    4 (3.0%)  verse psg   128  mentions 176
+  E3 EN orig 3             3 lect   362 psg  dig   16 (4.4%)  verse psg   346  mentions 414
+  E3 EN Chinmaya new 4     4 lect   299 psg  dig   74 (24.7%)  verse psg   225  mentions 322
+  E3 EN 7                  7 lect   661 psg  dig   90 (13.6%)  verse psg   571  mentions 736
+  TEST 50                 50 lect  2209 psg  dig  749 (33.9%)  verse psg  1460  mentions 1774
+  ALL 59                  59 lect  2583 psg  dig  869 (33.6%)  verse psg  1714  mentions 2053
+
+1. STRICT / +-1 / THEME, per group
+  -- E2 Kannada (23 lect, 340 psg, 23 dig)
+     Plain Carry                        0.789 0.851 0.857   det 0.924 FV   23 missed    3 ident 0.678
+     Cue                                0.820 0.899 0.904   det 0.944 FV   19 missed    0 ident 0.744
+     Gemini low                         0.915 0.953 0.957   det 0.956 FV    6 missed    9 ident 0.886
+     conf. cascade + Gemini low         0.863 0.909 0.916   det 0.965 FV    6 missed    6 ident 0.781
+     3L + Gemini low                    0.917 0.956 0.959   det 0.959 FV    7 missed    7 ident 0.884
+     Gemini high                        0.927 0.961 0.962   det 0.959 FV    7 missed    7 ident 0.897
+     conf. cascade + Gemini high        0.867 0.908 0.915   det 0.959 FV    7 missed    7 ident 0.790
+     3L + Gemini high                   0.928 0.964 0.964   det 0.962 FV    8 missed    5 ident 0.894
+     Sol                                0.934 0.969 0.970   det 0.971 FV    7 missed    3 ident 0.889
+     conf. cascade + Sol                0.877 0.924 0.927   det 0.971 FV    7 missed    3 ident 0.790
+     3L + Sol                           0.934 0.969 0.970   det 0.971 FV    7 missed    3 ident 0.889
+  -- E2 English (11 lect, 1076 psg, 632 dig)
+     Plain Carry                        0.372 0.438 0.495   det 0.428 FV  602 missed   13 ident 0.640
+     Cue                                0.610 0.695 0.710   det 0.748 FV  176 missed   95 ident 0.788
+     Gemini low                         0.679 0.716 0.723   det 0.761 FV  161 missed   96 ident 0.888
+     conf. cascade + Gemini low         0.705 0.746 0.755   det 0.819 FV   66 missed  129 ident 0.879
+     3L + Gemini low                    0.701 0.745 0.754   det 0.802 FV  110 missed  103 ident 0.880
+     Gemini high                        0.717 0.749 0.751   det 0.778 FV  175 missed   64 ident 0.903
+     conf. cascade + Gemini high        0.723 0.759 0.760   det 0.816 FV   82 missed  116 ident 0.896
+     3L + Gemini high                   0.733 0.767 0.771   det 0.818 FV   98 missed   98 ident 0.899
+     Sol                                0.742 0.767 0.765   det 0.775 FV  209 missed   33 ident 0.920
+     conf. cascade + Sol                0.742 0.767 0.765   det 0.775 FV  209 missed   33 ident 0.920
+     3L + Sol                           0.754 0.780 0.778   det 0.809 FV  132 missed   73 ident 0.919
+  -- E3 Kannada (9 lect, 132 psg, 4 dig)
+     Plain Carry                        0.776 0.904 0.956   det 0.932 FV    0 missed    9 ident 0.664
+     Cue                                0.665 0.855 0.906   det 0.917 FV    1 missed   10 ident 0.508
+     Gemini low                         0.816 0.882 0.863   det 0.795 FV    0 missed   27 ident 0.762
+     conf. cascade + Gemini low         0.797 0.870 0.852   det 0.780 FV    0 missed   29 ident 0.758
+     3L + Gemini low                    0.850 0.913 0.914   det 0.879 FV    0 missed   16 ident 0.777
+     Gemini high                        0.904 0.941 0.939   det 0.894 FV    0 missed   14 ident 0.851
+     conf. cascade + Gemini high        0.849 0.914 0.912   det 0.856 FV    0 missed   19 ident 0.789
+     3L + Gemini high                   0.921 0.956 0.968   det 0.947 FV    0 missed    7 ident 0.851
+     Sol                                0.929 0.964 0.958   det 0.962 FV    0 missed    5 ident 0.854
+     conf. cascade + Sol                0.866 0.931 0.939   det 0.909 FV    0 missed   12 ident 0.776
+     3L + Sol                           0.934 0.970 0.966   det 0.977 FV    0 missed    3 ident 0.856
+  -- E3 English (7 lect, 661 psg, 90 dig)
+     Plain Carry                        0.693 0.795 0.834   det 0.818 FV   89 missed   31 ident 0.661
+     Cue                                0.738 0.849 0.873   det 0.846 FV   76 missed   26 ident 0.695
+     Gemini low                         0.772 0.846 0.839   det 0.756 FV   83 missed   78 ident 0.765
+     conf. cascade + Gemini low         0.765 0.842 0.833   det 0.749 FV   72 missed   94 ident 0.761
+     3L + Gemini low                    0.784 0.859 0.855   det 0.785 FV   74 missed   68 ident 0.767
+     Gemini high                        0.827 0.893 0.901   det 0.858 FV   79 missed   15 ident 0.791
+     conf. cascade + Gemini high        0.816 0.886 0.889   det 0.840 FV   68 missed   38 ident 0.786
+     3L + Gemini high                   0.819 0.886 0.892   det 0.844 FV   70 missed   33 ident 0.786
+     Sol                                0.885 0.911 0.906   det 0.856 FV   81 missed   14 ident 0.896
+     conf. cascade + Sol                0.885 0.911 0.906   det 0.856 FV   81 missed   14 ident 0.896
+     3L + Sol                           0.879 0.906 0.900   det 0.843 FV   74 missed   30 ident 0.896
+  -- All 50 test (50 lect, 2209 psg, 749 dig)
+     Plain Carry                        0.577 0.656 0.699   det 0.651 FV  714 missed   56 ident 0.659
+     Cue                                0.713 0.817 0.832   det 0.818 FV  272 missed  131 ident 0.715
+     Gemini low                         0.780 0.834 0.830   det 0.792 FV  250 missed  210 ident 0.829
+     conf. cascade + Gemini low         0.775 0.835 0.831   det 0.818 FV  144 missed  258 ident 0.797
+     3L + Gemini low                    0.797 0.854 0.852   det 0.826 FV  191 missed  194 ident 0.827
+     Gemini high                        0.823 0.870 0.869   det 0.837 FV  261 missed  100 ident 0.851
+     conf. cascade + Gemini high        0.806 0.860 0.859   det 0.847 FV  157 missed  180 ident 0.816
+     3L + Gemini high                   0.830 0.878 0.878   det 0.856 FV  176 missed  143 ident 0.847
+     Sol                                0.857 0.886 0.877   det 0.841 FV  297 missed   55 ident 0.898
+     conf. cascade + Sol                0.839 0.872 0.866   det 0.837 FV  297 missed   62 ident 0.869
+     3L + Sol                           0.862 0.891 0.883   det 0.854 FV  213 missed  109 ident 0.897
+
+2. PAIRED strict (10,000) diff [CI] W/T/L (groups of 5+)
+  3L + Gemini low - Gemini low:  E2 Kannada: +0.002 [-0.002,+0.006] 2/20/1 | E2 English: +0.022 [-0.033,+0.069] 6/0/5 | E3 Kannada: +0.034 [+0.001,+0.059] 3/6/0 | E3 English: +0.012 [-0.012,+0.070] 3/2/2 | All 50 test: +0.017 [-0.005,+0.041] 14/28/8
+  3L + Gemini high - Gemini high:  E2 Kannada: +0.002 [-0.002,+0.006] 2/20/1 | E2 English: +0.016 [-0.038,+0.062] 6/2/3 | E3 Kannada: +0.017 [-0.007,+0.033] 2/6/1 | E3 English: -0.008 [-0.020,+0.009] 2/3/2 | All 50 test: +0.007 [-0.011,+0.027] 12/31/7
+  3L + Sol - Sol:  E2 Kannada: +0.000 [+0.000,+0.000] 0/23/0 | E2 English: +0.012 [-0.040,+0.060] 4/1/6 | E3 Kannada: +0.006 [+0.000,+0.011] 1/8/0 | E3 English: -0.006 [-0.014,+0.006] 1/3/3 | All 50 test: +0.005 [-0.011,+0.024] 6/35/9
+  3L + Gemini low - conf. cascade + Gemini low:  E2 Kannada: +0.054 [+0.032,+0.078] 18/4/1 | E2 English: -0.004 [-0.031,+0.021] 4/1/6 | E3 Kannada: +0.053 [+0.028,+0.098] 6/3/0 | E3 English: +0.019 [-0.003,+0.073] 3/2/2 | All 50 test: +0.022 [+0.007,+0.043] 31/10/9
+  3L + Gemini high - conf. cascade + Gemini high:  E2 Kannada: +0.062 [+0.041,+0.083] 18/4/1 | E2 English: +0.010 [-0.006,+0.030] 6/2/3 | E3 Kannada: +0.072 [+0.014,+0.121] 7/0/2 | E3 English: +0.002 [-0.002,+0.012] 2/3/2 | All 50 test: +0.024 [+0.012,+0.040] 33/9/8
+  3L + Sol - conf. cascade + Sol:  E2 Kannada: +0.057 [+0.032,+0.084] 17/2/4 | E2 English: +0.012 [-0.040,+0.060] 4/1/6 | E3 Kannada: +0.068 [+0.040,+0.128] 8/1/0 | E3 English: -0.006 [-0.014,+0.006] 1/3/3 | All 50 test: +0.023 [+0.004,+0.048] 30/7/13
+  Cue - Plain Carry:  E2 Kannada: +0.031 [+0.007,+0.055] 16/0/7 | E2 English: +0.238 [+0.154,+0.298] 10/0/1 | E3 Kannada: -0.111 [-0.182,-0.013] 2/0/7 | E3 English: +0.045 [+0.011,+0.097] 5/1/1 | All 50 test: +0.137 [+0.064,+0.201] 33/1/16
+  Sol - Gemini high:  E2 Kannada: +0.007 [-0.010,+0.027] 10/7/6 | E2 English: +0.025 [-0.054,+0.112] 6/0/5 | E3 Kannada: +0.024 [+0.004,+0.068] 6/2/1 | E3 English: +0.058 [+0.030,+0.074] 6/0/1 | All 50 test: +0.034 [+0.001,+0.061] 28/9/13
+  Gemini high - Gemini low:  E2 Kannada: +0.011 [-0.005,+0.031] 8/10/5 | E2 English: +0.038 [+0.007,+0.072] 7/0/4 | E3 Kannada: +0.088 [+0.027,+0.122] 7/1/1 | E3 English: +0.055 [+0.000,+0.176] 5/0/2 | All 50 test: +0.043 [+0.015,+0.082] 27/11/12
+  Gemini low - Cue:  E2 Kannada: +0.095 [+0.048,+0.153] 18/1/4 | E2 English: +0.069 [-0.013,+0.158] 8/0/3 | E3 Kannada: +0.152 [+0.082,+0.281] 9/0/0 | E3 English: +0.034 [-0.096,+0.123] 5/0/2 | All 50 test: +0.067 [+0.016,+0.118] 40/1/9
+  Gemini high - Cue:  E2 Kannada: +0.107 [+0.059,+0.163] 20/0/3 | E2 English: +0.107 [+0.014,+0.201] 8/0/3 | E3 Kannada: +0.240 [+0.147,+0.352] 8/0/1 | E3 English: +0.089 [+0.048,+0.163] 7/0/0 | All 50 test: +0.110 [+0.070,+0.157] 43/0/7
+  Sol - Cue:  E2 Kannada: +0.114 [+0.063,+0.172] 18/2/3 | E2 English: +0.132 [+0.022,+0.276] 8/0/3 | E3 Kannada: +0.264 [+0.181,+0.384] 9/0/0 | E3 English: +0.147 [+0.098,+0.219] 7/0/0 | All 50 test: +0.144 [+0.100,+0.194] 42/2/6
+
+3. FALSE-VERSE RATIO 3L / LLM (lecture bootstrap 10,000), and veto decided / right vs LLM right
+  Gemini low   E2 Kannada   FV    6 ->    7  x1.17 [nan, nan]  missed    9 ->    7 | veto decides 0: right 0 vs LLM 0
+  Gemini low   E2 English   FV  161 ->  110  x0.68 [0.44, 1.33]  missed   96 ->  103 | veto decides 439: right 387 vs LLM 325
+  Gemini low   E3 Kannada   FV    0 ->    0  xnan [nan, nan]  missed   27 ->   16 | veto decides 0: right 0 vs LLM 0
+  Gemini low   E3 English   FV   83 ->   74  x0.89 [nan, nan]  missed   78 ->   68 | veto decides 31: right 11 vs LLM 14
+  Gemini low   All 50 test  FV  250 ->  191  x0.76 [0.56, 1.12]  missed  210 ->  194 | veto decides 470: right 398 vs LLM 339
+  Gemini high  E2 Kannada   FV    7 ->    8  x1.14 [nan, nan]  missed    7 ->    5 | veto decides 0: right 0 vs LLM 0
+  Gemini high  E2 English   FV  175 ->   98  x0.56 [0.45, 0.78]  missed   64 ->   98 | veto decides 439: right 387 vs LLM 342
+  Gemini high  E3 Kannada   FV    0 ->    0  xnan [nan, nan]  missed   14 ->    7 | veto decides 0: right 0 vs LLM 0
+  Gemini high  E3 English   FV   79 ->   70  x0.89 [nan, nan]  missed   15 ->   33 | veto decides 31: right 11 vs LLM 19
+  Gemini high  All 50 test  FV  261 ->  176  x0.67 [0.55, 0.86]  missed  100 ->  143 | veto decides 470: right 398 vs LLM 361
+  Sol          E2 Kannada   FV    7 ->    7  x1.00 [nan, nan]  missed    3 ->    3 | veto decides 0: right 0 vs LLM 0
+  Sol          E2 English   FV  209 ->  132  x0.63 [0.51, 0.79]  missed   33 ->   73 | veto decides 439: right 387 vs LLM 347
+  Sol          E3 Kannada   FV    0 ->    0  xnan [nan, nan]  missed    5 ->    3 | veto decides 0: right 0 vs LLM 0
+  Sol          E3 English   FV   81 ->   74  x0.91 [nan, nan]  missed   14 ->   30 | veto decides 31: right 11 vs LLM 18
+  Sol          All 50 test  FV  297 ->  213  x0.72 [0.60, 0.86]  missed   55 ->  109 | veto decides 470: right 398 vs LLM 365
+
+4. KANNADA FILL on test: fires, right, LLM right
+  Gemini low   KN fill fires 14 right 11 (LLM 1) | EN fill fires 74 right 35 (LLM 34)
+  Gemini high  KN fill fires 10 right 7 (LLM 1)
+  Sol          KN fill fires 2 right 2 (LLM 0)
+
+5. ABLATIONS (English veto variants; tuning EN evidence: decides, right vs LLM right; TEST 50: strict / FV / missed, diff vs LLM)
+  == Gemini low: alone 0.780 / 250 / 210
+     decoder OFF + conf 5           tuning  99:  86 vs  73 | test 0.797 / 191 / 194  +0.017 [-0.005,+0.041] 14/28/8 | E2 EN 0.701 E3 EN 0.784
+     conf 5 only                    tuning 124:  92 vs  96 | test 0.794 / 177 / 218  +0.013 [-0.009,+0.039] 14/27/9 | E2 EN 0.698 E3 EN 0.776
+     decoder OFF only               tuning 124:  97 vs  89 | test 0.794 / 172 / 221  +0.014 [-0.012,+0.041] 14/28/8 | E2 EN 0.686 E3 EN 0.784
+     decoder OFF + conf >= 4        tuning 115:  96 vs  82 | test 0.797 / 179 / 207  +0.016 [-0.008,+0.043] 14/28/8 | E2 EN 0.697 E3 EN 0.785
+     conf >= 4 only                 tuning 147: 102 vs 111 | test 0.786 / 159 / 257  +0.006 [-0.023,+0.037] 13/27/10 | E2 EN 0.679 E3 EN 0.768
+     3L without Kannada fill        tuning  99:  86 vs  73 | test 0.793 / 190 / 207  +0.013 [-0.008,+0.037] 9/34/7 | E2 EN 0.701 E3 EN 0.784
+     3L + profile gate z<2          tuning  90:  82 vs  69 | test 0.798 / 193 / 189  +0.018 [-0.003,+0.042] 14/29/7 | E2 EN 0.702 E3 EN 0.787
+     3L + lecture gate NONE>=0.3    tuning  65:  60 vs  58 | test 0.786 / 272 / 172  +0.005 [-0.009,+0.023] 10/34/6 | E2 EN 0.663 E3 EN 0.790
+  == Gemini high: alone 0.823 / 261 / 100
+     decoder OFF + conf 5           tuning  99:  86 vs  82 | test 0.830 / 176 / 143  +0.007 [-0.011,+0.027] 12/31/7 | E2 EN 0.733 E3 EN 0.819
+     conf 5 only                    tuning 124:  92 vs 105 | test 0.824 / 163 / 171  +0.001 [-0.018,+0.022] 12/28/10 | E2 EN 0.726 E3 EN 0.807
+     decoder OFF only               tuning 124:  97 vs 101 | test 0.825 / 149 / 182  +0.002 [-0.022,+0.026] 11/29/10 | E2 EN 0.709 E3 EN 0.817
+     decoder OFF + conf >= 4        tuning 115:  96 vs  94 | test 0.828 / 158 / 166  +0.005 [-0.016,+0.028] 11/29/10 | E2 EN 0.724 E3 EN 0.818
+     conf >= 4 only                 tuning 147: 102 vs 123 | test 0.811 / 135 / 234  -0.012 [-0.040,+0.017] 11/26/13 | E2 EN 0.699 E3 EN 0.788
+     3L without Kannada fill        tuning  99:  86 vs  82 | test 0.828 / 175 / 152  +0.004 [-0.012,+0.024] 8/37/5 | E2 EN 0.733 E3 EN 0.819
+     3L + profile gate z<2          tuning  93:  85 vs  78 | test 0.831 / 177 / 138  +0.008 [-0.008,+0.027] 12/31/7 | E2 EN 0.735 E3 EN 0.821
+     3L + lecture gate NONE>=0.3    tuning  65:  60 vs  54 | test 0.828 / 247 /  96  +0.004 [+0.000,+0.010] 8/38/4 | E2 EN 0.723 E3 EN 0.827
+  == Sol: alone 0.857 / 297 / 55
+     decoder OFF + conf 5           tuning  99:  86 vs  85 | test 0.862 / 213 / 109  +0.005 [-0.011,+0.024] 6/35/9 | E2 EN 0.754 E3 EN 0.879
+     conf 5 only                    tuning 124:  92 vs 104 | test 0.857 / 199 / 135  +0.000 [-0.018,+0.022] 8/33/9 | E2 EN 0.751 E3 EN 0.868
+     decoder OFF only               tuning 124:  97 vs 105 | test 0.858 / 178 / 155  +0.001 [-0.022,+0.025] 8/34/8 | E2 EN 0.732 E3 EN 0.879
+     decoder OFF + conf >= 4        tuning 115:  96 vs  97 | test 0.862 / 187 / 133  +0.005 [-0.016,+0.027] 9/34/7 | E2 EN 0.751 E3 EN 0.879
+     conf >= 4 only                 tuning 147: 102 vs 121 | test 0.849 / 159 / 199  -0.008 [-0.035,+0.021] 9/31/10 | E2 EN 0.737 E3 EN 0.852
+     3L without Kannada fill        tuning  99:  86 vs  85 | test 0.861 / 213 / 111  +0.004 [-0.012,+0.023] 5/36/9 | E2 EN 0.754 E3 EN 0.879
+     3L + profile gate z<2          tuning  92:  84 vs  80 | test 0.863 / 215 / 103  +0.006 [-0.009,+0.023] 7/35/8 | E2 EN 0.753 E3 EN 0.882
+     3L + lecture gate NONE>=0.3    tuning  65:  60 vs  59 | test 0.864 / 262 /  64  +0.007 [-0.001,+0.017] 4/42/4 | E2 EN 0.758 E3 EN 0.885
+
+6. ORACLE REPAIRS (fix digressions: gold digression -> NONE; fix identity: both give a verse -> gold set)
+  E2 English   Plain Carry  as is 0.372  fix dig 0.691 (+0.319)  fix id 0.482 (+0.110)  both 0.984
+  E2 English   Cue          as is 0.610  fix dig 0.737 (+0.127)  fix id 0.732 (+0.122)  both 0.884
+  E2 English   Gemini low   as is 0.679  fix dig 0.816 (+0.138)  fix id 0.735 (+0.056)  both 0.882
+  E2 English   Gemini high  as is 0.717  fix dig 0.866 (+0.149)  fix id 0.763 (+0.046)  both 0.922
+  E2 English   Sol          as is 0.742  fix dig 0.916 (+0.174)  fix id 0.776 (+0.034)  both 0.961
+  E3 English   Plain Carry  as is 0.693  fix dig 0.757 (+0.064)  fix id 0.878 (+0.186)  both 0.963
+  E3 English   Cue          as is 0.738  fix dig 0.778 (+0.040)  fix id 0.932 (+0.194)  both 0.981
+  E3 English   Gemini low   as is 0.772  fix dig 0.824 (+0.052)  fix id 0.885 (+0.113)  both 0.940
+  E3 English   Gemini high  as is 0.827  fix dig 0.878 (+0.051)  fix id 0.927 (+0.100)  both 0.981
+  E3 English   Sol          as is 0.885  fix dig 0.937 (+0.052)  fix id 0.935 (+0.050)  both 0.990
+  All 50 test  Plain Carry  as is 0.577  fix dig 0.752 (+0.175)  fix id 0.735 (+0.158)  both 0.976
+  All 50 test  Cue          as is 0.713  fix dig 0.771 (+0.058)  fix id 0.889 (+0.176)  both 0.960
+  All 50 test  Gemini low   as is 0.780  fix dig 0.844 (+0.064)  fix id 0.863 (+0.083)  both 0.932
+  All 50 test  Gemini high  as is 0.823  fix dig 0.890 (+0.067)  fix id 0.894 (+0.071)  both 0.965
+  All 50 test  Sol          as is 0.857  fix dig 0.932 (+0.075)  fix id 0.903 (+0.046)  both 0.983
+
+7. RECALL BY MENTION TYPE (recited T1+T2 / non-recited T3-T5); n
+  E2 Kannada n=[298, 89]  Plain Carry: 0.903/0.663  Cue: 0.903/0.663  Gemini low: 0.946/0.775  3L + Gemini low: 0.946/0.798  Gemini high: 0.966/0.809  3L + Gemini high: 0.966/0.831  Sol: 0.990/0.899  3L + Sol: 0.990/0.899
+  E2 English n=[132, 343]  Plain Carry: 0.841/0.822  Cue: 0.773/0.612  Gemini low: 0.879/0.665  3L + Gemini low: 0.864/0.644  Gemini high: 0.886/0.770  3L + Gemini high: 0.871/0.682  Sol: 0.894/0.892  3L + Sol: 0.871/0.790
+  E3 Kannada n=[79, 97]  Plain Carry: 0.949/0.598  Cue: 0.772/0.526  Gemini low: 0.937/0.567  3L + Gemini low: 0.937/0.670  Gemini high: 0.987/0.753  3L + Gemini high: 0.987/0.814  Sol: 1.000/0.928  3L + Sol: 1.000/0.948
+  E3 English n=[200, 536]  Plain Carry: 0.850/0.720  Cue: 0.830/0.701  Gemini low: 0.875/0.675  3L + Gemini low: 0.870/0.692  Gemini high: 0.875/0.799  3L + Gemini high: 0.870/0.767  Sol: 0.960/0.909  3L + Sol: 0.955/0.882
+
+8. PER SPEAKER (E3), strict
+  Sumith           8 lect dig 4/88 (4.5%)  Plain Carry: 0.710  Cue: 0.650  Gemini low: 0.854  3L + Gemini low: 0.862  Gemini high: 0.907  3L + Gemini high: 0.908  Sol: 0.944  3L + Sol: 0.944
+  Brahmanyacharya  1 lect dig 0/44 (0.0%)  Plain Carry: 0.889  Cue: 0.686  Gemini low: 0.758  3L + Gemini low: 0.833  Gemini high: 0.899  3L + Gemini high: 0.940  Sol: 0.905  3L + Sol: 0.920
+  ISKCON           1 lect dig 15/215 (7.0%)  Plain Carry: 0.775  Cue: 0.790  Gemini low: 0.837  3L + Gemini low: 0.816  Gemini high: 0.829  3L + Gemini high: 0.803  Sol: 0.908  3L + Sol: 0.895
+  Chinmaya 03-04   2 lect dig 1/147 (0.7%)  Plain Carry: 0.833  Cue: 0.857  Gemini low: 0.621  3L + Gemini low: 0.732  Gemini high: 0.903  3L + Gemini high: 0.888  Sol: 0.913  3L + Sol: 0.898
+  Chinmaya 06-09   4 lect dig 74/299 (24.7%)  Plain Carry: 0.579  Cue: 0.642  Gemini low: 0.776  3L + Gemini low: 0.780  Gemini high: 0.790  3L + Gemini high: 0.798  Sol: 0.856  3L + Sol: 0.860
+  Chinmaya all 6   6 lect dig 75/446 (16.8%)  Plain Carry: 0.651  Cue: 0.709  Gemini low: 0.736  3L + Gemini low: 0.767  Gemini high: 0.826  3L + Gemini high: 0.827  Sol: 0.873  3L + Sol: 0.871
+
+9. TRADE-OFF points on TEST 50 (missed, FV) per LLM
+  Gemini low: alone (210,250) | decoder-gated conf5/conf>=4/any: (194,191) (207,179) (221,172) | cue-only conf5/conf>=4: (218,177) (257,159)
+  Gemini high: alone (100,261) | decoder-gated conf5/conf>=4/any: (143,176) (166,158) (182,149) | cue-only conf5/conf>=4: (171,163) (234,135)
+  Sol: alone (55,297) | decoder-gated conf5/conf>=4/any: (109,213) (133,187) (155,178) | cue-only conf5/conf>=4: (135,199) (199,159)

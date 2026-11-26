@@ -1,5 +1,9 @@
 # results/ — what to look at
 
+> **The paper's numbers (59 lectures, 50 test) are in `paper_tables/`** (`paper_tables/README.md` maps every table to its
+> script and output). The files below are the earlier 42- and 51-lecture runs, kept unchanged as the record of the work.
+
+
 Splits: **tuning** = 9 lectures (6 KN, 3 EN) used for design · **E2 test** = 30 lectures (23 KN, 7 EN) ·
 **E3** = 12 new-speaker lectures (9 KN, 3 EN) · **new 4** = en_chinmaya_day06–09 (annotated Nov 2026).
 "The 42" = E2 + E3. Metrics: strict / ±1 / theme F1, micro over (passage, verse) pairs.

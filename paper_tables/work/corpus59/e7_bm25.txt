@@ -1,0 +1,10 @@
+questions: e7_questions_150.csv | index 2583 passages | BM25 vocabulary 24692
+  GitaGround (3L + Sol index)    Hit@5 0.960  P@5 0.746  R@5 0.121  (n 125)  question P@5 0.668  shloka P@5 0.820  explanation P@5 0.771
+  vector search (BGE-M3)         Hit@5 0.928  P@5 0.472  R@5 0.077  (n 125)  question P@5 0.440  shloka P@5 0.445  explanation P@5 0.549
+  BM25                           Hit@5 0.952  P@5 0.608  R@5 0.095  (n 125)  question P@5 0.440  shloka P@5 0.810  explanation P@5 0.617
+  hybrid BM25 + dense (RRF)      Hit@5 0.952  P@5 0.592  R@5 0.092  (n 125)  question P@5 0.492  shloka P@5 0.685  explanation P@5 0.629
+questions: e7_questions_scholar50.csv | index 2583 passages | BM25 vocabulary 24692
+  GitaGround (3L + Sol index)    Hit@5 0.769  P@5 0.636  R@5 0.116  (n 39)  question P@5 0.606  shloka P@5 0.840
+  vector search (BGE-M3)         Hit@5 0.769  P@5 0.426  R@5 0.075  (n 39)  question P@5 0.424  shloka P@5 0.440
+  BM25                           Hit@5 0.795  P@5 0.492  R@5 0.090  (n 39)  question P@5 0.447  shloka P@5 0.800
+  hybrid BM25 + dense (RRF)      Hit@5 0.846  P@5 0.513  R@5 0.094  (n 39)  question P@5 0.482  shloka P@5 0.720

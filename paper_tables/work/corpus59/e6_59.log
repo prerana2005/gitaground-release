@@ -1,0 +1,49 @@
+  FINAL alpha a05: gamma=2 beta_off=-1 delta=0 tau=1.01
+  wrote -> ../../../../../../var/folders/kl/1_c2q0w92qx37x4h7bdbg0gh0000gn/T/tmppubbdq2k.pkl
+  FINAL alpha a05: gamma=0.25 beta_off=-3 delta=0 tau=0.9
+  wrote -> ../../../../../../var/folders/kl/1_c2q0w92qx37x4h7bdbg0gh0000gn/T/tmpoaxk68gu.pkl
+  FINAL alpha a05: gamma=1 beta_off=-3 delta=0 tau=0.7
+  wrote -> ../../../../../../var/folders/kl/1_c2q0w92qx37x4h7bdbg0gh0000gn/T/tmpdd2rjfy1.pkl
+  FINAL alpha a05: gamma=1 beta_off=2 delta=0 tau=0.9
+  wrote -> ../../../../../../var/folders/kl/1_c2q0w92qx37x4h7bdbg0gh0000gn/T/tmpcy6v3vj3.pkl
+FREEZE RUN — E6 ablation, split = test (run once)
+Each ablated system fit on the 9 tuning lectures (settings by leave-one-lecture-out there), applied unchanged here.
+CI: 95% lecture bootstrap, 1000 resamples (groups with >= 5 lectures).
+
+========================================================================================================================
+Kannada test   lectures 23   passages 340
+========================================================================================================================
+  system                           strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]              Pk     WD
+  full (locked)                    0.817 [0.763,0.863]    0.894 [0.835,0.941]    0.899 [0.833,0.944]     0.312  0.315
+  - string match                   0.671 [0.591,0.742]    0.891 [0.825,0.939]    0.900 [0.830,0.948]     0.362  0.366
+     change vs full                                -0.146                 -0.003                 +0.001
+  - meaning match                  0.850 [0.795,0.893]    0.898 [0.840,0.941]    0.904 [0.841,0.949]     0.258  0.262
+     change vs full                                +0.033                 +0.004                 +0.006
+  - lecture memory                 0.744 [0.642,0.838]    0.827 [0.716,0.921]    0.843 [0.729,0.942]     0.285  0.292
+     change vs full                                -0.073                 -0.067                 -0.056
+  - off-verse state                0.815 [0.763,0.862]    0.891 [0.831,0.937]    0.891 [0.828,0.936]     0.295  0.299
+     change vs full                                -0.002                 -0.003                 -0.008
+  - lecture decoding               0.761 [0.708,0.815]    0.842 [0.781,0.893]    0.850 [0.789,0.903]     0.383  0.409
+     change vs full                                -0.056                 -0.052                 -0.049
+  plain carry (reference)          0.789 [0.738,0.832]    0.851 [0.795,0.896]    0.857 [0.793,0.909]     0.319  0.346
+  carry, best anchor (reference)   0.779 [0.721,0.826]    0.871 [0.804,0.920]    0.880 [0.809,0.929]     0.366  0.376
+
+========================================================================================================================
+English test   lectures 11   passages 1076
+========================================================================================================================
+  system                           strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]              Pk     WD
+  full (locked)                    0.552 [0.452,0.634]    0.620 [0.539,0.681]    0.620 [0.541,0.681]     0.348  0.368
+  - string match                   0.514 [0.392,0.615]    0.612 [0.525,0.679]    0.619 [0.540,0.680]     0.361  0.382
+     change vs full                                -0.039                 -0.008                 -0.001
+  - meaning match                  0.444 [0.356,0.536]    0.503 [0.428,0.578]    0.527 [0.450,0.598]     0.350  0.364
+     change vs full                                -0.108                 -0.117                 -0.093
+  - lecture memory                 0.232 [0.144,0.326]    0.308 [0.182,0.435]    0.445 [0.276,0.591]     0.354  0.379
+     change vs full                                -0.321                 -0.312                 -0.174
+  - off-verse state                0.475 [0.364,0.581]    0.547 [0.463,0.629]    0.567 [0.486,0.642]     0.354  0.370
+     change vs full                                -0.078                 -0.073                 -0.053
+  - lecture decoding               0.521 [0.434,0.614]    0.604 [0.520,0.681]    0.627 [0.542,0.702]     0.363  0.438
+     change vs full                                -0.031                 -0.015                 +0.008
+  plain carry (reference)          0.372 [0.278,0.507]    0.438 [0.362,0.545]    0.495 [0.407,0.585]     0.344  0.361
+  carry, best anchor (reference)   0.489 [0.390,0.585]    0.544 [0.460,0.626]    0.570 [0.489,0.648]     0.345  0.360
+
+  wrote -> ../../review/paper_v7_work/corpus59/freeze_e6_test_59.txt

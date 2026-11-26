@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[Embeddings] Loading BAAI/bge-m3 on mps
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 45963.37it/s]
+index: 1884 passages (frozen 51-lecture) -> 2583 passages, 59 lectures, labels GitaGround-3L + Sol; 775 passages OFF
+abstention  GitaGround (profile rule, frozen): unanswerable refused 7/11, answerable wrongly refused 1/39
+            vector search (passage cosine < 0.5625, dev): unanswerable refused 8/11, answerable wrongly refused 5/39
+verse Hit@1: {'question': '24/34 = 0.706', 'shloka': '5/5 = 1.000'}  all 29/39
+  GitaGround-3L + Sol index              Hit@5 0.769  P@5 0.636  R@5 0.116  (n 39)  question P@5 0.606  shloka P@5 0.840  | primary claims correct 146/155 = 0.942
+  vector search (same 2,583 passages)    Hit@5 0.769  P@5 0.426  R@5 0.075  (n 39)  question P@5 0.424  shloka P@5 0.440

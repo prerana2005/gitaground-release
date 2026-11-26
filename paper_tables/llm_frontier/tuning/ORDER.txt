@@ -1,0 +1,9 @@
+T1	gita-1st_video	KN	15 passages	save answer as answers/gita-1st_video.txt
+T2	gita-4th_video	KN	15 passages	save answer as answers/gita-4th_video.txt
+T3	kannada_07	KN	15 passages	save answer as answers/kannada_07.txt
+T4	kannada_10	KN	11 passages	save answer as answers/kannada_10.txt
+T5	kannada_13	KN	11 passages	save answer as answers/kannada_13.txt
+T6	kannada_16	KN	15 passages	save answer as answers/kannada_16.txt
+T7	video_01	EN	88 passages	save answer as answers/video_01.txt
+T8	video_04	EN	107 passages	save answer as answers/video_04.txt
+T9	video_07	EN	97 passages	save answer as answers/video_07.txt
